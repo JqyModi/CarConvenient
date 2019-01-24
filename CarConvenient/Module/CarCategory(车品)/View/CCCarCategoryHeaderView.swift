@@ -65,6 +65,14 @@ class CCCarCategoryHeaderView: BaseView {
         }
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+    }
+    
 }
 extension CCCarCategoryHeaderView: FSPagerViewDataSource, FSPagerViewDelegate {
     func numberOfItems(in pagerView: FSPagerView) -> Int {
