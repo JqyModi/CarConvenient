@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LTLocationBottomView" customModule="LT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dye-3K-fwY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uI1-3l-Qxt">
+                            <rect key="frame" x="14" y="20" width="279" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idg-zu-0mI">
+                            <rect key="frame" x="14" y="49" width="279" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zs-uU-v10">
+                            <rect key="frame" x="301" y="25" width="60" height="30"/>
+                            <color key="backgroundColor" red="0.18823529410000001" green="0.47058823529999999" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="cMQ-fx-b9P"/>
+                                <constraint firstAttribute="width" constant="60" id="iXU-xZ-h56"/>
+                            </constraints>
+                            <state key="normal" title="去导航">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="xib_Ok:" destination="iN0-l3-epB" eventType="touchUpInside" id="FAr-zQ-7N2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uI1-3l-Qxt" firstAttribute="top" secondItem="dye-3K-fwY" secondAttribute="top" constant="20" id="6xY-Dn-gHc"/>
+                        <constraint firstItem="0Zs-uU-v10" firstAttribute="leading" secondItem="uI1-3l-Qxt" secondAttribute="trailing" constant="8" symbolic="YES" id="NBa-zL-aGa"/>
+                        <constraint firstItem="uI1-3l-Qxt" firstAttribute="leading" secondItem="dye-3K-fwY" secondAttribute="leading" constant="14" id="WjK-PD-fl3"/>
+                        <constraint firstItem="Idg-zu-0mI" firstAttribute="leading" secondItem="uI1-3l-Qxt" secondAttribute="leading" id="hZA-Ql-LLw"/>
+                        <constraint firstItem="Idg-zu-0mI" firstAttribute="trailing" secondItem="uI1-3l-Qxt" secondAttribute="trailing" id="mWn-Y4-L0U"/>
+                        <constraint firstItem="Idg-zu-0mI" firstAttribute="top" secondItem="uI1-3l-Qxt" secondAttribute="bottom" constant="8" id="wMP-uD-aJH"/>
+                        <constraint firstItem="0Zs-uU-v10" firstAttribute="centerY" secondItem="dye-3K-fwY" secondAttribute="centerY" id="x1y-Yt-6O9"/>
+                        <constraint firstAttribute="trailing" secondItem="0Zs-uU-v10" secondAttribute="trailing" constant="14" id="zuN-Ic-Hoe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dye-3K-fwY" secondAttribute="bottom" id="8Sw-de-pYN"/>
+                <constraint firstItem="dye-3K-fwY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KiM-hN-Dxl"/>
+                <constraint firstItem="dye-3K-fwY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Lkg-VG-XLx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dye-3K-fwY" secondAttribute="trailing" id="wbv-Vd-n40"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="xib_Desc" destination="Idg-zu-0mI" id="KlR-vH-lHz"/>
+                <outlet property="xib_Ok" destination="0Zs-uU-v10" id="uLj-bX-poZ"/>
+                <outlet property="xib_Title" destination="uI1-3l-Qxt" id="Lrb-Uv-dyr"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-221.5"/>
+        </view>
+    </objects>
+</document>
