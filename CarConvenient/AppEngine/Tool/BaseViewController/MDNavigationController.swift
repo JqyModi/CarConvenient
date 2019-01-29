@@ -22,6 +22,11 @@ class MDNavigationController: UINavigationController {
         self.setupNavgationBar()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
     /// 配置导航栏样式
     private func setupNavgationBar() {
         

@@ -47,8 +47,20 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
 
     open func setupStyle() {
         // 添加左右按钮
-        addLeftItem(title: "", imageName: "btn_my_n", fontColor: Color.md_NavBarTintColor)
-        addRightItem(title: "", imageName: "btn_system_n", fontColor: Color.md_NavBarTintColor)
+        if let vcs = self.navigationController?.viewControllers {
+            if vcs.count > 1 {
+                self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "global_btn_return_n"), style: .plain, target: self, action: #selector(clickBack))
+            }else {
+                addLeftItem(title: "", imageName: "btn_my_n1", fontColor: Color.md_NavBarTintColor)
+                addRightItem(title: "", imageName: "btn_system_n1", fontColor: Color.md_NavBarTintColor)
+            }
+        }
+       
+    }
+    
+    /// 返回
+    @objc func clickBack() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /// 设置导航栏左按钮
@@ -57,12 +69,22 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     ///   - title: 标题
     ///   - imageName: 图片
     func addRightItem(title:String,imageName:String,fontColor: UIColor = UIColor.white) {
-        let rightButton = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(clickRight))
-        let dic = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 12)]
-        rightButton.setTitleTextAttributes(dic, for: .normal)
-        rightButton.setTitleTextAttributes(dic, for: .highlighted)
-        rightButton.tintColor = fontColor
-        rightButton.image = UIImage.init(named: imageName)
+//        let rightButton = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(clickRight))
+//        let dic = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 12)]
+//        rightButton.setTitleTextAttributes(dic, for: .normal)
+//        rightButton.setTitleTextAttributes(dic, for: .highlighted)
+//        rightButton.tintColor = fontColor
+//        rightButton.image = UIImage.init(named: imageName)
+//        self.navigationItem.rightBarButtonItem = rightButton
+        
+        let btn = UIButton()
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.setTitle(title, for: UIControlState.normal)
+        btn.setTitleColor(fontColor, for: UIControlState.normal)
+        btn.setImage(UIImage.init(named: imageName), for: UIControlState.normal)
+        btn.addTarget(self, action: #selector(clickRight), for: .touchUpInside)
+        
+        let rightButton = UIBarButtonItem(customView: btn)
         self.navigationItem.rightBarButtonItem = rightButton
     }
     
@@ -75,13 +97,26 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     ///   - title: 标题
     ///   - imageName: 图片
     func addLeftItem(title:String,imageName:String,fontColor: UIColor = UIColor.white) {
-        let leftButton = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(clickLeft))
-        let dic = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 12)]
-        leftButton.setTitleTextAttributes(dic, for: .normal)
-        leftButton.setTitleTextAttributes(dic, for: .highlighted)
-        leftButton.tintColor = fontColor
-        leftButton.image = UIImage.init(named: imageName)
+//        let leftButton = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(clickLeft))
+//        let dic = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 12)]
+//        leftButton.setTitleTextAttributes(dic, for: .normal)
+//        leftButton.setTitleTextAttributes(dic, for: .highlighted)
+//        leftButton.tintColor = fontColor
+//        leftButton.image = UIImage.init(named: imageName)
+        
+//        let leftButton = UIBarButtonItem(image: UIImage(named: imageName), style: UIBarButtonItemStyle.done, target: self, action: #selector(clickLeft))
+//        leftButton.tintColor = UIColor.black
+        
+        let btn = UIButton()
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        btn.setTitle(title, for: UIControlState.normal)
+        btn.setTitleColor(fontColor, for: UIControlState.normal)
+        btn.setImage(UIImage.init(named: imageName), for: UIControlState.normal)
+        btn.addTarget(self, action: #selector(clickLeft), for: .touchUpInside)
+        
+        let leftButton = UIBarButtonItem(customView: btn)
         self.navigationItem.leftBarButtonItem = leftButton
+        
     }
     
     /// 点击导航右按钮

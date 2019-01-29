@@ -9,7 +9,13 @@
 import UIKit
 import FSPagerView
 
+protocol CCCarCategoryHeaderViewDelegate: class {
+    func itemDidSelect(index: Int)
+}
+
 class CCCarCategoryHeaderView: BaseView {
+    
+    weak var delegate: CCCarCategoryHeaderViewDelegate!
 
     lazy var imgNameDataSource: [String] = {
         let ds = [
@@ -48,7 +54,7 @@ class CCCarCategoryHeaderView: BaseView {
     }()
     
     lazy var bannerModels: [String] = {
-        let bms = ["qb_guide_1", "qb_guide_2", "qb_guide_3"]
+        let bms = ["placeholder", "placeholder", "placeholder"]
         return bms
     }()
 
@@ -65,11 +71,30 @@ class CCCarCategoryHeaderView: BaseView {
         }
     }
     
+    lazy var centerView: UIImageView = {
+        let iv = UIImageView(image: UIImage(named: "btn_supermarket_n"))
+        iv.isUserInteractionEnabled = true
+        return iv
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        xib_bannerView.dataSource = self
+        xib_bannerView.delegate = self
+        
+        addSubview(centerView)
+        
+        let width = (collectionView.width/4)
+        let height = width
+        centerView.snp.makeConstraints { (make) in
+            make.center.equalTo(collectionView)
+            make.width.equalTo(width*2)
+            make.height.equalTo(height)
+        }
         
     }
     
@@ -121,5 +146,12 @@ extension CCCarCategoryHeaderView: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        QYTools.shared.Log(log: "\(indexPath.row)")
+        if let d = delegate {
+            d.itemDidSelect(index: indexPath.row)
+        }
     }
 }

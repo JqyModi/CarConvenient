@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CCCarTypeCollectionViewCell" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="123" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="123" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tDD-ny-MRO">
+                        <rect key="frame" x="0.0" y="0.0" width="123" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tDD-ny-MRO" secondAttribute="height" multiplier="16:9" id="srL-ko-hBv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzd-h2-1eE">
+                        <rect key="frame" x="0.0" y="74" width="123" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Wzd-h2-1eE" firstAttribute="top" secondItem="tDD-ny-MRO" secondAttribute="bottom" constant="5" id="02y-wr-9bQ"/>
+                <constraint firstItem="tDD-ny-MRO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Fz-zT-XdG"/>
+                <constraint firstAttribute="trailing" secondItem="tDD-ny-MRO" secondAttribute="trailing" id="I7d-9Y-WHL"/>
+                <constraint firstItem="tDD-ny-MRO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KcN-az-TF3"/>
+                <constraint firstAttribute="trailing" secondItem="Wzd-h2-1eE" secondAttribute="trailing" id="QrP-jc-C1a"/>
+                <constraint firstItem="Wzd-h2-1eE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="plc-ML-9cN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="123" height="89"/>
+            <connections>
+                <outlet property="iconImageView" destination="tDD-ny-MRO" id="Kvm-3u-H75"/>
+                <outlet property="titleLabel" destination="Wzd-h2-1eE" id="RuS-GA-Gyw"/>
+            </connections>
+            <point key="canvasLocation" x="61.600000000000001" y="74.212893553223395"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="320" height="150"/>
+    </resources>
+</document>

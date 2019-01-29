@@ -37,6 +37,9 @@ class BaseCollectionViewController: BaseViewController {
         collectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
         }
+//        collectionView.snp.makeConstraints { (make) in
+//            make.left.right.top.bottom.equalToSuperview()
+//        }
     }
     
     open var identifier: String = "UICollectionViewCell" {

@@ -6,16 +6,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CarConvenient/Module/CarCategory(&#x8f66;&#x54c1;)/CCCarCategoryViewController.swift"
-            timestampString = "570013277.557976"
+            filePath = "CarConvenient/Module/CarCategory(&#x8f66;&#x54c1;)/CarType(&#x8f66;&#x54c1;&#x5206;&#x7c7b;)/CCCarTypeViewController.swift"
+            timestampString = "570361018.7252181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "setupTableHeaderView()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CarConvenient/AppEngine/Tool/BaseViewController/BaseViewController.swift"
+            timestampString = "570422315.792889"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "addLeftItem(title:imageName:fontColor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
