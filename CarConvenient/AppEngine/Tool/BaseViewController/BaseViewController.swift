@@ -89,7 +89,15 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     }
     
     /// 点击导航右按钮
-    @objc func clickRight() {}
+    @objc func clickRight() {
+        // 添加左右按钮
+        if let vcs = self.navigationController?.viewControllers {
+            if vcs.count == 1 {
+//                let vc = CCPersonalCenterViewController()
+//                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
     
     /// 设置导航栏左按钮
     ///
@@ -120,7 +128,15 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     }
     
     /// 点击导航右按钮
-    @objc func clickLeft() {}
+    @objc func clickLeft() {
+        // 添加左右按钮
+        if let vcs = self.navigationController?.viewControllers {
+            if vcs.count == 1 {
+                let vc = CCPersonalCenterViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
     
     //设置状态栏颜色
     @objc open func setStatusBarBackgroundColor(color: UIColor) {

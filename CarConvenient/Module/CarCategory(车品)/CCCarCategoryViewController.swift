@@ -70,6 +70,12 @@ extension CCCarCategoryViewController {
         }else if indexPath.row == 1 {
             let vc = CCBargainViewController.init(nibName: "CCBargainViewController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 2 {
+            let vc = CCSpikeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 3 {
+            let vc = CCSpecialAreaViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

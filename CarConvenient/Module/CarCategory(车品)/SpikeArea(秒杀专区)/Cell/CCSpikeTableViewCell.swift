@@ -10,6 +10,13 @@ import UIKit
 
 class CCSpikeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var xib_progress: UIProgressView! {
+        didSet {
+            xib_progress.layer.cornerRadius = 5.5
+            xib_progress.layer.masksToBounds = true
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

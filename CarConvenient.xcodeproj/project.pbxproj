@@ -10,6 +10,8 @@
 		0878AA2B9A0E91EEA1041B9D /* Pods_CarConvenientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BAD907F5139F7A4B738861 /* Pods_CarConvenientUITests.framework */; };
 		C52A0D8721FFF4C80017D113 /* CCPersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52A0D8521FFF4C80017D113 /* CCPersonalCenterViewController.swift */; };
 		C52A0D8821FFF4C80017D113 /* CCPersonalCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52A0D8621FFF4C80017D113 /* CCPersonalCenterViewController.xib */; };
+		C52A0D8B220033920017D113 /* CCPersonalCenterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52A0D8A220033920017D113 /* CCPersonalCenterHeaderView.swift */; };
+		C52A0D8D2200339B0017D113 /* CCPersonalCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52A0D8C2200339B0017D113 /* CCPersonalCenterHeaderView.xib */; };
 		C5306AF921FF069E00B82697 /* CCBargainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5306AF821FF069E00B82697 /* CCBargainViewController.xib */; };
 		C532F52E21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532F52C21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift */; };
 		C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C532F52D21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib */; };
@@ -21,6 +23,15 @@
 		C532F53C21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C532F53A21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib */; };
 		C532F53F21F99A7D00AD7ED3 /* CCModifyPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532F53D21F99A7D00AD7ED3 /* CCModifyPasswordViewController.swift */; };
 		C532F54021F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C532F53E21F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib */; };
+		C5384C1622115DD0002F9561 /* CCSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C1422115DD0002F9561 /* CCSettingViewController.swift */; };
+		C5384C1722115DD0002F9561 /* CCSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C1522115DD0002F9561 /* CCSettingViewController.xib */; };
+		C5384C1B22116041002F9561 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5384C1A22116041002F9561 /* setting.plist */; };
+		C5384C1D22117D60002F9561 /* CCMyWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C1C22117D60002F9561 /* CCMyWalletViewController.swift */; };
+		C5384C212211957E002F9561 /* myWallet.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5384C202211957E002F9561 /* myWallet.plist */; };
+		C5384C2422119F71002F9561 /* CCMyWalletHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C2322119F71002F9561 /* CCMyWalletHeaderView.swift */; };
+		C5384C2622119F8F002F9561 /* CCMyWalletHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C2522119F8F002F9561 /* CCMyWalletHeaderView.xib */; };
+		C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C2822125A33002F9561 /* CCBalanceRechargeViewController.swift */; };
+		C5384C2B22125A33002F9561 /* CCBalanceRechargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C2922125A33002F9561 /* CCBalanceRechargeViewController.xib */; };
 		C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403521F5579B008C8CC6 /* AppDelegate.swift */; };
 		C566403821F5579B008C8CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403721F5579B008C8CC6 /* ViewController.swift */; };
 		C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C566403921F5579B008C8CC6 /* Main.storyboard */; };
@@ -224,8 +235,12 @@
 		C566429D21F55C8D008C8CC6 /* YDMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566428421F55C8D008C8CC6 /* YDMenuDataSource.swift */; };
 		C566429E21F55C8D008C8CC6 /* MenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C566428521F55C8D008C8CC6 /* MenuData.plist */; };
 		C566429F21F55C8D008C8CC6 /* YDMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566428621F55C8D008C8CC6 /* YDMenu.swift */; };
-		C56642A321F55CF3008C8CC6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C56642A121F55CF0008C8CC6 /* Info.plist */; };
 		C56642A521F577E6008C8CC6 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56642A421F577E6008C8CC6 /* TokenModel.swift */; };
+		C56E20C122110CCD00E9BB47 /* CCSpecialAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E20C022110CCD00E9BB47 /* CCSpecialAreaViewController.swift */; };
+		C56E20C522110CF600E9BB47 /* CCSpecialAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E20C322110CF600E9BB47 /* CCSpecialAreaTableViewCell.swift */; };
+		C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */; };
+		C56E20CA2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */; };
+		C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */; };
 		C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */; };
 		C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */; };
 		C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */; };
@@ -297,6 +312,8 @@
 		C16AB7EA69AD7A6A836CC919 /* Pods-CarConvenientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarConvenientTests.debug.xcconfig"; path = "Target Support Files/Pods-CarConvenientTests/Pods-CarConvenientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C52A0D8521FFF4C80017D113 /* CCPersonalCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterViewController.swift; sourceTree = "<group>"; };
 		C52A0D8621FFF4C80017D113 /* CCPersonalCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterViewController.xib; sourceTree = "<group>"; };
+		C52A0D8A220033920017D113 /* CCPersonalCenterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterHeaderView.swift; sourceTree = "<group>"; };
+		C52A0D8C2200339B0017D113 /* CCPersonalCenterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterHeaderView.xib; sourceTree = "<group>"; };
 		C5306AF821FF069E00B82697 /* CCBargainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBargainViewController.xib; sourceTree = "<group>"; };
 		C532F52C21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		C532F52D21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCForgetPasswordViewController.xib; sourceTree = "<group>"; };
@@ -308,6 +325,15 @@
 		C532F53A21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCModifyPayPasswordViewController.xib; sourceTree = "<group>"; };
 		C532F53D21F99A7D00AD7ED3 /* CCModifyPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCModifyPasswordViewController.swift; sourceTree = "<group>"; };
 		C532F53E21F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCModifyPasswordViewController.xib; sourceTree = "<group>"; };
+		C5384C1422115DD0002F9561 /* CCSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSettingViewController.swift; sourceTree = "<group>"; };
+		C5384C1522115DD0002F9561 /* CCSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSettingViewController.xib; sourceTree = "<group>"; };
+		C5384C1A22116041002F9561 /* setting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		C5384C1C22117D60002F9561 /* CCMyWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyWalletViewController.swift; sourceTree = "<group>"; };
+		C5384C202211957E002F9561 /* myWallet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = myWallet.plist; sourceTree = "<group>"; };
+		C5384C2322119F71002F9561 /* CCMyWalletHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyWalletHeaderView.swift; sourceTree = "<group>"; };
+		C5384C2522119F8F002F9561 /* CCMyWalletHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyWalletHeaderView.xib; sourceTree = "<group>"; };
+		C5384C2822125A33002F9561 /* CCBalanceRechargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBalanceRechargeViewController.swift; sourceTree = "<group>"; };
+		C5384C2922125A33002F9561 /* CCBalanceRechargeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBalanceRechargeViewController.xib; sourceTree = "<group>"; };
 		C566403221F5579B008C8CC6 /* CarConvenient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarConvenient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C566403521F5579B008C8CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C566403721F5579B008C8CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -607,6 +633,11 @@
 		C56642A121F55CF0008C8CC6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C56642A221F55CF3008C8CC6 /* CarConvenient-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarConvenient-Bridging-Header.h"; sourceTree = "<group>"; };
 		C56642A421F577E6008C8CC6 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		C56E20C022110CCD00E9BB47 /* CCSpecialAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSpecialAreaViewController.swift; sourceTree = "<group>"; };
+		C56E20C322110CF600E9BB47 /* CCSpecialAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSpecialAreaTableViewCell.swift; sourceTree = "<group>"; };
+		C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSpecialAreaTableViewCell.xib; sourceTree = "<group>"; };
+		C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterCollectionViewCell.swift; sourceTree = "<group>"; };
+		C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryViewController.swift; sourceTree = "<group>"; };
 		C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCarCategoryHeaderView.xib; sourceTree = "<group>"; };
@@ -679,6 +710,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C52A0D89220033680017D113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C56E20C72211410D00E9BB47 /* Cell */,
+				C52A0D8A220033920017D113 /* CCPersonalCenterHeaderView.swift */,
+				C52A0D8C2200339B0017D113 /* CCPersonalCenterHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C532F52B21F98C4900AD7ED3 /* ForgetPassword(忘记密码) */ = {
 			isa = PBXGroup;
 			children = (
@@ -699,6 +740,40 @@
 				C532F53E21F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib */,
 			);
 			path = "ModifyPassword(修改密码)";
+			sourceTree = "<group>";
+		};
+		C5384C1822115F1F002F9561 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C1A22116041002F9561 /* setting.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C5384C1E22117D67002F9561 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C202211957E002F9561 /* myWallet.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C5384C2222119F46002F9561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C2322119F71002F9561 /* CCMyWalletHeaderView.swift */,
+				C5384C2522119F8F002F9561 /* CCMyWalletHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5384C272212596D002F9561 /* BalanceRecharge(余额充值) */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C2822125A33002F9561 /* CCBalanceRechargeViewController.swift */,
+				C5384C2922125A33002F9561 /* CCBalanceRechargeViewController.xib */,
+			);
+			path = "BalanceRecharge(余额充值)";
 			sourceTree = "<group>";
 		};
 		C566402921F5579B008C8CC6 = {
@@ -1565,6 +1640,7 @@
 		C56642A621F57A39008C8CC6 /* CarCategory(车品) */ = {
 			isa = PBXGroup;
 			children = (
+				C56E20BF22110C7D00E9BB47 /* SpecialArea(特价专区) */,
 				C5FA095321FD5D42005AF09C /* CarType(车品分类) */,
 				C5F6BE1D21F6F716009FACD6 /* View */,
 				C5F6BE0821F6B331009FACD6 /* SpikeArea(秒杀专区) */,
@@ -1622,6 +1698,7 @@
 		C56642AB21F59132008C8CC6 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				C52A0D89220033680017D113 /* View */,
 				C5F6BE1621F6B77D009FACD6 /* Invoice(发票助手) */,
 				C5F6BE1521F6B767009FACD6 /* ShoppingCart(购物车) */,
 				C5F6BE1421F6B73F009FACD6 /* PromotedCode(推广码) */,
@@ -1639,6 +1716,33 @@
 			children = (
 			);
 			path = "MessageCenter(消息中心)";
+			sourceTree = "<group>";
+		};
+		C56E20BF22110C7D00E9BB47 /* SpecialArea(特价专区) */ = {
+			isa = PBXGroup;
+			children = (
+				C56E20C222110CD900E9BB47 /* Cell */,
+				C56E20C022110CCD00E9BB47 /* CCSpecialAreaViewController.swift */,
+			);
+			path = "SpecialArea(特价专区)";
+			sourceTree = "<group>";
+		};
+		C56E20C222110CD900E9BB47 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C56E20C322110CF600E9BB47 /* CCSpecialAreaTableViewCell.swift */,
+				C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C56E20C72211410D00E9BB47 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */,
+				C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C5F6BE0221F6AF8E009FACD6 /* Login(登录) */ = {
@@ -1769,6 +1873,10 @@
 		C5F6BE1121F6B6BD009FACD6 /* MyWallet(我的钱包) */ = {
 			isa = PBXGroup;
 			children = (
+				C5384C272212596D002F9561 /* BalanceRecharge(余额充值) */,
+				C5384C2222119F46002F9561 /* View */,
+				C5384C1E22117D67002F9561 /* Config */,
+				C5384C1C22117D60002F9561 /* CCMyWalletViewController.swift */,
 			);
 			path = "MyWallet(我的钱包)";
 			sourceTree = "<group>";
@@ -1776,6 +1884,9 @@
 		C5F6BE1221F6B70A009FACD6 /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
+				C5384C1822115F1F002F9561 /* Config */,
+				C5384C1422115DD0002F9561 /* CCSettingViewController.swift */,
+				C5384C1522115DD0002F9561 /* CCSettingViewController.xib */,
 			);
 			path = "Setting(设置)";
 			sourceTree = "<group>";
@@ -2093,10 +2204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
+				C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */,
 				C566424621F55C43008C8CC6 /* FJAddressTVCell.xib in Resources */,
 				C566424721F55C43008C8CC6 /* tp_region.sql in Resources */,
 				C566429A21F55C8D008C8CC6 /* LTLocationBottomView.xib in Resources */,
 				C56641DD21F55C43008C8CC6 /* 1.plist in Resources */,
+				C5384C2B22125A33002F9561 /* CCBalanceRechargeViewController.xib in Resources */,
 				C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */,
 				C566425021F55C43008C8CC6 /* icon_deleted@2x.png in Resources */,
 				C566428F21F55C8D008C8CC6 /* MDWebViewController.xib in Resources */,
@@ -2106,6 +2219,7 @@
 				C566429E21F55C8D008C8CC6 /* MenuData.plist in Resources */,
 				C566428821F55C8D008C8CC6 /* start _img_logo@2x.png in Resources */,
 				C56641BF21F55C43008C8CC6 /* HFWelcomeViewController.xib in Resources */,
+				C52A0D8D2200339B0017D113 /* CCPersonalCenterHeaderView.xib in Resources */,
 				C5FA09E221FEFBB7005AF09C /* CCSpikeTableViewCell.xib in Resources */,
 				C566425921F55C43008C8CC6 /* CYPasswordView.bundle in Resources */,
 				C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */,
@@ -2120,17 +2234,21 @@
 				C566404021F5579D008C8CC6 /* LaunchScreen.storyboard in Resources */,
 				C566429121F55C8D008C8CC6 /* LTCommentViewController.xib in Resources */,
 				C5306AF921FF069E00B82697 /* CCBargainViewController.xib in Resources */,
-				C56642A321F55CF3008C8CC6 /* Info.plist in Resources */,
 				C566425B21F55C43008C8CC6 /* MDFlowView.xib in Resources */,
+				C5384C1722115DD0002F9561 /* CCSettingViewController.xib in Resources */,
 				C566421321F55C43008C8CC6 /* BRPickerView.bundle in Resources */,
 				C566425D21F55C43008C8CC6 /* MDFlowViewCollectionViewCell.xib in Resources */,
+				C5384C2622119F8F002F9561 /* CCMyWalletHeaderView.xib in Resources */,
 				C566420721F55C43008C8CC6 /* setting_example.plist in Resources */,
+				C5384C1B22116041002F9561 /* setting.plist in Resources */,
 				C5FA095F21FD5E21005AF09C /* CCCarTypeDetailTableViewCell.xib in Resources */,
 				C56641B221F55C43008C8CC6 /* HFStartViewController.xib in Resources */,
 				C5FA09C821FED968005AF09C /* CCGroupBuyingFooterView.xib in Resources */,
 				C566420421F55C43008C8CC6 /* ico_make.png in Resources */,
 				C566428C21F55C8D008C8CC6 /* LTLocationViewController.xib in Resources */,
+				C5384C212211957E002F9561 /* myWallet.plist in Resources */,
 				C566403D21F5579D008C8CC6 /* Assets.xcassets in Resources */,
+				C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */,
 				C5FA096421FD5E21005AF09C /* CCCarTypeTableViewCell.xib in Resources */,
 				C566423D21F55C43008C8CC6 /* HXPhotoPicker.bundle in Resources */,
 				C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */,
@@ -2314,6 +2432,7 @@
 				C566425121F55C43008C8CC6 /* MDRightIconButton.swift in Sources */,
 				C56641DB21F55C43008C8CC6 /* JYEqualCellSpaceFlowLayout.swift in Sources */,
 				C566421421F55C43008C8CC6 /* BRAddressPickerView.m in Sources */,
+				C56E20CA2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.swift in Sources */,
 				C566420F21F55C43008C8CC6 /* NSDate+BRPickerView.m in Sources */,
 				C56641F521F55C43008C8CC6 /* NSMutableDictionary+Category.m in Sources */,
 				C566422A21F55C43008C8CC6 /* HXPhotoManager.m in Sources */,
@@ -2327,6 +2446,7 @@
 				C56641B921F55C43008C8CC6 /* HFStartViewController.swift in Sources */,
 				C566420821F55C43008C8CC6 /* UIView+Extension.swift in Sources */,
 				C5F6BE3821F85430009FACD6 /* CCLoginViewController.swift in Sources */,
+				C5384C1622115DD0002F9561 /* CCSettingViewController.swift in Sources */,
 				C56641FE21F55C43008C8CC6 /* UITableView+CellAnimation.m in Sources */,
 				C566424921F55C43008C8CC6 /* AddressModel.swift in Sources */,
 				C566422521F55C43008C8CC6 /* HXPhotoCustomNavigationBar.m in Sources */,
@@ -2351,6 +2471,7 @@
 				C566423A21F55C43008C8CC6 /* HXDatePhotoPersentInteractiveTransition.m in Sources */,
 				C56641CC21F55C43008C8CC6 /* HFWebViewController.swift in Sources */,
 				C566423B21F55C43008C8CC6 /* HXCircleProgressView.m in Sources */,
+				C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */,
 				C566423821F55C43008C8CC6 /* UIButton+HXExtension.m in Sources */,
 				C56641D121F55C43008C8CC6 /* BaseViewController.swift in Sources */,
 				C56641C121F55C43008C8CC6 /* HFWelcomeViewController.swift in Sources */,
@@ -2372,6 +2493,7 @@
 				C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */,
 				C566421D21F55C43008C8CC6 /* NSBundle+HXPhotoPicker.m in Sources */,
 				C56641AF21F55C43008C8CC6 /* HFMainDataCent.swift in Sources */,
+				C5384C2422119F71002F9561 /* CCMyWalletHeaderView.swift in Sources */,
 				C566429821F55C8D008C8CC6 /* FCSearchHouseModel.swift in Sources */,
 				C56641D521F55C43008C8CC6 /* PlaceholderView.swift in Sources */,
 				C566422221F55C43008C8CC6 /* HXPhotoModel.m in Sources */,
@@ -2384,7 +2506,9 @@
 				C566420921F55C43008C8CC6 /* SwiftyTextView.swift in Sources */,
 				C566422921F55C43008C8CC6 /* HXDatePhotoViewController.m in Sources */,
 				C566423921F55C43008C8CC6 /* HXCustomPreviewView.m in Sources */,
+				C56E20C122110CCD00E9BB47 /* CCSpecialAreaViewController.swift in Sources */,
 				C566421E21F55C43008C8CC6 /* HXCollectionView.m in Sources */,
+				C5384C1D22117D60002F9561 /* CCMyWalletViewController.swift in Sources */,
 				C56641F921F55C43008C8CC6 /* NSString+Predicate.m in Sources */,
 				C56641D821F55C43008C8CC6 /* FlowLayoutViewController.swift in Sources */,
 				C56641FB21F55C43008C8CC6 /* NSObject+Category.m in Sources */,
@@ -2471,10 +2595,12 @@
 				C56641E621F55C43008C8CC6 /* UIButton+Category.m in Sources */,
 				C566428D21F55C8D008C8CC6 /* MDWebViewController.swift in Sources */,
 				C56641C421F55C43008C8CC6 /* MDHorizontalCircleMenuView.swift in Sources */,
+				C52A0D8B220033920017D113 /* CCPersonalCenterHeaderView.swift in Sources */,
 				C56641CB21F55C43008C8CC6 /* HFImagePickerManager.swift in Sources */,
 				C566422821F55C43008C8CC6 /* HXDatePhotoViewFlowLayout.m in Sources */,
 				C56641E721F55C43008C8CC6 /* NSString+DisplayTime.m in Sources */,
 				C56641E421F55C43008C8CC6 /* NSObject+Swizzle.m in Sources */,
+				C56E20C522110CF600E9BB47 /* CCSpecialAreaTableViewCell.swift in Sources */,
 				C56641AB21F55C43008C8CC6 /* HFBaseViewModel.swift in Sources */,
 				C566423F21F55C43008C8CC6 /* HXDatePhotoEditViewController.m in Sources */,
 				C5FA09E121FEFBB7005AF09C /* CCSpikeTableViewCell.swift in Sources */,

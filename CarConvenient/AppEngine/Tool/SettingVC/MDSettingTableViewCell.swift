@@ -24,16 +24,31 @@ class MDSettingTableViewCell: UITableViewCell {
 //        fatalError("init(coder:) has not been implemented")
 //    }
     
+    var switcherBlock: ((_ sw: UISwitch, _ index: Int)->Void)?
+    
     private func setupData() {
         //设置标题文字
         self.textLabel?.text = cellInfo["title"] as? String
+        
+        if let tColor = cellInfo["titleColor"] as? String {
+            self.textLabel?.textColor = UIColor.init(rgba: tColor)
+        }
+        
+        if let tFontSize = cellInfo["titleFontSize"] as? CGFloat {
+            self.textLabel?.font = UIFont.systemFont(ofSize: tFontSize)
+        }
+        
         //设置副标题：为空默认不显示
         self.detailTextLabel?.text = cellInfo["subTitle"] as? String
         
         //判断副标题是否有特定颜色
         if let subColor = cellInfo["subTitleColor"] as? String {
             debugPrint("subColor ----> \(subColor)")
-            self.detailTextLabel?.textColor = UIColor.red
+            self.detailTextLabel?.textColor = UIColor.init(rgba: subColor)
+        }
+        
+        if let stFontSize = cellInfo["subTitleFontSize"] as? CGFloat {
+            self.detailTextLabel?.font = UIFont.systemFont(ofSize: stFontSize)
         }
         
         //设置图标
@@ -81,6 +96,24 @@ class MDSettingTableViewCell: UITableViewCell {
             ud.synchronize()
             
             debugPrint("Home ----> \(NSHomeDirectory())")
+        }
+
+        if let b = self.switcherBlock, let title = self.textLabel?.text {
+            var index = 0
+            switch title {
+            case "推送开关":
+                index = 0
+                break
+            case "通知铃声":
+                index = 1
+                break
+            case "小红点通知":
+                index = 2
+                break
+            default:
+                break
+            }
+            b(sender, index)
         }
         
     }
