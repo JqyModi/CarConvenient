@@ -248,6 +248,9 @@
 		C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */; };
 		C56E20CA2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */; };
 		C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */; };
+		C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */; };
+		C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */; };
+		C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */; };
 		C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */; };
 		C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */; };
 		C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */; };
@@ -652,6 +655,9 @@
 		C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSpecialAreaTableViewCell.xib; sourceTree = "<group>"; };
 		C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterCollectionViewCell.swift; sourceTree = "<group>"; };
 		C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterCollectionViewCell.xib; sourceTree = "<group>"; };
+		C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailViewController.swift; sourceTree = "<group>"; };
+		C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailTableViewCell.swift; sourceTree = "<group>"; };
+		C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBillingDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryViewController.swift; sourceTree = "<group>"; };
 		C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCarCategoryHeaderView.xib; sourceTree = "<group>"; };
@@ -1797,6 +1803,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1322212A0D700C93EC1 /* Cell */,
+				C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */,
+			);
+			path = "BillingDetail(账单明细)";
+			sourceTree = "<group>";
+		};
+		C5E0D1322212A0D700C93EC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */,
+				C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C5F6BE0221F6AF8E009FACD6 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1925,6 +1949,7 @@
 		C5F6BE1121F6B6BD009FACD6 /* MyWallet(我的钱包) */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */,
 				C5384C3122127480002F9561 /* IntegralMall(积分商城) */,
 				C5384C272212596D002F9561 /* BalanceRecharge(余额充值) */,
 				C5384C2222119F46002F9561 /* View */,
@@ -2283,6 +2308,7 @@
 				C566424E21F55C43008C8CC6 /* icon_deleted@3x copy.png in Resources */,
 				C5FA096121FD5E21005AF09C /* CCCarTypeCollectionViewCell.xib in Resources */,
 				C5FA09CF21FEE0F2005AF09C /* CCCarCategoryDetailHeaderView.xib in Resources */,
+				C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */,
 				C566420A21F55C43008C8CC6 /* reverse in Resources */,
 				C566429021F55C8D008C8CC6 /* LTWebViewController.xib in Resources */,
 				C5F6BE2D21F714FC009FACD6 /* CCCarCategoryHeaderCollectionViewCell.xib in Resources */,
@@ -2551,8 +2577,10 @@
 				C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */,
 				C566421D21F55C43008C8CC6 /* NSBundle+HXPhotoPicker.m in Sources */,
 				C56641AF21F55C43008C8CC6 /* HFMainDataCent.swift in Sources */,
+				C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */,
 				C5384C2422119F71002F9561 /* CCMyWalletHeaderView.swift in Sources */,
 				C566429821F55C8D008C8CC6 /* FCSearchHouseModel.swift in Sources */,
+				C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */,
 				C56641D521F55C43008C8CC6 /* PlaceholderView.swift in Sources */,
 				C566422221F55C43008C8CC6 /* HXPhotoModel.m in Sources */,
 				C56641D721F55C43008C8CC6 /* BaseModel.swift in Sources */,
