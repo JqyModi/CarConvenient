@@ -30,7 +30,7 @@ class CCMyWalletViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "我的钱包"
     }
     
     override func setupTableView() {
@@ -152,7 +152,8 @@ extension CCMyWalletViewController {
     }
     /// 积分
     @objc func integral() {
-        
+        let vc = CCIntegralMallViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     /// 账单
     @objc func billing() {

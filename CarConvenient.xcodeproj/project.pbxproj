@@ -34,6 +34,11 @@
 		C5384C2B22125A33002F9561 /* CCBalanceRechargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C2922125A33002F9561 /* CCBalanceRechargeViewController.xib */; };
 		C5384C2E22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C2D22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift */; };
 		C5384C3022126BEA002F9561 /* CCBalanceRechargeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C2F22126BEA002F9561 /* CCBalanceRechargeHeaderView.xib */; };
+		C5384C3322127516002F9561 /* CCIntegralMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C3222127516002F9561 /* CCIntegralMallViewController.swift */; };
+		C5384C372212754C002F9561 /* CCIntegralMallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C352212754C002F9561 /* CCIntegralMallCollectionViewCell.swift */; };
+		C5384C382212754C002F9561 /* CCIntegralMallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C362212754C002F9561 /* CCIntegralMallCollectionViewCell.xib */; };
+		C5384C3B2212793B002F9561 /* CCIntegralMallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5384C3A2212793B002F9561 /* CCIntegralMallHeaderView.swift */; };
+		C5384C3D22127942002F9561 /* CCIntegralMallHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5384C3C22127942002F9561 /* CCIntegralMallHeaderView.xib */; };
 		C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403521F5579B008C8CC6 /* AppDelegate.swift */; };
 		C566403821F5579B008C8CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403721F5579B008C8CC6 /* ViewController.swift */; };
 		C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C566403921F5579B008C8CC6 /* Main.storyboard */; };
@@ -338,6 +343,11 @@
 		C5384C2922125A33002F9561 /* CCBalanceRechargeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBalanceRechargeViewController.xib; sourceTree = "<group>"; };
 		C5384C2D22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBalanceRechargeHeaderView.swift; sourceTree = "<group>"; };
 		C5384C2F22126BEA002F9561 /* CCBalanceRechargeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBalanceRechargeHeaderView.xib; sourceTree = "<group>"; };
+		C5384C3222127516002F9561 /* CCIntegralMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCIntegralMallViewController.swift; sourceTree = "<group>"; };
+		C5384C352212754C002F9561 /* CCIntegralMallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCIntegralMallCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5384C362212754C002F9561 /* CCIntegralMallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCIntegralMallCollectionViewCell.xib; sourceTree = "<group>"; };
+		C5384C3A2212793B002F9561 /* CCIntegralMallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCIntegralMallHeaderView.swift; sourceTree = "<group>"; };
+		C5384C3C22127942002F9561 /* CCIntegralMallHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCIntegralMallHeaderView.xib; sourceTree = "<group>"; };
 		C566403221F5579B008C8CC6 /* CarConvenient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarConvenient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C566403521F5579B008C8CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C566403721F5579B008C8CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -786,6 +796,34 @@
 			children = (
 				C5384C2D22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift */,
 				C5384C2F22126BEA002F9561 /* CCBalanceRechargeHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5384C3122127480002F9561 /* IntegralMall(积分商城) */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C392212791B002F9561 /* View */,
+				C5384C3422127522002F9561 /* Cell */,
+				C5384C3222127516002F9561 /* CCIntegralMallViewController.swift */,
+			);
+			path = "IntegralMall(积分商城)";
+			sourceTree = "<group>";
+		};
+		C5384C3422127522002F9561 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C352212754C002F9561 /* CCIntegralMallCollectionViewCell.swift */,
+				C5384C362212754C002F9561 /* CCIntegralMallCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5384C392212791B002F9561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5384C3A2212793B002F9561 /* CCIntegralMallHeaderView.swift */,
+				C5384C3C22127942002F9561 /* CCIntegralMallHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1887,6 +1925,7 @@
 		C5F6BE1121F6B6BD009FACD6 /* MyWallet(我的钱包) */ = {
 			isa = PBXGroup;
 			children = (
+				C5384C3122127480002F9561 /* IntegralMall(积分商城) */,
 				C5384C272212596D002F9561 /* BalanceRecharge(余额充值) */,
 				C5384C2222119F46002F9561 /* View */,
 				C5384C1E22117D67002F9561 /* Config */,
@@ -2240,6 +2279,7 @@
 				C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */,
 				C566424C21F55C43008C8CC6 /* FJItemCVCell.xib in Resources */,
 				C5FA09DD21FEEC1D005AF09C /* CCBargainFooterView.xib in Resources */,
+				C5384C3D22127942002F9561 /* CCIntegralMallHeaderView.xib in Resources */,
 				C566424E21F55C43008C8CC6 /* icon_deleted@3x copy.png in Resources */,
 				C5FA096121FD5E21005AF09C /* CCCarTypeCollectionViewCell.xib in Resources */,
 				C5FA09CF21FEE0F2005AF09C /* CCCarCategoryDetailHeaderView.xib in Resources */,
@@ -2255,6 +2295,7 @@
 				C566425D21F55C43008C8CC6 /* MDFlowViewCollectionViewCell.xib in Resources */,
 				C5384C2622119F8F002F9561 /* CCMyWalletHeaderView.xib in Resources */,
 				C566420721F55C43008C8CC6 /* setting_example.plist in Resources */,
+				C5384C382212754C002F9561 /* CCIntegralMallCollectionViewCell.xib in Resources */,
 				C5384C1B22116041002F9561 /* setting.plist in Resources */,
 				C5FA095F21FD5E21005AF09C /* CCCarTypeDetailTableViewCell.xib in Resources */,
 				C56641B221F55C43008C8CC6 /* HFStartViewController.xib in Resources */,
@@ -2465,6 +2506,7 @@
 				C56641FE21F55C43008C8CC6 /* UITableView+CellAnimation.m in Sources */,
 				C566424921F55C43008C8CC6 /* AddressModel.swift in Sources */,
 				C566422521F55C43008C8CC6 /* HXPhotoCustomNavigationBar.m in Sources */,
+				C5384C372212754C002F9561 /* CCIntegralMallCollectionViewCell.swift in Sources */,
 				C56641CD21F55C43008C8CC6 /* QYTools.swift in Sources */,
 				C566423521F55C43008C8CC6 /* HXPhotoSubViewCell.m in Sources */,
 				C566424821F55C43008C8CC6 /* FJSQLiteUtils.swift in Sources */,
@@ -2488,6 +2530,7 @@
 				C566423B21F55C43008C8CC6 /* HXCircleProgressView.m in Sources */,
 				C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */,
 				C566423821F55C43008C8CC6 /* UIButton+HXExtension.m in Sources */,
+				C5384C3B2212793B002F9561 /* CCIntegralMallHeaderView.swift in Sources */,
 				C56641D121F55C43008C8CC6 /* BaseViewController.swift in Sources */,
 				C56641C121F55C43008C8CC6 /* HFWelcomeViewController.swift in Sources */,
 				C5FA09C221FEAD5C005AF09C /* CCGroupBuyingCollectionViewCell.swift in Sources */,
@@ -2524,6 +2567,7 @@
 				C5384C2E22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift in Sources */,
 				C56E20C122110CCD00E9BB47 /* CCSpecialAreaViewController.swift in Sources */,
 				C566421E21F55C43008C8CC6 /* HXCollectionView.m in Sources */,
+				C5384C3322127516002F9561 /* CCIntegralMallViewController.swift in Sources */,
 				C5384C1D22117D60002F9561 /* CCMyWalletViewController.swift in Sources */,
 				C56641F921F55C43008C8CC6 /* NSString+Predicate.m in Sources */,
 				C56641D821F55C43008C8CC6 /* FlowLayoutViewController.swift in Sources */,
@@ -2833,7 +2877,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modi.CarConvenient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.micropole.carconvenient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CarConvenient/SupportFiles/CarConvenient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -2857,7 +2901,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.modi.CarConvenient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.micropole.carconvenient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CarConvenient/SupportFiles/CarConvenient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
