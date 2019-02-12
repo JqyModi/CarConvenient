@@ -157,7 +157,7 @@ extension CCMyWalletViewController {
     }
     /// 账单
     @objc func billing() {
-        let vc = CCBillingDetailViewController()
+        let vc = CCBillingDetailOutSideViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     /// 返利
