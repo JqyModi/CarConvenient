@@ -147,7 +147,7 @@ extension CCMyWalletViewController {
     
     /// 充值
     @objc func recharge() {
-        let vc = CCBalanceRechargeViewController()
+        let vc = CCBalanceRechargeViewController.init(nibName: "CCBalanceRechargeViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     /// 积分

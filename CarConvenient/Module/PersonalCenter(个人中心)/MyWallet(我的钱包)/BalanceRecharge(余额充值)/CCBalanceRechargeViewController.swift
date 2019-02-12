@@ -24,13 +24,21 @@ class CCBalanceRechargeViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "余额充值"
     }
     
     override func setupTableView() {
         super.setupTableView()
+        // 显示底部视图
+        self.view.sendSubview(toBack: self.tableView)
+    }
+    
+    override func setupTableHeaderView() {
+        super.setupTableHeaderView()
         
-//        self.identifier = "BalanceRechargeCell"
+        let hv = CCBalanceRechargeHeaderView.md_viewFromXIB() as! CCBalanceRechargeHeaderView
+        hv.autoresizingMask = .flexibleWidth
+        tableView.tableHeaderView = hv
     }
 
 }
@@ -52,19 +60,32 @@ extension CCBalanceRechargeViewController {
         
         if let title = dataSources[indexPath.row]["title"] as? String {
             cell.textLabel?.text = title
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 17)
+            cell.textLabel?.textColor = UIColor(rgba: "#222222")
         }
         
         if let isSelect = dataSources[indexPath.row]["isSelect"] as? Bool {
-//            var img = "global_btn_select_n"
-//            if isSelect {
-//                img = "global_btn_select_s"
-//            }
-//            let btn = UIButton(title: nil, backImage: img, color: nil)
-//            cell.accessoryView = btn
-            cell.accessoryType = .detailButton
+            let btn = UIButton()
+            btn.setImage(UIImage(named: "global_btn_select_n"), for: .normal)
+            btn.setImage(UIImage(named: "global_btn_select_s"), for: .selected)
+            btn.isSelected = isSelect
+            btn.sizeToFit()
+            cell.accessoryView = btn
         }
         
+        cell.selectionStyle = .none
+
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let isSelect = dataSources[indexPath.row]["isSelect"] as? Bool {
+            for i in 0..<dataSources.count {
+                dataSources[i]["isSelect"] = false
+            }
+            dataSources[indexPath.row]["isSelect"] = !isSelect
+            tableView.reloadData()
+        }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
