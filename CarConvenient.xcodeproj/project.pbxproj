@@ -2901,7 +2901,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R22SN3U44G;
+				DEVELOPMENT_TEAM = UP5749PQDU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarConvenient/AppEngine/Tool/AliPay",
@@ -2925,7 +2925,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R22SN3U44G;
+				DEVELOPMENT_TEAM = UP5749PQDU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarConvenient/AppEngine/Tool/AliPay",
