@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98A68C14AD084206A18827D5BC7468AF"
-               BlueprintName = "SnapKit"
+               BlueprintIdentifier = "D244E55827DB33AF54E7018900D1F7A6"
+               BlueprintName = "LTScrollView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SnapKit.framework">
+               BuildableName = "LTScrollView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

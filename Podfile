@@ -44,8 +44,8 @@ target 'CarConvenient' do
 #    二维码生成
 #    pod "EFQRCode"
 #   选项卡：Viewpager
-#    pod 'LTScrollView'
-#    下拉菜单    
+    pod 'LTScrollView'
+#    下拉菜单
 #    pod "DropDown"
 #    弹框
 #    pod 'STZPopupView'
