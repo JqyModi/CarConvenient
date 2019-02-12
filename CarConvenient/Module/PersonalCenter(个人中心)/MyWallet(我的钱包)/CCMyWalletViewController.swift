@@ -160,8 +160,9 @@ extension CCMyWalletViewController {
         let vc = CCBillingDetailOutSideViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    /// 返利
+    /// 返利: 跳转到H5
     @objc func rebate() {
-        
+//        let vc = CCRebateViewController.init(nibName: "CCRebateViewController", bundle: nil)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
