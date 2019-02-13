@@ -285,6 +285,14 @@
 		C5E0D18922141D5A00C93EC1 /* CCMyPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D18722141D5A00C93EC1 /* CCMyPropertyViewController.xib */; };
 		C5E0D18D22141E0000C93EC1 /* CCMyPropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D18B22141E0000C93EC1 /* CCMyPropertyTableViewCell.swift */; };
 		C5E0D18E22141E0000C93EC1 /* CCMyPropertyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D18C22141E0000C93EC1 /* CCMyPropertyTableViewCell.xib */; };
+		C5E0D1922214430000C93EC1 /* CCMyPropertyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1902214430000C93EC1 /* CCMyPropertyHeaderView.swift */; };
+		C5E0D1932214430000C93EC1 /* CCMyPropertyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1912214430000C93EC1 /* CCMyPropertyHeaderView.xib */; };
+		C5E0D197221449A500C93EC1 /* CCCooperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D195221449A500C93EC1 /* CCCooperationViewController.swift */; };
+		C5E0D198221449A500C93EC1 /* CCCooperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D196221449A500C93EC1 /* CCCooperationViewController.xib */; };
+		C5E0D19C2214508D00C93EC1 /* CCMyGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D19A2214508D00C93EC1 /* CCMyGroupViewController.swift */; };
+		C5E0D19D2214508D00C93EC1 /* CCMyGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D19B2214508D00C93EC1 /* CCMyGroupViewController.xib */; };
+		C5E0D1A32214559D00C93EC1 /* CCMyBargainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1A12214559D00C93EC1 /* CCMyBargainViewController.swift */; };
+		C5E0D1A42214559D00C93EC1 /* CCMyBargainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1A22214559D00C93EC1 /* CCMyBargainViewController.xib */; };
 		C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */; };
 		C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */; };
 		C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */; };
@@ -726,6 +734,14 @@
 		C5E0D18722141D5A00C93EC1 /* CCMyPropertyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyPropertyViewController.xib; sourceTree = "<group>"; };
 		C5E0D18B22141E0000C93EC1 /* CCMyPropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyPropertyTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D18C22141E0000C93EC1 /* CCMyPropertyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyPropertyTableViewCell.xib; sourceTree = "<group>"; };
+		C5E0D1902214430000C93EC1 /* CCMyPropertyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyPropertyHeaderView.swift; sourceTree = "<group>"; };
+		C5E0D1912214430000C93EC1 /* CCMyPropertyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyPropertyHeaderView.xib; sourceTree = "<group>"; };
+		C5E0D195221449A500C93EC1 /* CCCooperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCooperationViewController.swift; sourceTree = "<group>"; };
+		C5E0D196221449A500C93EC1 /* CCCooperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCooperationViewController.xib; sourceTree = "<group>"; };
+		C5E0D19A2214508D00C93EC1 /* CCMyGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyGroupViewController.swift; sourceTree = "<group>"; };
+		C5E0D19B2214508D00C93EC1 /* CCMyGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyGroupViewController.xib; sourceTree = "<group>"; };
+		C5E0D1A12214559D00C93EC1 /* CCMyBargainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMyBargainViewController.swift; sourceTree = "<group>"; };
+		C5E0D1A22214559D00C93EC1 /* CCMyBargainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCMyBargainViewController.xib; sourceTree = "<group>"; };
 		C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryViewController.swift; sourceTree = "<group>"; };
 		C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCarCategoryHeaderView.xib; sourceTree = "<group>"; };
@@ -1824,6 +1840,7 @@
 		C56642AB21F59132008C8CC6 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0D1942214496300C93EC1 /* Cooperation(招商加盟) */,
 				C5E0D18522141D0000C93EC1 /* MyProperty(我的物业) */,
 				C5E0D1772214001C00C93EC1 /* UserSetting(个人设置) */,
 				C52A0D89220033680017D113 /* View */,
@@ -2036,6 +2053,7 @@
 		C5E0D18522141D0000C93EC1 /* MyProperty(我的物业) */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0D18F221442DD00C93EC1 /* View */,
 				C5E0D18A22141DE800C93EC1 /* Cell */,
 				C5E0D18622141D5A00C93EC1 /* CCMyPropertyViewController.swift */,
 				C5E0D18722141D5A00C93EC1 /* CCMyPropertyViewController.xib */,
@@ -2050,6 +2068,42 @@
 				C5E0D18C22141E0000C93EC1 /* CCMyPropertyTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5E0D18F221442DD00C93EC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1902214430000C93EC1 /* CCMyPropertyHeaderView.swift */,
+				C5E0D1912214430000C93EC1 /* CCMyPropertyHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5E0D1942214496300C93EC1 /* Cooperation(招商加盟) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D195221449A500C93EC1 /* CCCooperationViewController.swift */,
+				C5E0D196221449A500C93EC1 /* CCCooperationViewController.xib */,
+			);
+			path = "Cooperation(招商加盟)";
+			sourceTree = "<group>";
+		};
+		C5E0D1992214506400C93EC1 /* MyGroup(我的拼团) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D19A2214508D00C93EC1 /* CCMyGroupViewController.swift */,
+				C5E0D19B2214508D00C93EC1 /* CCMyGroupViewController.xib */,
+			);
+			path = "MyGroup(我的拼团)";
+			sourceTree = "<group>";
+		};
+		C5E0D19E2214543900C93EC1 /* MyBargain(我的砍价) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1A12214559D00C93EC1 /* CCMyBargainViewController.swift */,
+				C5E0D1A22214559D00C93EC1 /* CCMyBargainViewController.xib */,
+			);
+			path = "MyBargain(我的砍价)";
 			sourceTree = "<group>";
 		};
 		C5F6BE0221F6AF8E009FACD6 /* Login(登录) */ = {
@@ -2092,6 +2146,7 @@
 		C5F6BE0621F6B292009FACD6 /* GroupBuyingArea(拼团专区) */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0D1992214506400C93EC1 /* MyGroup(我的拼团) */,
 				C5FA09C421FED935005AF09C /* FooterView */,
 				C5FA09BF21FEAD31005AF09C /* Cell */,
 				C5FA09BB21FEABE9005AF09C /* CCGroupBuyingViewController.swift */,
@@ -2103,6 +2158,7 @@
 		C5F6BE0721F6B308009FACD6 /* BargainArea(砍价专区) */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0D19E2214543900C93EC1 /* MyBargain(我的砍价) */,
 				C5FA09D721FEE6DC005AF09C /* FooterView */,
 				C5FA09D221FEE3A6005AF09C /* Cell */,
 				C5FA09D021FEE399005AF09C /* CCBargainViewController.swift */,
@@ -2519,6 +2575,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E0D198221449A500C93EC1 /* CCCooperationViewController.xib in Resources */,
+				C5E0D1932214430000C93EC1 /* CCMyPropertyHeaderView.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
 				C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */,
 				C566424621F55C43008C8CC6 /* FJAddressTVCell.xib in Resources */,
@@ -2554,6 +2612,7 @@
 				C5FA096121FD5E21005AF09C /* CCCarTypeCollectionViewCell.xib in Resources */,
 				C5FA09CF21FEE0F2005AF09C /* CCCarCategoryDetailHeaderView.xib in Resources */,
 				C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */,
+				C5E0D1A42214559D00C93EC1 /* CCMyBargainViewController.xib in Resources */,
 				C566420A21F55C43008C8CC6 /* reverse in Resources */,
 				C5E0D1712213F0BF00C93EC1 /* CCCouponsTableViewCell.xib in Resources */,
 				C566429021F55C8D008C8CC6 /* LTWebViewController.xib in Resources */,
@@ -2564,6 +2623,7 @@
 				C566425B21F55C43008C8CC6 /* MDFlowView.xib in Resources */,
 				C5E0D17D2214060F00C93EC1 /* usersetting.plist in Resources */,
 				C5384C1722115DD0002F9561 /* CCSettingViewController.xib in Resources */,
+				C5E0D19D2214508D00C93EC1 /* CCMyGroupViewController.xib in Resources */,
 				C566421321F55C43008C8CC6 /* BRPickerView.bundle in Resources */,
 				C566425D21F55C43008C8CC6 /* MDFlowViewCollectionViewCell.xib in Resources */,
 				C5384C2622119F8F002F9561 /* CCMyWalletHeaderView.xib in Resources */,
@@ -2847,6 +2907,7 @@
 				C5E0D16C2213F04C00C93EC1 /* CCCouponsViewController.swift in Sources */,
 				C566422221F55C43008C8CC6 /* HXPhotoModel.m in Sources */,
 				C56641D721F55C43008C8CC6 /* BaseModel.swift in Sources */,
+				C5E0D1A32214559D00C93EC1 /* CCMyBargainViewController.swift in Sources */,
 				C56641AC21F55C43008C8CC6 /* HFDataCent.swift in Sources */,
 				C56641D921F55C43008C8CC6 /* MDFlowLayout.swift in Sources */,
 				C532F53721F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.swift in Sources */,
@@ -2884,11 +2945,13 @@
 				C5FA09C621FED95F005AF09C /* CCGroupBuyingFooterView.swift in Sources */,
 				C566424421F55C43008C8CC6 /* FJAddressTVCell.swift in Sources */,
 				C56641D321F55C43008C8CC6 /* BaseView.swift in Sources */,
+				C5E0D19C2214508D00C93EC1 /* CCMyGroupViewController.swift in Sources */,
 				C5FA095621FD5DB1005AF09C /* CCCarTypeViewController.swift in Sources */,
 				C5E0D13C2212AB9D00C93EC1 /* CCRebateViewController.swift in Sources */,
 				C56641C721F55C43008C8CC6 /* HFNetworkManager.swift in Sources */,
 				C566425221F55C43008C8CC6 /* AppDefaultStyle.swift in Sources */,
 				C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */,
+				C5E0D197221449A500C93EC1 /* CCCooperationViewController.swift in Sources */,
 				C56641B021F55C43008C8CC6 /* HFAppEngine+Enum.swift in Sources */,
 				C566423E21F55C43008C8CC6 /* HXDatePhotoToolManager.m in Sources */,
 				C566424D21F55C43008C8CC6 /* FJSelectLocationView.swift in Sources */,
@@ -2962,6 +3025,7 @@
 				C566422821F55C43008C8CC6 /* HXDatePhotoViewFlowLayout.m in Sources */,
 				C56641E721F55C43008C8CC6 /* NSString+DisplayTime.m in Sources */,
 				C56641E421F55C43008C8CC6 /* NSObject+Swizzle.m in Sources */,
+				C5E0D1922214430000C93EC1 /* CCMyPropertyHeaderView.swift in Sources */,
 				C56E20C522110CF600E9BB47 /* CCSpecialAreaTableViewCell.swift in Sources */,
 				C56641AB21F55C43008C8CC6 /* HFBaseViewModel.swift in Sources */,
 				C566423F21F55C43008C8CC6 /* HXDatePhotoEditViewController.m in Sources */,

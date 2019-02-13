@@ -118,10 +118,14 @@ extension CCPersonalCenterViewController {
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 4:
+            let vc = CCManagerAddressViewController.init(nibName: "CCManagerAddressViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 5:
             break
         case 6:
+            let vc = CCCooperationViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 7:
             break

@@ -30,7 +30,7 @@ class CCMyPropertyViewController: BaseTableViewController {
     override func setupTableHeaderView() {
         super.setupTableHeaderView()
         
-        let hv = CCBalanceRechargeHeaderView.md_viewFromXIB() as! CCBalanceRechargeHeaderView
+        let hv = CCMyPropertyHeaderView.md_viewFromXIB() as! CCMyPropertyHeaderView
         hv.autoresizingMask = .flexibleWidth
         tableView.tableHeaderView = hv
     }
