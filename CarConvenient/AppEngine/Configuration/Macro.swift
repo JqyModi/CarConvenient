@@ -116,3 +116,7 @@ let TabBarDataSource: [[String: String]] = {
     let dic5 = ["title": "福利", "imageNameS": "btn_welfare_s", "imageNameN": "btn_welfare_n", "viewController": "CCWelfareViewController"]
     return [dic1, dic2, dic3, dic4, dic5]
 }()
+
+protocol ViewClickedDelegate {
+    var clickBlock: ((_ sender: Any?) -> ())? {get set}
+}

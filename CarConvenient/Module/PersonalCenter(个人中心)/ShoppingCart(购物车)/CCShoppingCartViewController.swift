@@ -38,6 +38,21 @@ class CCShoppingCartViewController: BaseTableViewController {
         tableView.reloadData()
     }
     
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        switch sender.tag {
+        case 10001: // 合计
+            
+            break
+        case 10002: // 去结算
+            let vc = CCConfirmOrderViewController.init(nibName: "CCConfirmOrderViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        default:
+            break
+        }
+    }
+    
+    
 }
 extension CCShoppingCartViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

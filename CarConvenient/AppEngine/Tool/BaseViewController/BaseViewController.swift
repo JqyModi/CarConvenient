@@ -68,7 +68,7 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     /// - Parameters:
     ///   - title: 标题
     ///   - imageName: 图片
-    func addRightItem(title:String,selectTitle: String = "",imageName:String,fontColor: UIColor = UIColor.white) {
+    func addRightItem(title:String,selectTitle: String = "",imageName:String = "",fontColor: UIColor = UIColor.white) {
 //        let rightButton = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(clickRight))
 //        let dic = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 12)]
 //        rightButton.setTitleTextAttributes(dic, for: .normal)

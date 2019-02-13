@@ -258,6 +258,24 @@
 		C5E0D1412212B1B700C93EC1 /* CCShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D13F2212B1B700C93EC1 /* CCShoppingCartViewController.xib */; };
 		C5E0D1452212B1F100C93EC1 /* CCShoppingCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1432212B1F100C93EC1 /* CCShoppingCartTableViewCell.swift */; };
 		C5E0D1462212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1442212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib */; };
+		C5E0D14A2213B29A00C93EC1 /* CCConfirmOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1482213B29A00C93EC1 /* CCConfirmOrderViewController.swift */; };
+		C5E0D14B2213B29A00C93EC1 /* CCConfirmOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1492213B29A00C93EC1 /* CCConfirmOrderViewController.xib */; };
+		C5E0D14E2213B6B900C93EC1 /* CCConfirmOrderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D14D2213B6B900C93EC1 /* CCConfirmOrderHeaderView.swift */; };
+		C5E0D1502213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D14F2213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib */; };
+		C5E0D1532213C0C500C93EC1 /* CCAddressManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1522213C0C500C93EC1 /* CCAddressManagerViewController.swift */; };
+		C5E0D1572213C19900C93EC1 /* CCAddressManagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1552213C19900C93EC1 /* CCAddressManagerTableViewCell.swift */; };
+		C5E0D1582213C19900C93EC1 /* CCAddressManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1562213C19900C93EC1 /* CCAddressManagerTableViewCell.xib */; };
+		C5E0D15C2213C5F000C93EC1 /* CCManagerAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D15A2213C5F000C93EC1 /* CCManagerAddressViewController.swift */; };
+		C5E0D15D2213C5F000C93EC1 /* CCManagerAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D15B2213C5F000C93EC1 /* CCManagerAddressViewController.xib */; };
+		C5E0D1612213C64D00C93EC1 /* CCManagerAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D15F2213C64D00C93EC1 /* CCManagerAddressTableViewCell.swift */; };
+		C5E0D1622213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1602213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib */; };
+		C5E0D1682213CD9F00C93EC1 /* CCAddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1662213CD9F00C93EC1 /* CCAddAddressViewController.swift */; };
+		C5E0D1692213CD9F00C93EC1 /* CCAddAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1672213CD9F00C93EC1 /* CCAddAddressViewController.xib */; };
+		C5E0D16C2213F04C00C93EC1 /* CCCouponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D16B2213F04C00C93EC1 /* CCCouponsViewController.swift */; };
+		C5E0D1702213F0BF00C93EC1 /* CCCouponsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D16E2213F0BF00C93EC1 /* CCCouponsTableViewCell.swift */; };
+		C5E0D1712213F0BF00C93EC1 /* CCCouponsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D16F2213F0BF00C93EC1 /* CCCouponsTableViewCell.xib */; };
+		C5E0D1752213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1732213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift */; };
+		C5E0D1762213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1742213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib */; };
 		C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */; };
 		C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */; };
 		C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */; };
@@ -672,6 +690,24 @@
 		C5E0D13F2212B1B700C93EC1 /* CCShoppingCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCShoppingCartViewController.xib; sourceTree = "<group>"; };
 		C5E0D1432212B1F100C93EC1 /* CCShoppingCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCShoppingCartTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D1442212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCShoppingCartTableViewCell.xib; sourceTree = "<group>"; };
+		C5E0D1482213B29A00C93EC1 /* CCConfirmOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCConfirmOrderViewController.swift; sourceTree = "<group>"; };
+		C5E0D1492213B29A00C93EC1 /* CCConfirmOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCConfirmOrderViewController.xib; sourceTree = "<group>"; };
+		C5E0D14D2213B6B900C93EC1 /* CCConfirmOrderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCConfirmOrderHeaderView.swift; sourceTree = "<group>"; };
+		C5E0D14F2213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCConfirmOrderHeaderView.xib; sourceTree = "<group>"; };
+		C5E0D1522213C0C500C93EC1 /* CCAddressManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAddressManagerViewController.swift; sourceTree = "<group>"; };
+		C5E0D1552213C19900C93EC1 /* CCAddressManagerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAddressManagerTableViewCell.swift; sourceTree = "<group>"; };
+		C5E0D1562213C19900C93EC1 /* CCAddressManagerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCAddressManagerTableViewCell.xib; sourceTree = "<group>"; };
+		C5E0D15A2213C5F000C93EC1 /* CCManagerAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCManagerAddressViewController.swift; sourceTree = "<group>"; };
+		C5E0D15B2213C5F000C93EC1 /* CCManagerAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCManagerAddressViewController.xib; sourceTree = "<group>"; };
+		C5E0D15F2213C64D00C93EC1 /* CCManagerAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCManagerAddressTableViewCell.swift; sourceTree = "<group>"; };
+		C5E0D1602213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCManagerAddressTableViewCell.xib; sourceTree = "<group>"; };
+		C5E0D1662213CD9F00C93EC1 /* CCAddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAddAddressViewController.swift; sourceTree = "<group>"; };
+		C5E0D1672213CD9F00C93EC1 /* CCAddAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCAddAddressViewController.xib; sourceTree = "<group>"; };
+		C5E0D16B2213F04C00C93EC1 /* CCCouponsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCouponsViewController.swift; sourceTree = "<group>"; };
+		C5E0D16E2213F0BF00C93EC1 /* CCCouponsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCouponsTableViewCell.swift; sourceTree = "<group>"; };
+		C5E0D16F2213F0BF00C93EC1 /* CCCouponsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCouponsTableViewCell.xib; sourceTree = "<group>"; };
+		C5E0D1732213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCConfirmOrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5E0D1742213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCConfirmOrderCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryViewController.swift; sourceTree = "<group>"; };
 		C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCarCategoryHeaderView.xib; sourceTree = "<group>"; };
@@ -1854,6 +1890,103 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C5E0D1472213B26300C93EC1 /* ConfirmOrder(确认订单) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D16A2213F00B00C93EC1 /* Coupons(优惠券) */,
+				C5E0D1512213C07800C93EC1 /* AddressManager(地址管理) */,
+				C5E0D14C2213B69800C93EC1 /* View */,
+				C5E0D1482213B29A00C93EC1 /* CCConfirmOrderViewController.swift */,
+				C5E0D1492213B29A00C93EC1 /* CCConfirmOrderViewController.xib */,
+			);
+			path = "ConfirmOrder(确认订单)";
+			sourceTree = "<group>";
+		};
+		C5E0D14C2213B69800C93EC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1722213F69500C93EC1 /* Cell */,
+				C5E0D14D2213B6B900C93EC1 /* CCConfirmOrderHeaderView.swift */,
+				C5E0D14F2213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5E0D1512213C07800C93EC1 /* AddressManager(地址管理) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1592213C59200C93EC1 /* Manager(管理地址) */,
+				C5E0D1542213C17700C93EC1 /* Cell */,
+				C5E0D1522213C0C500C93EC1 /* CCAddressManagerViewController.swift */,
+			);
+			path = "AddressManager(地址管理)";
+			sourceTree = "<group>";
+		};
+		C5E0D1542213C17700C93EC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1552213C19900C93EC1 /* CCAddressManagerTableViewCell.swift */,
+				C5E0D1562213C19900C93EC1 /* CCAddressManagerTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5E0D1592213C59200C93EC1 /* Manager(管理地址) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1632213CCE900C93EC1 /* AddAddress(添加、编辑地址) */,
+				C5E0D15E2213C62F00C93EC1 /* Cell */,
+				C5E0D15A2213C5F000C93EC1 /* CCManagerAddressViewController.swift */,
+				C5E0D15B2213C5F000C93EC1 /* CCManagerAddressViewController.xib */,
+			);
+			path = "Manager(管理地址)";
+			sourceTree = "<group>";
+		};
+		C5E0D15E2213C62F00C93EC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D15F2213C64D00C93EC1 /* CCManagerAddressTableViewCell.swift */,
+				C5E0D1602213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5E0D1632213CCE900C93EC1 /* AddAddress(添加、编辑地址) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1662213CD9F00C93EC1 /* CCAddAddressViewController.swift */,
+				C5E0D1672213CD9F00C93EC1 /* CCAddAddressViewController.xib */,
+			);
+			path = "AddAddress(添加、编辑地址)";
+			sourceTree = "<group>";
+		};
+		C5E0D16A2213F00B00C93EC1 /* Coupons(优惠券) */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D16D2213F0A500C93EC1 /* Cell */,
+				C5E0D16B2213F04C00C93EC1 /* CCCouponsViewController.swift */,
+			);
+			path = "Coupons(优惠券)";
+			sourceTree = "<group>";
+		};
+		C5E0D16D2213F0A500C93EC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D16E2213F0BF00C93EC1 /* CCCouponsTableViewCell.swift */,
+				C5E0D16F2213F0BF00C93EC1 /* CCCouponsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5E0D1722213F69500C93EC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D1732213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift */,
+				C5E0D1742213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C5F6BE0221F6AF8E009FACD6 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
@@ -2020,6 +2153,7 @@
 		C5F6BE1521F6B767009FACD6 /* ShoppingCart(购物车) */ = {
 			isa = PBXGroup;
 			children = (
+				C5E0D1472213B26300C93EC1 /* ConfirmOrder(确认订单) */,
 				C5E0D1422212B1BF00C93EC1 /* Cell */,
 				C5E0D13E2212B1B700C93EC1 /* CCShoppingCartViewController.swift */,
 				C5E0D13F2212B1B700C93EC1 /* CCShoppingCartViewController.xib */,
@@ -2325,13 +2459,17 @@
 				C566429A21F55C8D008C8CC6 /* LTLocationBottomView.xib in Resources */,
 				C56641DD21F55C43008C8CC6 /* 1.plist in Resources */,
 				C5384C2B22125A33002F9561 /* CCBalanceRechargeViewController.xib in Resources */,
+				C5E0D1502213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib in Resources */,
 				C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */,
+				C5E0D1692213CD9F00C93EC1 /* CCAddAddressViewController.xib in Resources */,
 				C566425021F55C43008C8CC6 /* icon_deleted@2x.png in Resources */,
 				C566428F21F55C8D008C8CC6 /* MDWebViewController.xib in Resources */,
+				C5E0D1762213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib in Resources */,
 				C532F54021F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib in Resources */,
 				C5E0D1462212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib in Resources */,
 				C566428921F55C8D008C8CC6 /* start _img_logo.png in Resources */,
 				C56641CF21F55C43008C8CC6 /* project_intro.css in Resources */,
+				C5E0D1622213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib in Resources */,
 				C566429E21F55C8D008C8CC6 /* MenuData.plist in Resources */,
 				C566428821F55C8D008C8CC6 /* start _img_logo@2x.png in Resources */,
 				C56641BF21F55C43008C8CC6 /* HFWelcomeViewController.xib in Resources */,
@@ -2349,6 +2487,7 @@
 				C5FA09CF21FEE0F2005AF09C /* CCCarCategoryDetailHeaderView.xib in Resources */,
 				C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */,
 				C566420A21F55C43008C8CC6 /* reverse in Resources */,
+				C5E0D1712213F0BF00C93EC1 /* CCCouponsTableViewCell.xib in Resources */,
 				C566429021F55C8D008C8CC6 /* LTWebViewController.xib in Resources */,
 				C5F6BE2D21F714FC009FACD6 /* CCCarCategoryHeaderCollectionViewCell.xib in Resources */,
 				C566404021F5579D008C8CC6 /* LaunchScreen.storyboard in Resources */,
@@ -2374,15 +2513,18 @@
 				C5FA096421FD5E21005AF09C /* CCCarTypeTableViewCell.xib in Resources */,
 				C566423D21F55C43008C8CC6 /* HXPhotoPicker.bundle in Resources */,
 				C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */,
+				C5E0D15D2213C5F000C93EC1 /* CCManagerAddressViewController.xib in Resources */,
 				C532F53C21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib in Resources */,
 				C56641C521F55C43008C8CC6 /* AlipaySDK.bundle in Resources */,
 				C5FA09C321FEAD5C005AF09C /* CCGroupBuyingCollectionViewCell.xib in Resources */,
 				C566424521F55C43008C8CC6 /* icon_deleted @2x.png in Resources */,
 				C566424B21F55C43008C8CC6 /* icon_deleted@3x.png in Resources */,
 				C566428A21F55C8D008C8CC6 /* start _img_logo@3x.png in Resources */,
+				C5E0D1582213C19900C93EC1 /* CCAddressManagerTableViewCell.xib in Resources */,
 				C532F53821F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.xib in Resources */,
 				C5FA09D621FEE3D0005AF09C /* CCBargainTableViewCell.xib in Resources */,
 				C56641CE21F55C43008C8CC6 /* project_intro.html in Resources */,
+				C5E0D14B2213B29A00C93EC1 /* CCConfirmOrderViewController.xib in Resources */,
 				C52A0D8821FFF4C80017D113 /* CCPersonalCenterViewController.xib in Resources */,
 				C5FA09BE21FEABE9005AF09C /* CCGroupBuyingViewController.xib in Resources */,
 				C566428721F55C8D008C8CC6 /* LaunchScreen1.storyboard in Resources */,
@@ -2551,6 +2693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E0D1612213C64D00C93EC1 /* CCManagerAddressTableViewCell.swift in Sources */,
 				C56641E121F55C43008C8CC6 /* UIColor+Extension.swift in Sources */,
 				C566420521F55C43008C8CC6 /* MDSettingTableViewCell.swift in Sources */,
 				C566425121F55C43008C8CC6 /* MDRightIconButton.swift in Sources */,
@@ -2620,11 +2763,13 @@
 				C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */,
 				C566421D21F55C43008C8CC6 /* NSBundle+HXPhotoPicker.m in Sources */,
 				C56641AF21F55C43008C8CC6 /* HFMainDataCent.swift in Sources */,
+				C5E0D1682213CD9F00C93EC1 /* CCAddAddressViewController.swift in Sources */,
 				C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */,
 				C5384C2422119F71002F9561 /* CCMyWalletHeaderView.swift in Sources */,
 				C566429821F55C8D008C8CC6 /* FCSearchHouseModel.swift in Sources */,
 				C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */,
 				C56641D521F55C43008C8CC6 /* PlaceholderView.swift in Sources */,
+				C5E0D16C2213F04C00C93EC1 /* CCCouponsViewController.swift in Sources */,
 				C566422221F55C43008C8CC6 /* HXPhotoModel.m in Sources */,
 				C56641D721F55C43008C8CC6 /* BaseModel.swift in Sources */,
 				C56641AC21F55C43008C8CC6 /* HFDataCent.swift in Sources */,
@@ -2636,8 +2781,10 @@
 				C566422921F55C43008C8CC6 /* HXDatePhotoViewController.m in Sources */,
 				C566423921F55C43008C8CC6 /* HXCustomPreviewView.m in Sources */,
 				C5384C2E22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift in Sources */,
+				C5E0D1752213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift in Sources */,
 				C56E20C122110CCD00E9BB47 /* CCSpecialAreaViewController.swift in Sources */,
 				C566421E21F55C43008C8CC6 /* HXCollectionView.m in Sources */,
+				C5E0D15C2213C5F000C93EC1 /* CCManagerAddressViewController.swift in Sources */,
 				C5E0D1382212A59000C93EC1 /* CCBillingDetailOutSideViewController.swift in Sources */,
 				C5384C3322127516002F9561 /* CCIntegralMallViewController.swift in Sources */,
 				C5384C1D22117D60002F9561 /* CCMyWalletViewController.swift in Sources */,
@@ -2684,6 +2831,8 @@
 				C566420E21F55C43008C8CC6 /* BRStringPickerView.m in Sources */,
 				C56641FD21F55C43008C8CC6 /* NSString+MD5.m in Sources */,
 				C56641F621F55C43008C8CC6 /* UIMenuItem+Category.m in Sources */,
+				C5E0D14E2213B6B900C93EC1 /* CCConfirmOrderHeaderView.swift in Sources */,
+				C5E0D14A2213B29A00C93EC1 /* CCConfirmOrderViewController.swift in Sources */,
 				C5FA09D521FEE3D0005AF09C /* CCBargainTableViewCell.swift in Sources */,
 				C56641E021F55C43008C8CC6 /* UIFont+Extension.swift in Sources */,
 				C566429621F55C8D008C8CC6 /* MDTaoPasswordParseModel.swift in Sources */,
@@ -2707,6 +2856,7 @@
 				C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */,
 				C566429521F55C8D008C8CC6 /* PostInfoModel.swift in Sources */,
 				C5E0D1452212B1F100C93EC1 /* CCShoppingCartTableViewCell.swift in Sources */,
+				C5E0D1702213F0BF00C93EC1 /* CCCouponsTableViewCell.swift in Sources */,
 				C532F53121F993ED00AD7ED3 /* CCSendCodePopView.swift in Sources */,
 				C566422621F55C43008C8CC6 /* HXPhotoTools.m in Sources */,
 				C566422D21F55C43008C8CC6 /* UIImage+HXExtension.m in Sources */,
@@ -2718,10 +2868,12 @@
 				C566421C21F55C43008C8CC6 /* HXDatePhotoPreviewBottomView.m in Sources */,
 				C5F6BE3521F71B97009FACD6 /* CCWelfareViewController.swift in Sources */,
 				C566423C21F55C43008C8CC6 /* HXDateVideoEditViewController.m in Sources */,
+				C5E0D1532213C0C500C93EC1 /* CCAddressManagerViewController.swift in Sources */,
 				C566421821F55C43008C8CC6 /* UIViewController+HXExtension.m in Sources */,
 				C56641C321F55C43008C8CC6 /* HFAppEngine.swift in Sources */,
 				C566422B21F55C43008C8CC6 /* HXDatePhotoViewPresentTransition.m in Sources */,
 				C566421921F55C43008C8CC6 /* HXPhotoConfiguration.m in Sources */,
+				C5E0D1572213C19900C93EC1 /* CCAddressManagerTableViewCell.swift in Sources */,
 				C56641DC21F55C43008C8CC6 /* HotSearchController.swift in Sources */,
 				C566421121F55C43008C8CC6 /* BRBaseView.m in Sources */,
 				C566422021F55C43008C8CC6 /* UIFont+HXExtension.m in Sources */,
