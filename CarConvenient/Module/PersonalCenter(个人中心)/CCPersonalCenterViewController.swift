@@ -102,6 +102,34 @@ extension CCPersonalCenterViewController {
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            break
+        case 1:
+            break
+        case 2:
+            let vc = CCMyPropertyViewController.init(nibName: "CCMyPropertyViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 3:
+            let vc = CCUserSettingViewController()
+            vc.plistName = "usersetting"
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 4:
+            break
+        case 5:
+            break
+        case 6:
+            break
+        case 7:
+            break
+        default:
+            break
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 80, height: SCREEN_WIDTH*(90/375))
     }
