@@ -46,7 +46,10 @@ class CCBargainViewController: BaseTableViewController {
 //        }
         
         view.sendSubview(toBack: tableView)
-        
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+            make.bottom.equalTo(self.view.safeArea.bottom).offset(-(SCREEN_WIDTH*(50/375)))
+        }
     }
 
 }

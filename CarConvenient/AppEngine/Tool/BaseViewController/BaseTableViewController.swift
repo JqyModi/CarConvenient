@@ -34,6 +34,7 @@ class BaseTableViewController: BaseViewController {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
+            make.bottom.equalTo(self.view.safeArea.bottom)
         }
     }
     

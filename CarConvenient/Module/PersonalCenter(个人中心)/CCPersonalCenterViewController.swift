@@ -38,8 +38,8 @@ class CCPersonalCenterViewController: BaseCollectionViewController {
         addRightItem(title: "", imageName: "btn_setting_n(1)")
     }
     
-    override func clickRight() {
-        super.clickRight()
+    override func clickRight(sender: UIButton) {
+        super.clickRight(sender: sender)
         let vc = CCSettingViewController()
         vc.plistName = "setting"
         self.navigationController?.pushViewController(vc, animated: true)
@@ -61,6 +61,8 @@ class CCPersonalCenterViewController: BaseCollectionViewController {
                     HFAppEngine.shared.gotoLoginViewController()
                     break
                 case 10002:
+                    let vc = CCShoppingCartViewController.init(nibName: "CCShoppingCartViewController", bundle: nil)
+                    self.navigationController?.pushViewController(vc, animated: true)
                     break
                 case 10003:
                     break

@@ -36,6 +36,7 @@ class BaseCollectionViewController: BaseViewController {
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
+            make.bottom.equalTo(self.view.safeArea.bottom)
         }
 //        collectionView.snp.makeConstraints { (make) in
 //            make.left.right.top.bottom.equalToSuperview()

@@ -13,7 +13,7 @@ class CCSpecialAreaViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "特价专区"
     }
 
     override func setupTableView() {

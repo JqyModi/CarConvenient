@@ -47,6 +47,10 @@ class CCGroupBuyingViewController: BaseCollectionViewController {
 //            make.height.equalTo(collectionView.height-height)
 //        }
         view.sendSubview(toBack: collectionView)
+        collectionView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view)
+            make.bottom.equalTo(self.view.safeArea.bottom).offset(-(SCREEN_WIDTH*(50/375)))
+        }
     }
 
 }

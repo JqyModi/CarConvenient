@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCShoppingCartViewController" customModule="CarConvenient" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E2-Cf-R3p">
+                    <rect key="frame" x="0.0" y="620" width="375" height="47"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-ZV-BHE">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="47"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIm-o2-rgP">
+                                    <rect key="frame" x="8" y="12.5" width="51" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="全选" image="global_btn_select_n">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="global_btn_select_s"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-97-id8">
+                                    <rect key="frame" x="67" y="13" width="52" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTZ-SP-b0L">
+                                    <rect key="frame" x="127" y="13" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.90196078430000004" green="0.086274509799999996" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="XIm-o2-rgP" firstAttribute="leading" secondItem="dqh-ZV-BHE" secondAttribute="leading" constant="8" id="JRN-3W-Fj0"/>
+                                <constraint firstItem="tTZ-SP-b0L" firstAttribute="leading" secondItem="8tm-97-id8" secondAttribute="trailing" constant="8" id="bl3-Qp-kyR"/>
+                                <constraint firstItem="tTZ-SP-b0L" firstAttribute="centerY" secondItem="8tm-97-id8" secondAttribute="centerY" id="cJY-qg-F8l"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tTZ-SP-b0L" secondAttribute="trailing" constant="8" id="d99-aD-sba"/>
+                                <constraint firstItem="XIm-o2-rgP" firstAttribute="centerY" secondItem="dqh-ZV-BHE" secondAttribute="centerY" id="eh1-ja-bkU"/>
+                                <constraint firstItem="8tm-97-id8" firstAttribute="leading" secondItem="XIm-o2-rgP" secondAttribute="trailing" constant="8" id="hwR-rm-P0V"/>
+                                <constraint firstItem="8tm-97-id8" firstAttribute="centerY" secondItem="XIm-o2-rgP" secondAttribute="centerY" id="la4-hk-xdD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o04-Xw-V7f">
+                            <rect key="frame" x="250" y="0.0" width="125" height="47"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-U2-Il1">
+                                    <rect key="frame" x="0.0" y="7" width="125" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="去结算(1)">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1058823529" green="0.50980392159999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="hHB-U2-Il1" firstAttribute="centerY" secondItem="o04-Xw-V7f" secondAttribute="centerY" id="Uco-kW-2YV"/>
+                                <constraint firstItem="hHB-U2-Il1" firstAttribute="leading" secondItem="o04-Xw-V7f" secondAttribute="leading" id="YWp-U2-XiB"/>
+                                <constraint firstAttribute="trailing" secondItem="hHB-U2-Il1" secondAttribute="trailing" id="qjN-aQ-5Uh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dqh-ZV-BHE" firstAttribute="leading" secondItem="0E2-Cf-R3p" secondAttribute="leading" id="AHZ-Mo-AxX"/>
+                        <constraint firstItem="dqh-ZV-BHE" firstAttribute="width" secondItem="0E2-Cf-R3p" secondAttribute="width" multiplier="2/3" id="I6x-4S-p1g"/>
+                        <constraint firstItem="o04-Xw-V7f" firstAttribute="leading" secondItem="dqh-ZV-BHE" secondAttribute="trailing" id="LZF-zl-Ilb"/>
+                        <constraint firstAttribute="height" constant="47" id="NXS-Rf-wEA"/>
+                        <constraint firstAttribute="trailing" secondItem="o04-Xw-V7f" secondAttribute="trailing" id="VZO-qh-bSC"/>
+                        <constraint firstAttribute="bottom" secondItem="dqh-ZV-BHE" secondAttribute="bottom" id="ZNV-gn-Bgz"/>
+                        <constraint firstItem="o04-Xw-V7f" firstAttribute="top" secondItem="0E2-Cf-R3p" secondAttribute="top" id="jRp-hF-u5U"/>
+                        <constraint firstItem="dqh-ZV-BHE" firstAttribute="top" secondItem="0E2-Cf-R3p" secondAttribute="top" id="jks-nC-A3W"/>
+                        <constraint firstAttribute="bottom" secondItem="o04-Xw-V7f" secondAttribute="bottom" id="ltv-RE-IgH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0E2-Cf-R3p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kkx-v9-eNC"/>
+                <constraint firstItem="0E2-Cf-R3p" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="hs1-ZI-11q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0E2-Cf-R3p" secondAttribute="trailing" id="jnA-0n-Fq2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="global_btn_select_n" width="22" height="22"/>
+        <image name="global_btn_select_s" width="22" height="22"/>
+    </resources>
+</document>

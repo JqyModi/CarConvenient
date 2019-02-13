@@ -13,7 +13,7 @@ class CCSpikeViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "秒杀专区"
     }
     
     override func setupTableView() {
