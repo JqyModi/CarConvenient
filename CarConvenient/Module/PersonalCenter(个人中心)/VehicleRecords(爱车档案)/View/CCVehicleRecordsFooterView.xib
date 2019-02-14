@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0DV-9g-PWC" customClass="CCVehicleRecordsFooterView" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驾驶证认证(认证送大礼)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-ga-atL">
+                    <rect key="frame" x="8" y="8" width="359" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hp2-Jr-hVx">
+                    <rect key="frame" x="8" y="33" width="359" height="89"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-Bu-mpk">
+                    <rect key="frame" x="0.0" y="130" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="继续添加车辆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOx-xp-YRg">
+                            <rect key="frame" x="8" y="13.5" width="86" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="global_btn_right_n" translatesAutoresizingMaskIntoConstraints="NO" id="dK5-cM-AIT">
+                            <rect key="frame" x="347" y="12" width="20" height="20"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dK5-cM-AIT" firstAttribute="centerY" secondItem="fy7-Bu-mpk" secondAttribute="centerY" id="HYJ-P9-K2M"/>
+                        <constraint firstAttribute="trailing" secondItem="dK5-cM-AIT" secondAttribute="trailing" constant="8" id="Z8T-8X-V33"/>
+                        <constraint firstAttribute="height" constant="44" id="ad3-Ev-JrE"/>
+                        <constraint firstItem="GOx-xp-YRg" firstAttribute="leading" secondItem="fy7-Bu-mpk" secondAttribute="leading" constant="8" id="h82-Gg-Q77"/>
+                        <constraint firstItem="GOx-xp-YRg" firstAttribute="centerY" secondItem="fy7-Bu-mpk" secondAttribute="centerY" id="r3g-zA-jGZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fy7-Bu-mpk" firstAttribute="top" secondItem="hp2-Jr-hVx" secondAttribute="bottom" constant="8" id="5WN-hS-Heo"/>
+                <constraint firstItem="fy7-Bu-mpk" firstAttribute="leading" secondItem="XU6-9Q-yrd" secondAttribute="leading" id="5bB-jA-6Br"/>
+                <constraint firstItem="XU6-9Q-yrd" firstAttribute="trailing" secondItem="fy7-Bu-mpk" secondAttribute="trailing" id="6g8-hM-ltj"/>
+                <constraint firstItem="XU6-9Q-yrd" firstAttribute="trailing" secondItem="iC9-ga-atL" secondAttribute="trailing" constant="8" id="EgA-pB-2dV"/>
+                <constraint firstAttribute="bottom" secondItem="fy7-Bu-mpk" secondAttribute="bottom" id="HAg-Xm-vhf"/>
+                <constraint firstItem="hp2-Jr-hVx" firstAttribute="leading" secondItem="XU6-9Q-yrd" secondAttribute="leading" constant="8" id="Hen-Ie-Rqn"/>
+                <constraint firstItem="XU6-9Q-yrd" firstAttribute="trailing" secondItem="hp2-Jr-hVx" secondAttribute="trailing" constant="8" id="HwI-VR-LeS"/>
+                <constraint firstItem="iC9-ga-atL" firstAttribute="leading" secondItem="XU6-9Q-yrd" secondAttribute="leading" constant="8" id="jTG-bR-VSc"/>
+                <constraint firstItem="iC9-ga-atL" firstAttribute="top" secondItem="XU6-9Q-yrd" secondAttribute="top" constant="8" id="qwu-5U-5kG"/>
+                <constraint firstItem="hp2-Jr-hVx" firstAttribute="top" secondItem="iC9-ga-atL" secondAttribute="bottom" constant="8" id="zwd-eL-Xuy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XU6-9Q-yrd"/>
+            <point key="canvasLocation" x="120.8" y="250.9745127436282"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="global_btn_right_n" width="20" height="20"/>
+    </resources>
+</document>

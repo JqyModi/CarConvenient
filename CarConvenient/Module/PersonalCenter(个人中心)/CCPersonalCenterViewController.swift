@@ -105,6 +105,8 @@ extension CCPersonalCenterViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
+            let vc = CCOwnersCertificationViewController.init(nibName: "CCOwnersCertificationViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
             break

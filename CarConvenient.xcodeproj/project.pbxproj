@@ -248,6 +248,18 @@
 		C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */; };
 		C56E20CA2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */; };
 		C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */; };
+		C5A750D422150BE70010A183 /* CCVehicleRecordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750CA22150BE70010A183 /* CCVehicleRecordsViewController.xib */; };
+		C5A750D522150BE70010A183 /* CCVehicleRecordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750CC22150BE70010A183 /* CCVehicleRecordsTableViewCell.swift */; };
+		C5A750D622150BE70010A183 /* CCVehicleRecordsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750CD22150BE70010A183 /* CCVehicleRecordsTableViewCell.xib */; };
+		C5A750DB22150BE70010A183 /* CCVehicleRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750D322150BE70010A183 /* CCVehicleRecordsViewController.swift */; };
+		C5A750DE2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750DC2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.swift */; };
+		C5A750DF2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750DD2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.xib */; };
+		C5A750E2221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750E0221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.swift */; };
+		C5A750E3221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750E1221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.xib */; };
+		C5A750E6221528460010A183 /* CCVehicleRecordsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750E4221528460010A183 /* CCVehicleRecordsFooterView.xib */; };
+		C5A750E7221528460010A183 /* CCVehicleRecordsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750E5221528460010A183 /* CCVehicleRecordsFooterView.swift */; };
+		C5A750EA221528690010A183 /* CCVehicleRecordsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750E8221528690010A183 /* CCVehicleRecordsHeaderView.xib */; };
+		C5A750EB221528690010A183 /* CCVehicleRecordsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750E9221528690010A183 /* CCVehicleRecordsHeaderView.swift */; };
 		C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */; };
 		C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */; };
 		C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */; };
@@ -307,6 +319,14 @@
 		C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE3721F85430009FACD6 /* CCLoginViewController.xib */; };
 		C5F6BE3E21F86BD9009FACD6 /* CCRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE3C21F86BD9009FACD6 /* CCRegisterViewController.swift */; };
 		C5F6BE3F21F86BD9009FACD6 /* CCRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE3D21F86BD9009FACD6 /* CCRegisterViewController.xib */; };
+		C5F6F9262214FA790094DC0E /* CCOwnersCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6F9242214FA790094DC0E /* CCOwnersCertificationViewController.swift */; };
+		C5F6F9272214FA790094DC0E /* CCOwnersCertificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6F9252214FA790094DC0E /* CCOwnersCertificationViewController.xib */; };
+		C5F6F92B2214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6F9292214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift */; };
+		C5F6F92C2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6F92A2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib */; };
+		C5F6F930221500280094DC0E /* CCOwnersCertificationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6F92E221500280094DC0E /* CCOwnersCertificationHeaderView.swift */; };
+		C5F6F931221500280094DC0E /* CCOwnersCertificationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6F92F221500280094DC0E /* CCOwnersCertificationHeaderView.xib */; };
+		C5F6F934221501470094DC0E /* CCOwnersCertificationFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6F932221501470094DC0E /* CCOwnersCertificationFooterView.swift */; };
+		C5F6F935221501470094DC0E /* CCOwnersCertificationFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6F933221501470094DC0E /* CCOwnersCertificationFooterView.xib */; };
 		C5FA095621FD5DB1005AF09C /* CCCarTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA095421FD5DB1005AF09C /* CCCarTypeViewController.swift */; };
 		C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FA095521FD5DB1005AF09C /* CCCarTypeViewController.xib */; };
 		C5FA095F21FD5E21005AF09C /* CCCarTypeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FA095921FD5E20005AF09C /* CCCarTypeDetailTableViewCell.xib */; };
@@ -697,6 +717,18 @@
 		C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSpecialAreaTableViewCell.xib; sourceTree = "<group>"; };
 		C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterCollectionViewCell.swift; sourceTree = "<group>"; };
 		C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterCollectionViewCell.xib; sourceTree = "<group>"; };
+		C5A750CA22150BE70010A183 /* CCVehicleRecordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsViewController.xib; sourceTree = "<group>"; };
+		C5A750CC22150BE70010A183 /* CCVehicleRecordsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsTableViewCell.swift; sourceTree = "<group>"; };
+		C5A750CD22150BE70010A183 /* CCVehicleRecordsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsTableViewCell.xib; sourceTree = "<group>"; };
+		C5A750D322150BE70010A183 /* CCVehicleRecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsViewController.swift; sourceTree = "<group>"; };
+		C5A750DC2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsTypeOneBtnTableViewCell.swift; sourceTree = "<group>"; };
+		C5A750DD2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCVehicleRecordsTypeOneBtnTableViewCell.xib; sourceTree = "<group>"; };
+		C5A750E0221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsTypeTwoBtnTableViewCell.swift; sourceTree = "<group>"; };
+		C5A750E1221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCVehicleRecordsTypeTwoBtnTableViewCell.xib; sourceTree = "<group>"; };
+		C5A750E4221528460010A183 /* CCVehicleRecordsFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsFooterView.xib; sourceTree = "<group>"; };
+		C5A750E5221528460010A183 /* CCVehicleRecordsFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsFooterView.swift; sourceTree = "<group>"; };
+		C5A750E8221528690010A183 /* CCVehicleRecordsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsHeaderView.xib; sourceTree = "<group>"; };
+		C5A750E9221528690010A183 /* CCVehicleRecordsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsHeaderView.swift; sourceTree = "<group>"; };
 		C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailViewController.swift; sourceTree = "<group>"; };
 		C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBillingDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -757,6 +789,14 @@
 		C5F6BE3721F85430009FACD6 /* CCLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCLoginViewController.xib; sourceTree = "<group>"; };
 		C5F6BE3C21F86BD9009FACD6 /* CCRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCRegisterViewController.swift; sourceTree = "<group>"; };
 		C5F6BE3D21F86BD9009FACD6 /* CCRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCRegisterViewController.xib; sourceTree = "<group>"; };
+		C5F6F9242214FA790094DC0E /* CCOwnersCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOwnersCertificationViewController.swift; sourceTree = "<group>"; };
+		C5F6F9252214FA790094DC0E /* CCOwnersCertificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOwnersCertificationViewController.xib; sourceTree = "<group>"; };
+		C5F6F9292214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOwnersCertificationTableViewCell.swift; sourceTree = "<group>"; };
+		C5F6F92A2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOwnersCertificationTableViewCell.xib; sourceTree = "<group>"; };
+		C5F6F92E221500280094DC0E /* CCOwnersCertificationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOwnersCertificationHeaderView.swift; sourceTree = "<group>"; };
+		C5F6F92F221500280094DC0E /* CCOwnersCertificationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOwnersCertificationHeaderView.xib; sourceTree = "<group>"; };
+		C5F6F932221501470094DC0E /* CCOwnersCertificationFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOwnersCertificationFooterView.swift; sourceTree = "<group>"; };
+		C5F6F933221501470094DC0E /* CCOwnersCertificationFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOwnersCertificationFooterView.xib; sourceTree = "<group>"; };
 		C5FA095421FD5DB1005AF09C /* CCCarTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarTypeViewController.swift; sourceTree = "<group>"; };
 		C5FA095521FD5DB1005AF09C /* CCCarTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCarTypeViewController.xib; sourceTree = "<group>"; };
 		C5FA095921FD5E20005AF09C /* CCCarTypeDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCCarTypeDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -1840,6 +1880,8 @@
 		C56642AB21F59132008C8CC6 /* PersonalCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				C5A750C922150BE70010A183 /* VehicleRecords(爱车档案) */,
+				C5F6F9232214FA010094DC0E /* OwnersCertification(车主认证) */,
 				C5E0D1942214496300C93EC1 /* Cooperation(招商加盟) */,
 				C5E0D18522141D0000C93EC1 /* MyProperty(我的物业) */,
 				C5E0D1772214001C00C93EC1 /* UserSetting(个人设置) */,
@@ -1888,6 +1930,41 @@
 				C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5A750C922150BE70010A183 /* VehicleRecords(爱车档案) */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750CB22150BE70010A183 /* Cell */,
+				C5A750CE22150BE70010A183 /* View */,
+				C5A750D322150BE70010A183 /* CCVehicleRecordsViewController.swift */,
+				C5A750CA22150BE70010A183 /* CCVehicleRecordsViewController.xib */,
+			);
+			path = "VehicleRecords(爱车档案)";
+			sourceTree = "<group>";
+		};
+		C5A750CB22150BE70010A183 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750CC22150BE70010A183 /* CCVehicleRecordsTableViewCell.swift */,
+				C5A750CD22150BE70010A183 /* CCVehicleRecordsTableViewCell.xib */,
+				C5A750DC2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.swift */,
+				C5A750DD2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.xib */,
+				C5A750E0221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.swift */,
+				C5A750E1221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5A750CE22150BE70010A183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750E9221528690010A183 /* CCVehicleRecordsHeaderView.swift */,
+				C5A750E8221528690010A183 /* CCVehicleRecordsHeaderView.xib */,
+				C5A750E5221528460010A183 /* CCVehicleRecordsFooterView.swift */,
+				C5A750E4221528460010A183 /* CCVehicleRecordsFooterView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */ = {
@@ -2365,6 +2442,37 @@
 			path = "Register(注册)";
 			sourceTree = "<group>";
 		};
+		C5F6F9232214FA010094DC0E /* OwnersCertification(车主认证) */ = {
+			isa = PBXGroup;
+			children = (
+				C5F6F92D2215000A0094DC0E /* View */,
+				C5F6F9282214FD490094DC0E /* Cell */,
+				C5F6F9242214FA790094DC0E /* CCOwnersCertificationViewController.swift */,
+				C5F6F9252214FA790094DC0E /* CCOwnersCertificationViewController.xib */,
+			);
+			path = "OwnersCertification(车主认证)";
+			sourceTree = "<group>";
+		};
+		C5F6F9282214FD490094DC0E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5F6F9292214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift */,
+				C5F6F92A2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5F6F92D2215000A0094DC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5F6F92E221500280094DC0E /* CCOwnersCertificationHeaderView.swift */,
+				C5F6F92F221500280094DC0E /* CCOwnersCertificationHeaderView.xib */,
+				C5F6F932221501470094DC0E /* CCOwnersCertificationFooterView.swift */,
+				C5F6F933221501470094DC0E /* CCOwnersCertificationFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C5FA095321FD5D42005AF09C /* CarType(车品分类) */ = {
 			isa = PBXGroup;
 			children = (
@@ -2578,13 +2686,17 @@
 				C5E0D198221449A500C93EC1 /* CCCooperationViewController.xib in Resources */,
 				C5E0D1932214430000C93EC1 /* CCMyPropertyHeaderView.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
+				C5A750D622150BE70010A183 /* CCVehicleRecordsTableViewCell.xib in Resources */,
 				C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */,
+				C5A750EA221528690010A183 /* CCVehicleRecordsHeaderView.xib in Resources */,
 				C566424621F55C43008C8CC6 /* FJAddressTVCell.xib in Resources */,
 				C566424721F55C43008C8CC6 /* tp_region.sql in Resources */,
 				C566429A21F55C8D008C8CC6 /* LTLocationBottomView.xib in Resources */,
 				C56641DD21F55C43008C8CC6 /* 1.plist in Resources */,
 				C5384C2B22125A33002F9561 /* CCBalanceRechargeViewController.xib in Resources */,
 				C5E0D1502213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib in Resources */,
+				C5A750E3221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.xib in Resources */,
+				C5F6F9272214FA790094DC0E /* CCOwnersCertificationViewController.xib in Resources */,
 				C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */,
 				C5E0D1692213CD9F00C93EC1 /* CCAddAddressViewController.xib in Resources */,
 				C566425021F55C43008C8CC6 /* icon_deleted@2x.png in Resources */,
@@ -2601,6 +2713,7 @@
 				C52A0D8D2200339B0017D113 /* CCPersonalCenterHeaderView.xib in Resources */,
 				C5E0D18922141D5A00C93EC1 /* CCMyPropertyViewController.xib in Resources */,
 				C5FA09E221FEFBB7005AF09C /* CCSpikeTableViewCell.xib in Resources */,
+				C5A750DF2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.xib in Resources */,
 				C566425921F55C43008C8CC6 /* CYPasswordView.bundle in Resources */,
 				C5384C3022126BEA002F9561 /* CCBalanceRechargeHeaderView.xib in Resources */,
 				C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */,
@@ -2615,6 +2728,7 @@
 				C5E0D1A42214559D00C93EC1 /* CCMyBargainViewController.xib in Resources */,
 				C566420A21F55C43008C8CC6 /* reverse in Resources */,
 				C5E0D1712213F0BF00C93EC1 /* CCCouponsTableViewCell.xib in Resources */,
+				C5A750E6221528460010A183 /* CCVehicleRecordsFooterView.xib in Resources */,
 				C566429021F55C8D008C8CC6 /* LTWebViewController.xib in Resources */,
 				C5F6BE2D21F714FC009FACD6 /* CCCarCategoryHeaderCollectionViewCell.xib in Resources */,
 				C566404021F5579D008C8CC6 /* LaunchScreen.storyboard in Resources */,
@@ -2636,6 +2750,7 @@
 				C5FA09C821FED968005AF09C /* CCGroupBuyingFooterView.xib in Resources */,
 				C566420421F55C43008C8CC6 /* ico_make.png in Resources */,
 				C566428C21F55C8D008C8CC6 /* LTLocationViewController.xib in Resources */,
+				C5F6F935221501470094DC0E /* CCOwnersCertificationFooterView.xib in Resources */,
 				C5384C212211957E002F9561 /* myWallet.plist in Resources */,
 				C566403D21F5579D008C8CC6 /* Assets.xcassets in Resources */,
 				C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */,
@@ -2650,12 +2765,15 @@
 				C566424B21F55C43008C8CC6 /* icon_deleted@3x.png in Resources */,
 				C566428A21F55C8D008C8CC6 /* start _img_logo@3x.png in Resources */,
 				C5E0D1582213C19900C93EC1 /* CCAddressManagerTableViewCell.xib in Resources */,
+				C5F6F92C2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib in Resources */,
+				C5F6F931221500280094DC0E /* CCOwnersCertificationHeaderView.xib in Resources */,
 				C532F53821F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.xib in Resources */,
 				C5FA09D621FEE3D0005AF09C /* CCBargainTableViewCell.xib in Resources */,
 				C56641CE21F55C43008C8CC6 /* project_intro.html in Resources */,
 				C5E0D18E22141E0000C93EC1 /* CCMyPropertyTableViewCell.xib in Resources */,
 				C5E0D14B2213B29A00C93EC1 /* CCConfirmOrderViewController.xib in Resources */,
 				C52A0D8821FFF4C80017D113 /* CCPersonalCenterViewController.xib in Resources */,
+				C5A750D422150BE70010A183 /* CCVehicleRecordsViewController.xib in Resources */,
 				C5FA09BE21FEABE9005AF09C /* CCGroupBuyingViewController.xib in Resources */,
 				C566428721F55C8D008C8CC6 /* LaunchScreen1.storyboard in Resources */,
 				C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */,
@@ -2846,15 +2964,18 @@
 				C566429C21F55C8D008C8CC6 /* YDMenuDelegate.swift in Sources */,
 				C56641B921F55C43008C8CC6 /* HFStartViewController.swift in Sources */,
 				C566420821F55C43008C8CC6 /* UIView+Extension.swift in Sources */,
+				C5F6F934221501470094DC0E /* CCOwnersCertificationFooterView.swift in Sources */,
 				C5F6BE3821F85430009FACD6 /* CCLoginViewController.swift in Sources */,
 				C5384C1622115DD0002F9561 /* CCSettingViewController.swift in Sources */,
 				C56641FE21F55C43008C8CC6 /* UITableView+CellAnimation.m in Sources */,
 				C566424921F55C43008C8CC6 /* AddressModel.swift in Sources */,
 				C566422521F55C43008C8CC6 /* HXPhotoCustomNavigationBar.m in Sources */,
+				C5F6F9262214FA790094DC0E /* CCOwnersCertificationViewController.swift in Sources */,
 				C5384C372212754C002F9561 /* CCIntegralMallCollectionViewCell.swift in Sources */,
 				C56641CD21F55C43008C8CC6 /* QYTools.swift in Sources */,
 				C566423521F55C43008C8CC6 /* HXPhotoSubViewCell.m in Sources */,
 				C566424821F55C43008C8CC6 /* FJSQLiteUtils.swift in Sources */,
+				C5F6F930221500280094DC0E /* CCOwnersCertificationHeaderView.swift in Sources */,
 				C56641DE21F55C43008C8CC6 /* HotSearchView.swift in Sources */,
 				C566421B21F55C43008C8CC6 /* HXPhoto3DTouchViewController.m in Sources */,
 				C532F53B21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.swift in Sources */,
@@ -2888,6 +3009,7 @@
 				C566420221F55C43008C8CC6 /* ZYStarRateView.swift in Sources */,
 				C566423421F55C43008C8CC6 /* HXDatePhotoViewTransition.m in Sources */,
 				C56641F721F55C43008C8CC6 /* NSMutableString+Safe.m in Sources */,
+				C5F6F92B2214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift in Sources */,
 				C566422C21F55C43008C8CC6 /* HXCustomCameraController.m in Sources */,
 				C566429421F55C8D008C8CC6 /* MKGPX.swift in Sources */,
 				C566424021F55C43008C8CC6 /* String+Extension.swift in Sources */,
@@ -2897,6 +3019,7 @@
 				C566425821F55C43008C8CC6 /* UIView+Extension.m in Sources */,
 				C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */,
 				C566421D21F55C43008C8CC6 /* NSBundle+HXPhotoPicker.m in Sources */,
+				C5A750E2221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.swift in Sources */,
 				C56641AF21F55C43008C8CC6 /* HFMainDataCent.swift in Sources */,
 				C5E0D1682213CD9F00C93EC1 /* CCAddAddressViewController.swift in Sources */,
 				C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */,
@@ -2909,6 +3032,7 @@
 				C56641D721F55C43008C8CC6 /* BaseModel.swift in Sources */,
 				C5E0D1A32214559D00C93EC1 /* CCMyBargainViewController.swift in Sources */,
 				C56641AC21F55C43008C8CC6 /* HFDataCent.swift in Sources */,
+				C5A750E7221528460010A183 /* CCVehicleRecordsFooterView.swift in Sources */,
 				C56641D921F55C43008C8CC6 /* MDFlowLayout.swift in Sources */,
 				C532F53721F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.swift in Sources */,
 				C56641EB21F55C43008C8CC6 /* UIView+Frame.m in Sources */,
@@ -2920,12 +3044,14 @@
 				C5E0D1752213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift in Sources */,
 				C56E20C122110CCD00E9BB47 /* CCSpecialAreaViewController.swift in Sources */,
 				C566421E21F55C43008C8CC6 /* HXCollectionView.m in Sources */,
+				C5A750DE2215137D0010A183 /* CCVehicleRecordsTypeOneBtnTableViewCell.swift in Sources */,
 				C5E0D15C2213C5F000C93EC1 /* CCManagerAddressViewController.swift in Sources */,
 				C5E0D1382212A59000C93EC1 /* CCBillingDetailOutSideViewController.swift in Sources */,
 				C5384C3322127516002F9561 /* CCIntegralMallViewController.swift in Sources */,
 				C5384C1D22117D60002F9561 /* CCMyWalletViewController.swift in Sources */,
 				C56641F921F55C43008C8CC6 /* NSString+Predicate.m in Sources */,
 				C56641D821F55C43008C8CC6 /* FlowLayoutViewController.swift in Sources */,
+				C5A750EB221528690010A183 /* CCVehicleRecordsHeaderView.swift in Sources */,
 				C56641FB21F55C43008C8CC6 /* NSObject+Category.m in Sources */,
 				C566423121F55C43008C8CC6 /* HXFullScreenCameraPlayView.m in Sources */,
 				C566422421F55C43008C8CC6 /* UIView+HXExtension.m in Sources */,
@@ -2955,6 +3081,7 @@
 				C56641B021F55C43008C8CC6 /* HFAppEngine+Enum.swift in Sources */,
 				C566423E21F55C43008C8CC6 /* HXDatePhotoToolManager.m in Sources */,
 				C566424D21F55C43008C8CC6 /* FJSelectLocationView.swift in Sources */,
+				C5A750D522150BE70010A183 /* CCVehicleRecordsTableViewCell.swift in Sources */,
 				C566425321F55C43008C8CC6 /* DispatchTime+Extension.swift in Sources */,
 				C566422321F55C43008C8CC6 /* HXAlbumListViewController.m in Sources */,
 				C56641F321F55C43008C8CC6 /* UINavigationController+NavManager.m in Sources */,
@@ -2993,6 +3120,7 @@
 				C566423621F55C43008C8CC6 /* HXAlbumModel.m in Sources */,
 				C5F6BE2821F6FF40009FACD6 /* NSLayoutConstraint+Category.m in Sources */,
 				C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */,
+				C5A750DB22150BE70010A183 /* CCVehicleRecordsViewController.swift in Sources */,
 				C566429521F55C8D008C8CC6 /* PostInfoModel.swift in Sources */,
 				C5E0D1452212B1F100C93EC1 /* CCShoppingCartTableViewCell.swift in Sources */,
 				C5E0D1702213F0BF00C93EC1 /* CCCouponsTableViewCell.swift in Sources */,

@@ -11,10 +11,11 @@ import UIKit
 /// button类型
 ///
 /// - separate: 两端对齐
-/// - adjacent: 相邻对齐
+/// - adjacentCenter: 相邻居中对齐
 /// - none: 正常
+/// - adjacentRight: 相邻居右对齐
 @objc enum MDRightIconButtonType: Int {
-    case separate, adjacent, none
+    case separate, adjacentCenter, none, adjacentRight
 }
 
 @IBDesignable
@@ -40,6 +41,10 @@ class MDRightIconButton: UIButton {
             break
         case 3:
             self.imageView?.left = self.frame.width-(self.imageView?.width)!
+            self.titleLabel?.right = (self.imageView?.left)!
+            break
+        case 4:
+            self.imageView?.right = self.frame.width
             self.titleLabel?.right = (self.imageView?.left)!
             break
         default:
