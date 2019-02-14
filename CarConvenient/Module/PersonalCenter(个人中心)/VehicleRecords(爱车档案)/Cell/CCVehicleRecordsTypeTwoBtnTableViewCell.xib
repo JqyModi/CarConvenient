@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fNd-Fr-fR2" customClass="CCVehicleRecordsTypeTwoBtnTableViewCell" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fNd-Fr-fR2" id="jpk-4B-etH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兴趣爱好（选填）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x7-gs-uLt">
+                        <rect key="frame" x="8" y="13.5" width="114.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kn5-fZ-eDu">
+                        <rect key="frame" x="272" y="8" width="40" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="否" image="global_btn_option_n">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="global_btn_option_s"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X8-Wt-Jv2">
+                        <rect key="frame" x="217" y="8" width="40" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="IqY-fC-fNP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="是" image="global_btn_option_n">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="global_btn_option_s"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5X8-Wt-Jv2" firstAttribute="centerY" secondItem="Kn5-fZ-eDu" secondAttribute="centerY" id="1zb-bz-gtG"/>
+                    <constraint firstItem="Kn5-fZ-eDu" firstAttribute="leading" secondItem="5X8-Wt-Jv2" secondAttribute="trailing" constant="15" id="5XF-xX-ebs"/>
+                    <constraint firstItem="Kn5-fZ-eDu" firstAttribute="top" secondItem="jpk-4B-etH" secondAttribute="top" constant="8" id="OH1-XL-Bl7"/>
+                    <constraint firstAttribute="trailing" secondItem="Kn5-fZ-eDu" secondAttribute="trailing" constant="8" id="QWl-rW-Xlj"/>
+                    <constraint firstItem="Kn5-fZ-eDu" firstAttribute="firstBaseline" secondItem="8x7-gs-uLt" secondAttribute="firstBaseline" id="VFh-yL-FwO"/>
+                    <constraint firstItem="5X8-Wt-Jv2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8x7-gs-uLt" secondAttribute="trailing" constant="8" id="fan-Q6-xEP"/>
+                    <constraint firstItem="5X8-Wt-Jv2" firstAttribute="width" secondItem="Kn5-fZ-eDu" secondAttribute="width" id="mMl-l5-Sci"/>
+                    <constraint firstItem="5X8-Wt-Jv2" firstAttribute="height" secondItem="Kn5-fZ-eDu" secondAttribute="height" id="shz-Ri-vmG"/>
+                    <constraint firstAttribute="bottom" secondItem="Kn5-fZ-eDu" secondAttribute="bottom" constant="8" id="wSQ-cK-3oL"/>
+                    <constraint firstItem="8x7-gs-uLt" firstAttribute="leading" secondItem="jpk-4B-etH" secondAttribute="leading" constant="8" id="zIa-iW-RGa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="3bt-Os-9Gg"/>
+            <connections>
+                <outlet property="xib_title" destination="8x7-gs-uLt" id="OSR-39-xmH"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="global_btn_option_n" width="14" height="14"/>
+        <image name="global_btn_option_s" width="14" height="14"/>
+    </resources>
+</document>

@@ -47,7 +47,26 @@ class CCGroupBuyingViewController: BaseCollectionViewController {
 //            make.height.equalTo(collectionView.height-height)
 //        }
         view.sendSubview(toBack: collectionView)
+        collectionView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view)
+            make.bottom.equalTo(self.view.safeArea.bottom).offset(-(SCREEN_WIDTH*(50/375)))
+        }
     }
+    
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        switch sender.tag {
+        case 10001:
+            
+            break
+        case 10002:
+            let vc = CCMyGroupViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        default:
+            break
+        }
+    }
+    
 
 }
 extension CCGroupBuyingViewController {

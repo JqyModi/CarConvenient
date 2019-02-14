@@ -40,8 +40,8 @@ class CCLoginViewController: BaseViewController {
         HFAppEngine.shared.gotoMainController()
     }
     
-    override func clickRight() {
-        super.clickRight()
+    override func clickRight(sender: UIButton) {
+        super.clickRight(sender: sender)
         let vc = CCRegisterViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }

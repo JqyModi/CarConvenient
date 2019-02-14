@@ -31,7 +31,7 @@ class STRoadsideAssistanceVC: BaseViewController {
         
     }
     ///订单记录
-    override func clickRight(){
+    override func clickRight(sender: UIButton) {
         
     }
 

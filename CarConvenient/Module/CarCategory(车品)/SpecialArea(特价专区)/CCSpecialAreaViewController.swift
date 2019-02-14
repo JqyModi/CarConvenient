@@ -13,7 +13,7 @@ class CCSpecialAreaViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "特价专区"
     }
 
     override func setupTableView() {
@@ -33,7 +33,7 @@ extension CCSpecialAreaViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return SCREEN_WIDTH * (113/375)
     }
 }

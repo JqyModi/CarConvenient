@@ -37,6 +37,9 @@ PODS:
   - LTScrollView (0.2.0)
   - MJRefresh (3.1.15.7)
   - ObjectMapper (3.3.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
   - SnapKit (4.0.1)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.2.0)
@@ -54,6 +57,8 @@ DEPENDENCIES:
   - LTScrollView
   - MJRefresh
   - ObjectMapper
+  - RxCocoa
+  - RxSwift
   - SnapKit
   - SVProgressHUD
   - SwiftyJSON
@@ -74,6 +79,8 @@ SPEC REPOS:
     - LTScrollView
     - MJRefresh
     - ObjectMapper
+    - RxCocoa
+    - RxSwift
     - SnapKit
     - SVProgressHUD
     - SwiftyJSON
@@ -93,12 +100,14 @@ SPEC CHECKSUMS:
   LTScrollView: 1a18ae14884eb99c27f0222203aedaccd21b72fc
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   TencentOpenAPI: ddc6fb0134b25c9078ccd27fd2259ed0cc30a49a
   WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
 
-PODFILE CHECKSUM: d7648e453af65c4e556e7483d81c8b61fcb4ad1e
+PODFILE CHECKSUM: 5fc09cae2a3710e08d062a2d46dbdbf1672f2843
 
 COCOAPODS: 1.6.0.beta.1

@@ -34,6 +34,7 @@ class BaseTableViewController: BaseViewController {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
+            make.bottom.equalTo(self.view.safeArea.bottom)
         }
     }
     
@@ -127,9 +128,9 @@ extension BaseTableViewController: UITableViewDelegate , UITableViewDataSource{
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 0
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 0
+//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

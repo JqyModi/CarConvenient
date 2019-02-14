@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fED-hp-I9S" customClass="CCVehicleRecordsTypeOneBtnTableViewCell" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fED-hp-I9S" id="epn-8G-aZE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兴趣爱好（选填）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yz-h9-1xG">
+                        <rect key="frame" x="8" y="13.5" width="114.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uws-LW-Qce" customClass="MDRightIconButton" customModule="CarConvenient" customModuleProvider="target">
+                        <rect key="frame" x="130.5" y="8" width="181.5" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="请选择购买时间" image="global_btn_down_n">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="btn_DidClicked:" destination="fED-hp-I9S" eventType="touchUpInside" id="cRG-tR-fQ0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Uws-LW-Qce" firstAttribute="leading" secondItem="0Yz-h9-1xG" secondAttribute="trailing" constant="8" id="AuM-GF-Rfj"/>
+                    <constraint firstAttribute="bottom" secondItem="Uws-LW-Qce" secondAttribute="bottom" constant="8" id="Yy9-SD-Dra"/>
+                    <constraint firstItem="Uws-LW-Qce" firstAttribute="firstBaseline" secondItem="0Yz-h9-1xG" secondAttribute="firstBaseline" id="ZA0-YJ-Pd8"/>
+                    <constraint firstItem="Uws-LW-Qce" firstAttribute="top" secondItem="epn-8G-aZE" secondAttribute="top" constant="8" id="gW0-I8-n7Y"/>
+                    <constraint firstAttribute="trailing" secondItem="Uws-LW-Qce" secondAttribute="trailing" constant="8" id="gaU-R7-w9c"/>
+                    <constraint firstItem="0Yz-h9-1xG" firstAttribute="leading" secondItem="epn-8G-aZE" secondAttribute="leading" constant="8" id="mQd-MC-gXZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="n8e-KA-Ba0"/>
+            <connections>
+                <outlet property="xib_content" destination="Uws-LW-Qce" id="xRj-sZ-m7T"/>
+                <outlet property="xib_title" destination="0Yz-h9-1xG" id="vly-qZ-MmN"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="global_btn_down_n" width="15" height="15"/>
+    </resources>
+</document>

@@ -68,7 +68,7 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     /// - Parameters:
     ///   - title: 标题
     ///   - imageName: 图片
-    func addRightItem(title:String,imageName:String,fontColor: UIColor = UIColor.white) {
+    func addRightItem(title:String,selectTitle: String = "",imageName:String = "",fontColor: UIColor = UIColor.white) {
 //        let rightButton = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(clickRight))
 //        let dic = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 12)]
 //        rightButton.setTitleTextAttributes(dic, for: .normal)
@@ -80,21 +80,23 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
         let btn = UIButton()
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         btn.setTitle(title, for: UIControlState.normal)
+        btn.setTitle(selectTitle, for: .selected)
         btn.setTitleColor(fontColor, for: UIControlState.normal)
+        btn.setTitleColor(fontColor, for: UIControlState.selected)
         btn.setImage(UIImage.init(named: imageName), for: UIControlState.normal)
-        btn.addTarget(self, action: #selector(clickRight), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(clickRight(sender:)), for: .touchUpInside)
         
         let rightButton = UIBarButtonItem(customView: btn)
         self.navigationItem.rightBarButtonItem = rightButton
     }
     
     /// 点击导航右按钮
-    @objc func clickRight() {
+    @objc func clickRight(sender: UIButton) {
         // 添加左右按钮
         if let vcs = self.navigationController?.viewControllers {
             if vcs.count == 1 {
-//          let vc = CCPersonalCenterViewController()
-//          self.navigationController?.pushViewController(vc, animated: true)
+                let vc = CCMessageOutSideViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }

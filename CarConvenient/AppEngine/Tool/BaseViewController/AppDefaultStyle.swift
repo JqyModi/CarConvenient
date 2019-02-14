@@ -74,11 +74,78 @@ struct Color {
         let color = UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
         return (color,color.cgColor)
     }
+
     /// 透明背景色
     static let md_AlphaBGColor = UIColor.init(white: 0, alpha: 0.5)
     /// tableview默認背景色
     static let md_ViewGrayBGColor = UIColor.init(white: 0.93, alpha: 1)
+
     
+    /// app主题颜色，导航栏背景色,主要文字
+    static let appThemeColor_statusBar: UIColor = Hex("#2894fd").UIColor
+
+    
+    /// 主要按钮，左右渐变
+    static let themeButtonColor = Hex("#2894fd").UIColor
+    
+    /// (文字，按钮)价格
+    static let price_text_button_Color = Hex("#ff4e2b").UIColor
+    
+    /// 辅助按钮 ->左右渐变
+    static let warningbuttonColor = Hex("#ffa200").UIColor
+    
+    /// 菜单栏文字/主要文字色调
+    static let themeTextColor = Hex("#666666").UIColor
+    
+    /// app背景色
+    static let appBackgroundColor = Hex("#f6f6f6").UIColor
+    
+    /// 底部线条颜色 /输入框提示文字
+    
+    static let bottomLine_inputText_Color = Hex("#c5c5c5").UIColor
+    
+    //文本 - 主题文字颜色
+    static let mainTextColor = Color.RGB(r: 78, g: 78, b: 78, a: 1.0).UIColor
+    //    #868686
+    
+    /// 次要文字颜色
+    static let subMainTextColor = Hex("#868686").UIColor
+    
+    /// 登录背景颜色
+    static let loginBgColor = Hex("#3E9BF5").UIColor
+    ///cell的背景颜色
+    static let cellBackgroundColor = RGB(r: 240, g: 240, b: 240, a: 1.0).UIColor
+    
+    
+//    static func RGB(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> (UIColor: UIColor,CGColor: CGColor){
+//
+//        let color = UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+//        return (color,color.cgColor)
+//
+//    }
+    
+    static func Hex(_ hexString: String) -> (UIColor: UIColor,CGColor: CGColor){
+        var cstring = hexString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if(cstring.hasPrefix("#")){
+            cstring = String(cstring[cstring.index(after: cstring.startIndex)..<cstring.endIndex])
+        }
+        if (cstring.count != 6) {
+            return (UIColor.clear,UIColor.clear.cgColor)
+        }
+        let rString = cstring[..<cstring.index(cstring.startIndex, offsetBy: 2)]
+        let gString = cstring[cstring.index(cstring.startIndex, offsetBy: 2)..<cstring.index(cstring.startIndex, offsetBy: 4)]
+        let bString = cstring[cstring.index(cstring.endIndex, offsetBy: -2)..<cstring.endIndex]
+        
+        var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+        Scanner(string: String(rString)).scanHexInt32(&r)
+        Scanner(string: String(gString)).scanHexInt32(&g)
+        Scanner(string: String(bString)).scanHexInt32(&b)
+        
+        let color = UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1)
+        return (color,color.cgColor)
+        
+    }
     
 }
 

@@ -22,21 +22,27 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tM5-IX-XIQ">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKd-pp-LK6">
+                        <button opaque="NO" tag="10001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKd-pp-LK6">
                             <rect key="frame" x="0.0" y="0.0" width="179.5" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <state key="normal" title="砍价商城" image="btn_bargain_shop_n">
                                 <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="btn_DidClicked:" destination="-1" eventType="touchUpInside" id="FKV-s5-pHv"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrI-QN-Nql">
+                        <button opaque="NO" tag="10002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrI-QN-Nql">
                             <rect key="frame" x="187.5" y="0.0" width="179.5" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <state key="normal" title="我的砍价" image="btn_bargain_n(1)">
                                 <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="btn_DidClicked:" destination="-1" eventType="touchUpInside" id="wAC-Q9-IZT"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

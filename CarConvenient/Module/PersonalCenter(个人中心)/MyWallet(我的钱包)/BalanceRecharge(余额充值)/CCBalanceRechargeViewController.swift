@@ -31,6 +31,10 @@ class CCBalanceRechargeViewController: BaseTableViewController {
         super.setupTableView()
         // 显示底部视图
         self.view.sendSubview(toBack: self.tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+            make.bottom.equalTo(self.view.safeArea.bottom).offset(-(SCREEN_WIDTH*(40/375)))
+        }
     }
     
     override func setupTableHeaderView() {
@@ -88,7 +92,7 @@ extension CCBalanceRechargeViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
     

@@ -10,6 +10,7 @@ import UIKit
 import CoreGraphics
 import QuartzCore
 import Accelerate
+import SnapKit
 
 // MARK: - 扩展UIView
 extension UIView {
@@ -226,6 +227,33 @@ extension UIView {
         get {
             return self.frame.size
         }
+    }
+    
+    var safeArea: ConstraintBasicAttributesDSL {
+        
+        #if swift(>=3.2)
+        if #available(iOS 11.0, *) {
+            return self.safeAreaLayoutGuide.snp
+        }
+        return self.snp
+        #else
+        return self.snp
+        #endif
+    }
+    
+    /// 切圆角 - 需要先设置frame
+    ///
+    /// - Parameters:参数
+    ///   - radius: 切的幅度 -》 四个角都切
+    ///   - fillColor: 填充色
+    func viewClipCorner(radius:CGFloat,fillColor:UIColor) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: radius, height: radius))
+        let layer = CAShapeLayer()
+        layer.frame = bounds
+        layer.path = path.cgPath
+        layer.fillColor = fillColor.cgColor
+        self.layer.addSublayer(layer)
+        self.layer.mask = layer
     }
     
 }

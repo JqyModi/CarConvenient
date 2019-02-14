@@ -38,8 +38,8 @@ class CCPersonalCenterViewController: BaseCollectionViewController {
         addRightItem(title: "", imageName: "btn_setting_n(1)")
     }
     
-    override func clickRight() {
-        super.clickRight()
+    override func clickRight(sender: UIButton) {
+        super.clickRight(sender: sender)
         let vc = CCSettingViewController()
         vc.plistName = "setting"
         self.navigationController?.pushViewController(vc, animated: true)
@@ -61,6 +61,8 @@ class CCPersonalCenterViewController: BaseCollectionViewController {
                     HFAppEngine.shared.gotoLoginViewController()
                     break
                 case 10002:
+                    let vc = CCShoppingCartViewController.init(nibName: "CCShoppingCartViewController", bundle: nil)
+                    self.navigationController?.pushViewController(vc, animated: true)
                     break
                 case 10003:
                     break
@@ -98,6 +100,42 @@ extension CCPersonalCenterViewController {
         let cell: CCPersonalCenterCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CCPersonalCenterCollectionViewCell
         cell.updateCell(dic: dataSources[indexPath.row])
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let vc = CCOwnersCertificationViewController.init(nibName: "CCOwnersCertificationViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 1:
+            let vc = CCVehicleRecordsViewController.init(nibName: "CCVehicleRecordsViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 2:
+            let vc = CCMyPropertyViewController.init(nibName: "CCMyPropertyViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 3:
+            let vc = CCUserSettingViewController()
+            vc.plistName = "usersetting"
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 4:
+            let vc = CCManagerAddressViewController.init(nibName: "CCManagerAddressViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 5:
+            break
+        case 6:
+            let vc = CCCooperationViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 7:
+            break
+        default:
+            break
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

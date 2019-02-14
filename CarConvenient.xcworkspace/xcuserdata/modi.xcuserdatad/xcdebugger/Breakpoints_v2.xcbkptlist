@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CarConvenient/AppEngine/Tool/BaseViewController/BaseViewController.swift"
-            timestampString = "571557715.1140569"
+            filePath = "CarConvenient/AppEngine/Tool/BaseViewController/BaseCollectionViewController.swift"
+            timestampString = "571758086.992048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "addLeftItem(title:imageName:fontColor:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

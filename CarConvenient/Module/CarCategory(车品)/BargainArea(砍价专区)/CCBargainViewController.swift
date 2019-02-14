@@ -46,7 +46,24 @@ class CCBargainViewController: BaseTableViewController {
 //        }
         
         view.sendSubview(toBack: tableView)
-        
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+            make.bottom.equalTo(self.view.safeArea.bottom).offset(-(SCREEN_WIDTH*(50/375)))
+        }
+    }
+    
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        switch sender.tag {
+        case 10001:
+            
+            break
+        case 10002:
+            let vc = CCMyBargainViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        default:
+            break
+        }
     }
 
 }
@@ -58,7 +75,7 @@ extension CCBargainViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! CCBargainTableViewCell
         return cell
     }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return SCREEN_WIDTH * (123/375)
     }
 }

@@ -13,7 +13,7 @@ class CCSpikeViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "秒杀专区"
     }
     
     override func setupTableView() {
@@ -36,7 +36,7 @@ extension CCSpikeViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return SCREEN_WIDTH * (123/375)
     }
 }

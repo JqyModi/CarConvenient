@@ -96,6 +96,8 @@ let SCREEN_WIDTH = UIScreen.main.bounds.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
 let IPHONEX: Bool = UIScreen.main.bounds.height == 812 ? true : false
+let is_iPhonex: Bool = UIScreen.main.bounds.height == 812 ? true : false
+
 let IPHONESE: Bool = UIScreen.main.bounds.width == 320 ? true : false
 
 let BottomSaveAreaHeight: CGFloat = 34
@@ -116,3 +118,7 @@ let TabBarDataSource: [[String: String]] = {
     let dic5 = ["title": "福利", "imageNameS": "btn_welfare_s", "imageNameN": "btn_welfare_n", "viewController": "CCWelfareViewController"]
     return [dic1, dic2, dic3, dic4, dic5]
 }()
+
+protocol ViewClickedDelegate {
+    var clickBlock: ((_ sender: Any?) -> ())? {get set}
+}
