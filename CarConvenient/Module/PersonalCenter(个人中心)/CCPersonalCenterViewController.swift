@@ -109,6 +109,8 @@ extension CCPersonalCenterViewController {
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
+            let vc = CCVehicleRecordsViewController.init(nibName: "CCVehicleRecordsViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 2:
             let vc = CCMyPropertyViewController.init(nibName: "CCMyPropertyViewController", bundle: nil)

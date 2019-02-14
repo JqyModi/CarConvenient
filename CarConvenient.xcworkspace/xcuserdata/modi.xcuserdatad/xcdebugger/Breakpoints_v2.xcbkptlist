@@ -25,22 +25,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CarConvenient/AppEngine/Tool/BaseViewController/BaseViewController.swift"
-            timestampString = "571758086.9917459"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "addLeftItem(title:imageName:fontColor:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "CarConvenient/AppEngine/Tool/BaseViewController/BaseCollectionViewController.swift"
             timestampString = "571758086.992048"
             startingColumnNumber = "9223372036854775807"

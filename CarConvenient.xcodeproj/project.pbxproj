@@ -272,6 +272,10 @@
 		C5A7510622153F9C0010A183 /* ColorConfiguation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7510522153F9C0010A183 /* ColorConfiguation.swift */; };
 		C5A751082215431C0010A183 /* MCSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A751072215431C0010A183 /* MCSearchBar.swift */; };
 		C5A7510A221543860010A183 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A75109221543860010A183 /* citydict.plist */; };
+		C5A7510D22155E0A0010A183 /* CCMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7510C22155E0A0010A183 /* CCMessageViewController.swift */; };
+		C5A7511122155E380010A183 /* CCMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7510F22155E380010A183 /* CCMessageTableViewCell.swift */; };
+		C5A7511222155E380010A183 /* CCMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A7511022155E380010A183 /* CCMessageTableViewCell.xib */; };
+		C5A75114221566490010A183 /* CCMessageOutSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A75113221566490010A183 /* CCMessageOutSideViewController.swift */; };
 		C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */; };
 		C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */; };
 		C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */; };
@@ -753,6 +757,10 @@
 		C5A7510522153F9C0010A183 /* ColorConfiguation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConfiguation.swift; sourceTree = "<group>"; };
 		C5A751072215431C0010A183 /* MCSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSearchBar.swift; sourceTree = "<group>"; };
 		C5A75109221543860010A183 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		C5A7510C22155E0A0010A183 /* CCMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMessageViewController.swift; sourceTree = "<group>"; };
+		C5A7510F22155E380010A183 /* CCMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMessageTableViewCell.swift; sourceTree = "<group>"; };
+		C5A7511022155E380010A183 /* CCMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMessageTableViewCell.xib; sourceTree = "<group>"; };
+		C5A75113221566490010A183 /* CCMessageOutSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMessageOutSideViewController.swift; sourceTree = "<group>"; };
 		C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailViewController.swift; sourceTree = "<group>"; };
 		C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBillingDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -1925,6 +1933,9 @@
 		C56642AC21F59419008C8CC6 /* MessageCenter(消息中心) */ = {
 			isa = PBXGroup;
 			children = (
+				C5A7510E22155E200010A183 /* Cell */,
+				C5A7510C22155E0A0010A183 /* CCMessageViewController.swift */,
+				C5A75113221566490010A183 /* CCMessageOutSideViewController.swift */,
 			);
 			path = "MessageCenter(消息中心)";
 			sourceTree = "<group>";
@@ -2049,6 +2060,15 @@
 				C5A75109221543860010A183 /* citydict.plist */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		C5A7510E22155E200010A183 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7510F22155E380010A183 /* CCMessageTableViewCell.swift */,
+				C5A7511022155E380010A183 /* CCMessageTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */ = {
@@ -2832,6 +2852,7 @@
 				C5FA095F21FD5E21005AF09C /* CCCarTypeDetailTableViewCell.xib in Resources */,
 				C56641B221F55C43008C8CC6 /* HFStartViewController.xib in Resources */,
 				C5FA09C821FED968005AF09C /* CCGroupBuyingFooterView.xib in Resources */,
+				C5A7511222155E380010A183 /* CCMessageTableViewCell.xib in Resources */,
 				C566420421F55C43008C8CC6 /* ico_make.png in Resources */,
 				C566428C21F55C8D008C8CC6 /* LTLocationViewController.xib in Resources */,
 				C5F6F935221501470094DC0E /* CCOwnersCertificationFooterView.xib in Resources */,
@@ -3228,6 +3249,7 @@
 				C566425C21F55C43008C8CC6 /* MDFlowView.swift in Sources */,
 				C5A7510122153A240010A183 /* MCSelectLocalHeaderView.swift in Sources */,
 				C566423321F55C43008C8CC6 /* HXCustomNavigationController.m in Sources */,
+				C5A7511122155E380010A183 /* CCMessageTableViewCell.swift in Sources */,
 				C56641E521F55C43008C8CC6 /* MyControl.m in Sources */,
 				C5F6BE3E21F86BD9009FACD6 /* CCRegisterViewController.swift in Sources */,
 				C566421C21F55C43008C8CC6 /* HXDatePhotoPreviewBottomView.m in Sources */,
@@ -3260,6 +3282,7 @@
 				C5FA09E121FEFBB7005AF09C /* CCSpikeTableViewCell.swift in Sources */,
 				C566420B21F55C43008C8CC6 /* FGConverter.swift in Sources */,
 				C566420621F55C43008C8CC6 /* MDSettingController.swift in Sources */,
+				C5A75114221566490010A183 /* CCMessageOutSideViewController.swift in Sources */,
 				C566428E21F55C8D008C8CC6 /* LTWebViewController.swift in Sources */,
 				C5FA09CA21FEE083005AF09C /* CCCarCategoryDetailViewController.swift in Sources */,
 				C56641B121F55C43008C8CC6 /* AppDelegate+Extension.swift in Sources */,
@@ -3282,6 +3305,7 @@
 				C566422E21F55C43008C8CC6 /* HXCustomCollectionReusableView.m in Sources */,
 				C56641C921F55C43008C8CC6 /* HFLocationManageer.swift in Sources */,
 				C56641E321F55C43008C8CC6 /* MDNavigationController.swift in Sources */,
+				C5A7510D22155E0A0010A183 /* CCMessageViewController.swift in Sources */,
 				C5F6BE3121F71B3C009FACD6 /* CCWashCarViewController.swift in Sources */,
 				C532F52E21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift in Sources */,
 				C56641AE21F55C43008C8CC6 /* QBImageModel.swift in Sources */,
