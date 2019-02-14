@@ -93,8 +93,8 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
         // 添加左右按钮
         if let vcs = self.navigationController?.viewControllers {
             if vcs.count == 1 {
-//                let vc = CCPersonalCenterViewController()
-//                self.navigationController?.pushViewController(vc, animated: true)
+//          let vc = CCPersonalCenterViewController()
+//          self.navigationController?.pushViewController(vc, animated: true)
             }
         }
     }

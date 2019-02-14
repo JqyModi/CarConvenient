@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import MJRefresh
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "Cell"
 
 class BaseCollectionViewController: BaseViewController {
 
@@ -23,6 +23,7 @@ class BaseCollectionViewController: BaseViewController {
         cv.dataSource = self
         cv.showsVerticalScrollIndicator = false
         cv.showsHorizontalScrollIndicator = false
+        cv.backgroundColor = UIColor.white
         return cv
     }()
     
@@ -57,7 +58,7 @@ class BaseCollectionViewController: BaseViewController {
     
     open var dataSource: [Any] = Array() {
         didSet{
-            if dataSource == nil || dataSource.count == 0 {
+            if dataSource.count == 0 {
                 print("无数据///上线前删掉")
                 dataSource = ["假数据一","假数据二","假数据三","假数据四","假数据五"]
             }

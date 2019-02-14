@@ -252,8 +252,6 @@
 		C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */; };
 		C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */; };
 		C5E0D1382212A59000C93EC1 /* CCBillingDetailOutSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1372212A59000C93EC1 /* CCBillingDetailOutSideViewController.swift */; };
-		C5E0D13C2212AB9D00C93EC1 /* CCRebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D13A2212AB9D00C93EC1 /* CCRebateViewController.swift */; };
-		C5E0D13D2212AB9D00C93EC1 /* CCRebateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D13B2212AB9D00C93EC1 /* CCRebateViewController.xib */; };
 		C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */; };
 		C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */; };
 		C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */; };
@@ -294,6 +292,12 @@
 		C5FA09E221FEFBB7005AF09C /* CCSpikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FA09E021FEFBB6005AF09C /* CCSpikeTableViewCell.xib */; };
 		C5FA09E421FEFFDD005AF09C /* CCSpikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FA09E321FEFFDD005AF09C /* CCSpikeViewController.swift */; };
 		CCFC6A1850348143951E559B /* Pods_CarConvenient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C53F5ADD2825E02616778 /* Pods_CarConvenient.framework */; };
+		DE3CC9812212BB8300DA490D /* CCServiceViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3CC9802212BB8300DA490D /* CCServiceViewController.plist */; };
+		DE3CC9832212BE4A00DA490D /* STServiceViewControllerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CC9822212BE4A00DA490D /* STServiceViewControllerMode.swift */; };
+		DEA68AD42213BAB000EAEE9B /* STServiceCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA68AD22213BAB000EAEE9B /* STServiceCCell.xib */; };
+		DEA68AD52213BAB000EAEE9B /* STServiceCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA68AD32213BAB000EAEE9B /* STServiceCCell.swift */; };
+		DEA68AD92213C08F00EAEE9B /* STRoadsideAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA68AD72213C08F00EAEE9B /* STRoadsideAssistanceVC.swift */; };
+		DEA68ADB2213C99B00EAEE9B /* STRoadsideAssistanceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA68AD62213C08F00EAEE9B /* STRoadsideAssistanceVC.xib */; };
 		ED2823DEDA0D6A1459F77B47 /* Pods_CarConvenientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B8689DB96601D52641026B /* Pods_CarConvenientTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -662,8 +666,6 @@
 		C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBillingDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C5E0D1372212A59000C93EC1 /* CCBillingDetailOutSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailOutSideViewController.swift; sourceTree = "<group>"; };
-		C5E0D13A2212AB9D00C93EC1 /* CCRebateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCRebateViewController.swift; sourceTree = "<group>"; };
-		C5E0D13B2212AB9D00C93EC1 /* CCRebateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCRebateViewController.xib; sourceTree = "<group>"; };
 		C5F6BE1B21F6F6FE009FACD6 /* CCCarCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryViewController.swift; sourceTree = "<group>"; };
 		C5F6BE1E21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCarCategoryHeaderView.swift; sourceTree = "<group>"; };
 		C5F6BE2021F6F768009FACD6 /* CCCarCategoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCCarCategoryHeaderView.xib; sourceTree = "<group>"; };
@@ -705,6 +707,12 @@
 		C5FA09E021FEFBB6005AF09C /* CCSpikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSpikeTableViewCell.xib; sourceTree = "<group>"; };
 		C5FA09E321FEFFDD005AF09C /* CCSpikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSpikeViewController.swift; sourceTree = "<group>"; };
 		CD5844F0526DDF78D04FDCFD /* Pods-CarConvenientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarConvenientUITests.debug.xcconfig"; path = "Target Support Files/Pods-CarConvenientUITests/Pods-CarConvenientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE3CC9802212BB8300DA490D /* CCServiceViewController.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CCServiceViewController.plist; sourceTree = "<group>"; };
+		DE3CC9822212BE4A00DA490D /* STServiceViewControllerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STServiceViewControllerMode.swift; sourceTree = "<group>"; };
+		DEA68AD22213BAB000EAEE9B /* STServiceCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STServiceCCell.xib; sourceTree = "<group>"; };
+		DEA68AD32213BAB000EAEE9B /* STServiceCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STServiceCCell.swift; sourceTree = "<group>"; };
+		DEA68AD62213C08F00EAEE9B /* STRoadsideAssistanceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STRoadsideAssistanceVC.xib; sourceTree = "<group>"; };
+		DEA68AD72213C08F00EAEE9B /* STRoadsideAssistanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRoadsideAssistanceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1726,6 +1734,9 @@
 				C5F6BE0C21F6B4F2009FACD6 /* CarCheck(车检) */,
 				C5F6BE0B21F6B496009FACD6 /* RoadsideAssistance(道路救援) */,
 				C5F6BE2E21F71B15009FACD6 /* CCServiceViewController.swift */,
+				DE3CC9802212BB8300DA490D /* CCServiceViewController.plist */,
+				DE3CC9822212BE4A00DA490D /* STServiceViewControllerMode.swift */,
+				DEA68AD12213BA6600EAEE9B /* view */,
 			);
 			path = "Service(服务)";
 			sourceTree = "<group>";
@@ -1828,15 +1839,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		C5E0D1392212AB6A00C93EC1 /* Rebate(邀请返利) */ = {
-			isa = PBXGroup;
-			children = (
-				C5E0D13A2212AB9D00C93EC1 /* CCRebateViewController.swift */,
-				C5E0D13B2212AB9D00C93EC1 /* CCRebateViewController.xib */,
-			);
-			path = "Rebate(邀请返利)";
-			sourceTree = "<group>";
-		};
 		C5F6BE0221F6AF8E009FACD6 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1923,6 +1925,7 @@
 		C5F6BE0B21F6B496009FACD6 /* RoadsideAssistance(道路救援) */ = {
 			isa = PBXGroup;
 			children = (
+				DEA68ADA2213C16E00EAEE9B /* ViewController */,
 			);
 			path = "RoadsideAssistance(道路救援)";
 			sourceTree = "<group>";
@@ -1965,7 +1968,6 @@
 		C5F6BE1121F6B6BD009FACD6 /* MyWallet(我的钱包) */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0D1392212AB6A00C93EC1 /* Rebate(邀请返利) */,
 				C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */,
 				C5384C3122127480002F9561 /* IntegralMall(积分商城) */,
 				C5384C272212596D002F9561 /* BalanceRecharge(余额充值) */,
@@ -2178,6 +2180,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DEA68AD12213BA6600EAEE9B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DEA68AD22213BAB000EAEE9B /* STServiceCCell.xib */,
+				DEA68AD32213BAB000EAEE9B /* STServiceCCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DEA68ADA2213C16E00EAEE9B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DEA68AD62213C08F00EAEE9B /* STRoadsideAssistanceVC.xib */,
+				DEA68AD72213C08F00EAEE9B /* STRoadsideAssistanceVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E285290519D1BD1EAB8BD0B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2298,7 +2318,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA68ADB2213C99B00EAEE9B /* STRoadsideAssistanceVC.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
+				DEA68AD42213BAB000EAEE9B /* STServiceCCell.xib in Resources */,
 				C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */,
 				C566424621F55C43008C8CC6 /* FJAddressTVCell.xib in Resources */,
 				C566424721F55C43008C8CC6 /* tp_region.sql in Resources */,
@@ -2321,7 +2343,6 @@
 				C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */,
 				C566424C21F55C43008C8CC6 /* FJItemCVCell.xib in Resources */,
 				C5FA09DD21FEEC1D005AF09C /* CCBargainFooterView.xib in Resources */,
-				C5E0D13D2212AB9D00C93EC1 /* CCRebateViewController.xib in Resources */,
 				C5384C3D22127942002F9561 /* CCIntegralMallHeaderView.xib in Resources */,
 				C566424E21F55C43008C8CC6 /* icon_deleted@3x copy.png in Resources */,
 				C5FA096121FD5E21005AF09C /* CCCarTypeCollectionViewCell.xib in Resources */,
@@ -2346,6 +2367,7 @@
 				C5FA09C821FED968005AF09C /* CCGroupBuyingFooterView.xib in Resources */,
 				C566420421F55C43008C8CC6 /* ico_make.png in Resources */,
 				C566428C21F55C8D008C8CC6 /* LTLocationViewController.xib in Resources */,
+				DE3CC9812212BB8300DA490D /* CCServiceViewController.plist in Resources */,
 				C5384C212211957E002F9561 /* myWallet.plist in Resources */,
 				C566403D21F5579D008C8CC6 /* Assets.xcassets in Resources */,
 				C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */,
@@ -2640,7 +2662,6 @@
 				C566424421F55C43008C8CC6 /* FJAddressTVCell.swift in Sources */,
 				C56641D321F55C43008C8CC6 /* BaseView.swift in Sources */,
 				C5FA095621FD5DB1005AF09C /* CCCarTypeViewController.swift in Sources */,
-				C5E0D13C2212AB9D00C93EC1 /* CCRebateViewController.swift in Sources */,
 				C56641C721F55C43008C8CC6 /* HFNetworkManager.swift in Sources */,
 				C566425221F55C43008C8CC6 /* AppDefaultStyle.swift in Sources */,
 				C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */,
@@ -2690,6 +2711,7 @@
 				C566425C21F55C43008C8CC6 /* MDFlowView.swift in Sources */,
 				C566423321F55C43008C8CC6 /* HXCustomNavigationController.m in Sources */,
 				C56641E521F55C43008C8CC6 /* MyControl.m in Sources */,
+				DE3CC9832212BE4A00DA490D /* STServiceViewControllerMode.swift in Sources */,
 				C5F6BE3E21F86BD9009FACD6 /* CCRegisterViewController.swift in Sources */,
 				C566421C21F55C43008C8CC6 /* HXDatePhotoPreviewBottomView.m in Sources */,
 				C5F6BE3521F71B97009FACD6 /* CCWelfareViewController.swift in Sources */,
@@ -2702,6 +2724,7 @@
 				C566421121F55C43008C8CC6 /* BRBaseView.m in Sources */,
 				C566422021F55C43008C8CC6 /* UIFont+HXExtension.m in Sources */,
 				C566421A21F55C43008C8CC6 /* HXDownloadProgressView.m in Sources */,
+				DEA68AD52213BAB000EAEE9B /* STServiceCCell.swift in Sources */,
 				C56641E621F55C43008C8CC6 /* UIButton+Category.m in Sources */,
 				C566428D21F55C8D008C8CC6 /* MDWebViewController.swift in Sources */,
 				C56641C421F55C43008C8CC6 /* MDHorizontalCircleMenuView.swift in Sources */,
@@ -2727,6 +2750,7 @@
 				C5FA09D121FEE399005AF09C /* CCBargainViewController.swift in Sources */,
 				C56641AD21F55C43008C8CC6 /* HFUserData.swift in Sources */,
 				C566423721F55C43008C8CC6 /* HXAlbumlistView.m in Sources */,
+				DEA68AD92213C08F00EAEE9B /* STRoadsideAssistanceVC.swift in Sources */,
 				C56641DA21F55C43008C8CC6 /* MDHotSearchView.swift in Sources */,
 				C56641EF21F55C43008C8CC6 /* UITextView+Category.m in Sources */,
 				C566420321F55C43008C8CC6 /* JSDropDownMenu.m in Sources */,
@@ -2917,7 +2941,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UP5749PQDU;
+				DEVELOPMENT_TEAM = VJZKY87UD3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarConvenient/AppEngine/Tool/AliPay",
@@ -2941,7 +2965,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UP5749PQDU;
+				DEVELOPMENT_TEAM = VJZKY87UD3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarConvenient/AppEngine/Tool/AliPay",

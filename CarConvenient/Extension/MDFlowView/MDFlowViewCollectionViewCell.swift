@@ -59,7 +59,7 @@ extension MDFlowViewCollectionViewCell {
     private func setupStyle() {
         xib_name.textColor = UIColor.black
         xib_name.font = UIFont.systemFont(ofSize: FontSize.md_DescFontSize)
-        xib_desc.textColor = Color.md_BtnDisableTitleColor
+        xib_desc.textColor = Color.md_666666
         xib_desc.font = UIFont.systemFont(ofSize: 10)
         
         xib_number.textColor = UIColor.black

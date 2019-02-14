@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="STServiceCCell" id="0Vg-OA-emq" customClass="STServiceCCell" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_sell_car_n" translatesAutoresizingMaskIntoConstraints="NO" id="0eU-D7-Ual">
+                        <rect key="frame" x="17.5" y="12" width="45" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGy-Yb-SiK">
+                        <rect key="frame" x="8" y="64" width="64" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0eU-D7-Ual" firstAttribute="centerX" secondItem="0Vg-OA-emq" secondAttribute="centerX" id="2oU-Pl-j7n"/>
+                <constraint firstItem="DGy-Yb-SiK" firstAttribute="centerX" secondItem="0eU-D7-Ual" secondAttribute="centerX" id="8ib-bI-jrV"/>
+                <constraint firstItem="DGy-Yb-SiK" firstAttribute="leading" secondItem="0Vg-OA-emq" secondAttribute="leading" constant="8" id="Gvc-G2-9IA"/>
+                <constraint firstItem="DGy-Yb-SiK" firstAttribute="top" secondItem="0eU-D7-Ual" secondAttribute="bottom" constant="7" id="INc-8h-LLM"/>
+                <constraint firstItem="0eU-D7-Ual" firstAttribute="centerY" secondItem="0Vg-OA-emq" secondAttribute="centerY" constant="-10" id="dKC-27-VoK"/>
+                <constraint firstAttribute="trailing" secondItem="DGy-Yb-SiK" secondAttribute="trailing" constant="8" id="el8-WM-AZ9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Vqx-5v-S7t"/>
+            <connections>
+                <outlet property="picI" destination="0eU-D7-Ual" id="YiV-eA-Uwf"/>
+                <outlet property="titleL" destination="DGy-Yb-SiK" id="92a-ib-std"/>
+                <outlet property="xib_img" destination="0eU-D7-Ual" id="Vtu-jY-pWB"/>
+                <outlet property="xib_title" destination="DGy-Yb-SiK" id="oga-Wy-L4H"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_sell_car_n" width="45" height="45"/>
+    </resources>
+</document>

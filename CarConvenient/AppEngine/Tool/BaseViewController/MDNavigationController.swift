@@ -35,8 +35,9 @@ class MDNavigationController: UINavigationController {
         let bar = UINavigationBar.appearance()
         bar.barTintColor = Color.md_NavBarBgColor
         bar.tintColor = Color.md_NavBarTintColor
-        bar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: Color.md_TitleColor, NSAttributedStringKey.font: UIFont.systemFont(ofSize: FontSize.md_NavBarFontSize)]
+        bar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: Color.md_333333, NSAttributedStringKey.font: UIFont.systemFont(ofSize: FontSize.md_NavBarFontSize)]
         let line:UIImage = UIImage(color: Color.md_NavBarBgColor, size: CGSize(width: 500, height: 1))!
+        
         bar.shadowImage = line;
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-100, 0), for:UIBarMetrics.default)
         
