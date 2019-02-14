@@ -241,6 +241,21 @@ extension UIView {
         #endif
     }
     
+    /// 切圆角 - 需要先设置frame
+    ///
+    /// - Parameters:参数
+    ///   - radius: 切的幅度 -》 四个角都切
+    ///   - fillColor: 填充色
+    func viewClipCorner(radius:CGFloat,fillColor:UIColor) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: radius, height: radius))
+        let layer = CAShapeLayer()
+        layer.frame = bounds
+        layer.path = path.cgPath
+        layer.fillColor = fillColor.cgColor
+        self.layer.addSublayer(layer)
+        self.layer.mask = layer
+    }
+    
 }
 
 

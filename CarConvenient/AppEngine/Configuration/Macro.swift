@@ -96,6 +96,8 @@ let SCREEN_WIDTH = UIScreen.main.bounds.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
 let IPHONEX: Bool = UIScreen.main.bounds.height == 812 ? true : false
+let is_iPhonex: Bool = UIScreen.main.bounds.height == 812 ? true : false
+
 let IPHONESE: Bool = UIScreen.main.bounds.width == 320 ? true : false
 
 let BottomSaveAreaHeight: CGFloat = 34

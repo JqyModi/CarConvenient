@@ -21,8 +21,8 @@ class CCVehicleRecordsViewController: BaseTableViewController {
             items1.append(dic)
         }
         let titles2 = ["保险公司", "到期日", "车主名", "身份证", "投保城市", "是否一年内过户"]
-        let placeholders2 = ["请输入保险公司", "请输入到期日", "请输入车主名", "请输入身份证号", "请输入投保城市", ""]
-        let type2 = ["tf", "tf", "tf", "tf", "tf", "twobtn"]
+        let placeholders2 = ["请输入保险公司", "请输入到期日", "请输入车主名", "请输入身份证号", "请选择投保城市", ""]
+        let type2 = ["tf", "tf", "tf", "tf", "btn", "twobtn"]
         var items2 = [[String: String]]()
         for i in 0..<titles2.count {
             let dic = ["title": titles2[i], "placeholder": placeholders2[i], "value": "", "type": type2[i]]
@@ -35,7 +35,7 @@ class CCVehicleRecordsViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "车主认证"
+        title = "爱车档案"
     }
     
     override func setupTableView() {
@@ -87,11 +87,31 @@ extension CCVehicleRecordsViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         if let items = dataSources[indexPath.section]["items"] as? [[String: String]] {
-            if let type = items[indexPath.row]["type"] {
+            if let type = items[indexPath.row]["type"], let title = items[indexPath.row]["title"] {
                 switch type {
                 case "btn":
                     cell = tableView.dequeueReusableCell(withIdentifier: "CCVehicleRecordsTypeOneBtnTableViewCell") as! CCVehicleRecordsTypeOneBtnTableViewCell
                     (cell as! CCVehicleRecordsTypeOneBtnTableViewCell).updateCell(model: items[indexPath.row])
+                    (cell as! CCVehicleRecordsTypeOneBtnTableViewCell).clickBlock = {(sender) in
+                        if let btn = sender as? UIButton {
+                            switch title {
+                            case "品牌":
+                                break
+                            case "型号":
+                                break
+                            case "车座":
+                                break
+                            case "购买时间":
+                                break
+                            case "投保城市":
+                                let vc = MCSelectLocalController()
+                                self.navigationController?.pushViewController(vc, animated: true)
+                                break
+                            default:
+                                break
+                            }
+                        }
+                    }
                     break
                 case "tf":
                     cell = tableView.dequeueReusableCell(withIdentifier: "CCVehicleRecordsTableViewCell") as! CCVehicleRecordsTableViewCell

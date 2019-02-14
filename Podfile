@@ -60,6 +60,9 @@ target 'CarConvenient' do
 #    Google登录
 #    pod 'GoogleSignIn'
 
+    pod "RxSwift"
+    pod "RxCocoa"
+
 #   极光推送
     pod 'JPush'
     # 链式添加事件等处理

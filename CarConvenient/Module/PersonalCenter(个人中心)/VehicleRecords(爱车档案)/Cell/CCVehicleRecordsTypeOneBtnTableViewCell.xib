@@ -35,6 +35,9 @@
                                 <integer key="value" value="4"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="btn_DidClicked:" destination="fED-hp-I9S" eventType="touchUpInside" id="cRG-tR-fQ0"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

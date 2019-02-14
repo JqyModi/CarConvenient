@@ -8,13 +8,22 @@
 
 import UIKit
 
-class CCVehicleRecordsTypeOneBtnTableViewCell: UITableViewCell {
+class CCVehicleRecordsTypeOneBtnTableViewCell: UITableViewCell, ViewClickedDelegate {
+    
+    var clickBlock: ((Any?) -> ())?
+    
 
     @IBOutlet weak var xib_title: UILabel!
     @IBOutlet weak var xib_content: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        if let b = clickBlock {
+            b(sender)
+        }
     }
     
     func updateCell(model: [String: String]) {

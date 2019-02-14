@@ -260,6 +260,18 @@
 		C5A750E7221528460010A183 /* CCVehicleRecordsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750E5221528460010A183 /* CCVehicleRecordsFooterView.swift */; };
 		C5A750EA221528690010A183 /* CCVehicleRecordsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750E8221528690010A183 /* CCVehicleRecordsHeaderView.xib */; };
 		C5A750EB221528690010A183 /* CCVehicleRecordsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750E9221528690010A183 /* CCVehicleRecordsHeaderView.swift */; };
+		C5A750FB22153A240010A183 /* MCSelectLocalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750EE22153A240010A183 /* MCSelectLocalViewModel.swift */; };
+		C5A750FC22153A240010A183 /* MCCitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750EF22153A240010A183 /* MCCitySearchViewModel.swift */; };
+		C5A750FD22153A240010A183 /* MCSelectLocalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750F122153A240010A183 /* MCSelectLocalController.swift */; };
+		C5A750FE22153A240010A183 /* MCLocalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750F322153A240010A183 /* MCLocalRequest.swift */; };
+		C5A750FF22153A240010A183 /* MCLocalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750F422153A240010A183 /* MCLocalModel.swift */; };
+		C5A7510022153A240010A183 /* MCSelectLocalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750F622153A240010A183 /* MCSelectLocalHeader.swift */; };
+		C5A7510122153A240010A183 /* MCSelectLocalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750F722153A240010A183 /* MCSelectLocalHeaderView.swift */; };
+		C5A7510322153A240010A183 /* MCLocalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750F922153A240010A183 /* MCLocalButton.swift */; };
+		C5A7510422153A240010A183 /* MCLocalCityGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750FA22153A240010A183 /* MCLocalCityGroup.swift */; };
+		C5A7510622153F9C0010A183 /* ColorConfiguation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7510522153F9C0010A183 /* ColorConfiguation.swift */; };
+		C5A751082215431C0010A183 /* MCSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A751072215431C0010A183 /* MCSearchBar.swift */; };
+		C5A7510A221543860010A183 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A75109221543860010A183 /* citydict.plist */; };
 		C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */; };
 		C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */; };
 		C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */; };
@@ -729,6 +741,18 @@
 		C5A750E5221528460010A183 /* CCVehicleRecordsFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsFooterView.swift; sourceTree = "<group>"; };
 		C5A750E8221528690010A183 /* CCVehicleRecordsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsHeaderView.xib; sourceTree = "<group>"; };
 		C5A750E9221528690010A183 /* CCVehicleRecordsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsHeaderView.swift; sourceTree = "<group>"; };
+		C5A750EE22153A240010A183 /* MCSelectLocalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSelectLocalViewModel.swift; sourceTree = "<group>"; };
+		C5A750EF22153A240010A183 /* MCCitySearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCitySearchViewModel.swift; sourceTree = "<group>"; };
+		C5A750F122153A240010A183 /* MCSelectLocalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSelectLocalController.swift; sourceTree = "<group>"; };
+		C5A750F322153A240010A183 /* MCLocalRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLocalRequest.swift; sourceTree = "<group>"; };
+		C5A750F422153A240010A183 /* MCLocalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLocalModel.swift; sourceTree = "<group>"; };
+		C5A750F622153A240010A183 /* MCSelectLocalHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSelectLocalHeader.swift; sourceTree = "<group>"; };
+		C5A750F722153A240010A183 /* MCSelectLocalHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSelectLocalHeaderView.swift; sourceTree = "<group>"; };
+		C5A750F922153A240010A183 /* MCLocalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLocalButton.swift; sourceTree = "<group>"; };
+		C5A750FA22153A240010A183 /* MCLocalCityGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLocalCityGroup.swift; sourceTree = "<group>"; };
+		C5A7510522153F9C0010A183 /* ColorConfiguation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConfiguation.swift; sourceTree = "<group>"; };
+		C5A751072215431C0010A183 /* MCSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCSearchBar.swift; sourceTree = "<group>"; };
+		C5A75109221543860010A183 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
 		C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailViewController.swift; sourceTree = "<group>"; };
 		C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBillingDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -1935,6 +1959,7 @@
 		C5A750C922150BE70010A183 /* VehicleRecords(爱车档案) */ = {
 			isa = PBXGroup;
 			children = (
+				C5A750EC22153A240010A183 /* SelectLocal(城市选择) */,
 				C5A750CB22150BE70010A183 /* Cell */,
 				C5A750CE22150BE70010A183 /* View */,
 				C5A750D322150BE70010A183 /* CCVehicleRecordsViewController.swift */,
@@ -1965,6 +1990,65 @@
 				C5A750E4221528460010A183 /* CCVehicleRecordsFooterView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C5A750EC22153A240010A183 /* SelectLocal(城市选择) */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7510B221546EE0010A183 /* Config */,
+				C5A750ED22153A240010A183 /* ViewModel */,
+				C5A750F022153A240010A183 /* Controller */,
+				C5A750F222153A240010A183 /* Model */,
+				C5A750F522153A240010A183 /* View */,
+			);
+			path = "SelectLocal(城市选择)";
+			sourceTree = "<group>";
+		};
+		C5A750ED22153A240010A183 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750EE22153A240010A183 /* MCSelectLocalViewModel.swift */,
+				C5A750EF22153A240010A183 /* MCCitySearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C5A750F022153A240010A183 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750F122153A240010A183 /* MCSelectLocalController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5A750F222153A240010A183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750F322153A240010A183 /* MCLocalRequest.swift */,
+				C5A750F422153A240010A183 /* MCLocalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5A750F522153A240010A183 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5A750F622153A240010A183 /* MCSelectLocalHeader.swift */,
+				C5A750F722153A240010A183 /* MCSelectLocalHeaderView.swift */,
+				C5A750F922153A240010A183 /* MCLocalButton.swift */,
+				C5A750FA22153A240010A183 /* MCLocalCityGroup.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5A7510B221546EE0010A183 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7510522153F9C0010A183 /* ColorConfiguation.swift */,
+				C5A751072215431C0010A183 /* MCSearchBar.swift */,
+				C5A75109221543860010A183 /* citydict.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */ = {
@@ -2765,6 +2849,7 @@
 				C566424B21F55C43008C8CC6 /* icon_deleted@3x.png in Resources */,
 				C566428A21F55C8D008C8CC6 /* start _img_logo@3x.png in Resources */,
 				C5E0D1582213C19900C93EC1 /* CCAddressManagerTableViewCell.xib in Resources */,
+				C5A7510A221543860010A183 /* citydict.plist in Resources */,
 				C5F6F92C2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib in Resources */,
 				C5F6F931221500280094DC0E /* CCOwnersCertificationHeaderView.xib in Resources */,
 				C532F53821F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.xib in Resources */,
@@ -2907,6 +2992,8 @@
 				"${BUILT_PRODUCTS_DIR}/LTScrollView/LTScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -2925,6 +3012,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -2948,6 +3037,7 @@
 				C566425121F55C43008C8CC6 /* MDRightIconButton.swift in Sources */,
 				C5E0D17F221414CE00C93EC1 /* CCInvoiceViewController.swift in Sources */,
 				C56641DB21F55C43008C8CC6 /* JYEqualCellSpaceFlowLayout.swift in Sources */,
+				C5A750FB22153A240010A183 /* MCSelectLocalViewModel.swift in Sources */,
 				C566421421F55C43008C8CC6 /* BRAddressPickerView.m in Sources */,
 				C5E0D1792214005900C93EC1 /* CCUserSettingViewController.swift in Sources */,
 				C5E0D18D22141E0000C93EC1 /* CCMyPropertyTableViewCell.swift in Sources */,
@@ -2974,6 +3064,7 @@
 				C5384C372212754C002F9561 /* CCIntegralMallCollectionViewCell.swift in Sources */,
 				C56641CD21F55C43008C8CC6 /* QYTools.swift in Sources */,
 				C566423521F55C43008C8CC6 /* HXPhotoSubViewCell.m in Sources */,
+				C5A750FD22153A240010A183 /* MCSelectLocalController.swift in Sources */,
 				C566424821F55C43008C8CC6 /* FJSQLiteUtils.swift in Sources */,
 				C5F6F930221500280094DC0E /* CCOwnersCertificationHeaderView.swift in Sources */,
 				C56641DE21F55C43008C8CC6 /* HotSearchView.swift in Sources */,
@@ -2996,6 +3087,7 @@
 				C56641CC21F55C43008C8CC6 /* HFWebViewController.swift in Sources */,
 				C566423B21F55C43008C8CC6 /* HXCircleProgressView.m in Sources */,
 				C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */,
+				C5A7510422153A240010A183 /* MCLocalCityGroup.swift in Sources */,
 				C566423821F55C43008C8CC6 /* UIButton+HXExtension.m in Sources */,
 				C5384C3B2212793B002F9561 /* CCIntegralMallHeaderView.swift in Sources */,
 				C56641D121F55C43008C8CC6 /* BaseViewController.swift in Sources */,
@@ -3093,6 +3185,7 @@
 				C56641A921F55C43008C8CC6 /* API.swift in Sources */,
 				C566429D21F55C8D008C8CC6 /* YDMenuDataSource.swift in Sources */,
 				C566425521F55C43008C8CC6 /* CYPasswordView.m in Sources */,
+				C5A751082215431C0010A183 /* MCSearchBar.swift in Sources */,
 				C566420E21F55C43008C8CC6 /* BRStringPickerView.m in Sources */,
 				C56641FD21F55C43008C8CC6 /* NSString+MD5.m in Sources */,
 				C56641F621F55C43008C8CC6 /* UIMenuItem+Category.m in Sources */,
@@ -3109,14 +3202,17 @@
 				C566428B21F55C8D008C8CC6 /* LTLocationViewController.swift in Sources */,
 				C5F6BE3321F71B6C009FACD6 /* CCCarGroupViewController.swift in Sources */,
 				C566425A21F55C43008C8CC6 /* RequestExtension.swift in Sources */,
+				C5A7510322153A240010A183 /* MCLocalButton.swift in Sources */,
 				C5E0D18822141D5A00C93EC1 /* CCMyPropertyViewController.swift in Sources */,
 				C5F6BE2F21F71B15009FACD6 /* CCServiceViewController.swift in Sources */,
+				C5A7510622153F9C0010A183 /* ColorConfiguation.swift in Sources */,
 				C56641FC21F55C43008C8CC6 /* UIColor+Category.m in Sources */,
 				C56641FF21F55C43008C8CC6 /* NSAttributedString+Category.m in Sources */,
 				C566421221F55C43008C8CC6 /* BRAddressModel.m in Sources */,
 				C56641C821F55C43008C8CC6 /* HFThirdPartyManager.swift in Sources */,
 				C566424F21F55C43008C8CC6 /* FJItemCVCell.swift in Sources */,
 				C5FA09BD21FEABE9005AF09C /* CCGroupBuyingViewController.swift in Sources */,
+				C5A750FF22153A240010A183 /* MCLocalModel.swift in Sources */,
 				C566423621F55C43008C8CC6 /* HXAlbumModel.m in Sources */,
 				C5F6BE2821F6FF40009FACD6 /* NSLayoutConstraint+Category.m in Sources */,
 				C5F6BE1F21F6F75A009FACD6 /* CCCarCategoryHeaderView.swift in Sources */,
@@ -3125,20 +3221,24 @@
 				C5E0D1452212B1F100C93EC1 /* CCShoppingCartTableViewCell.swift in Sources */,
 				C5E0D1702213F0BF00C93EC1 /* CCCouponsTableViewCell.swift in Sources */,
 				C532F53121F993ED00AD7ED3 /* CCSendCodePopView.swift in Sources */,
+				C5A750FC22153A240010A183 /* MCCitySearchViewModel.swift in Sources */,
 				C566422621F55C43008C8CC6 /* HXPhotoTools.m in Sources */,
 				C566422D21F55C43008C8CC6 /* UIImage+HXExtension.m in Sources */,
 				C56641E221F55C43008C8CC6 /* Int+Extension.swift in Sources */,
 				C566425C21F55C43008C8CC6 /* MDFlowView.swift in Sources */,
+				C5A7510122153A240010A183 /* MCSelectLocalHeaderView.swift in Sources */,
 				C566423321F55C43008C8CC6 /* HXCustomNavigationController.m in Sources */,
 				C56641E521F55C43008C8CC6 /* MyControl.m in Sources */,
 				C5F6BE3E21F86BD9009FACD6 /* CCRegisterViewController.swift in Sources */,
 				C566421C21F55C43008C8CC6 /* HXDatePhotoPreviewBottomView.m in Sources */,
 				C5F6BE3521F71B97009FACD6 /* CCWelfareViewController.swift in Sources */,
+				C5A750FE22153A240010A183 /* MCLocalRequest.swift in Sources */,
 				C566423C21F55C43008C8CC6 /* HXDateVideoEditViewController.m in Sources */,
 				C5E0D1532213C0C500C93EC1 /* CCAddressManagerViewController.swift in Sources */,
 				C566421821F55C43008C8CC6 /* UIViewController+HXExtension.m in Sources */,
 				C56641C321F55C43008C8CC6 /* HFAppEngine.swift in Sources */,
 				C566422B21F55C43008C8CC6 /* HXDatePhotoViewPresentTransition.m in Sources */,
+				C5A7510022153A240010A183 /* MCSelectLocalHeader.swift in Sources */,
 				C566421921F55C43008C8CC6 /* HXPhotoConfiguration.m in Sources */,
 				C5E0D1572213C19900C93EC1 /* CCAddressManagerTableViewCell.swift in Sources */,
 				C56641DC21F55C43008C8CC6 /* HotSearchController.swift in Sources */,
