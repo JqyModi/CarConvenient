@@ -12,6 +12,13 @@ import QuartzCore
 import Accelerate
 import SnapKit
 
+enum clipCornerDirection :Int {
+    case topLeft  = 0
+    case topRight = 1
+    case bottomLeft = 2
+    case bottomRight = 3
+}
+
 // MARK: - 扩展UIView
 extension UIView {
     
@@ -241,6 +248,52 @@ extension UIView {
         #endif
     }
     
+    //    MARK:图片切圆角 左边
+    /// 指定方向切圆角 - 左边
+    ///
+    /// - Parameters: 参数
+    ///   - radius: 切的幅度
+    ///   - direct: 方向 -
+    ///   - fillColor: 填充色
+    func viewClipCornerDirection(radius:CGFloat,direct:clipCornerDirection,fillColor:UIColor) {
+        
+        //
+        let corners:UIRectCorner = [UIRectCorner.topLeft,UIRectCorner.bottomLeft]
+        
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners:corners, cornerRadii: CGSize(width: radius, height: radius))
+        let layer = CAShapeLayer()
+        layer.frame = bounds
+        layer.path = path.cgPath
+        layer.fillColor = fillColor.cgColor
+        self.layer.addSublayer(layer)
+        self.layer.mask = layer
+        
+        
+    }
+    
+    
+    /// 指定方向切圆角 - 右边
+    ///
+    /// - Parameters:
+    ///   - radius: 切的幅度
+    ///   - direct: 方向
+    ///   - fillColor: 填充色
+    func viewClipCornerDirectionRight(radius:CGFloat,direct:clipCornerDirection,fillColor:UIColor) {
+        
+        //
+        let corners:UIRectCorner = [UIRectCorner.topRight,UIRectCorner.bottomRight]
+        
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners:corners, cornerRadii: CGSize(width: radius, height: radius))
+        let layer = CAShapeLayer()
+        layer.frame = bounds
+        layer.path = path.cgPath
+        layer.fillColor = fillColor.cgColor
+        self.layer.addSublayer(layer)
+        self.layer.mask = layer
+        
+        
+    }
+    
     /// 切圆角 - 需要先设置frame
     ///
     /// - Parameters:参数
@@ -254,6 +307,26 @@ extension UIView {
         layer.fillColor = fillColor.cgColor
         self.layer.addSublayer(layer)
         self.layer.mask = layer
+    }
+    
+    /// 切圆角(设置边角宽度) - 需要先设置frame
+    ///
+    /// - Parameters:
+    ///   - radius: 幅度
+    ///   - fillColor: 填充色 -》无填充色传ClearColor
+    ///   - borderColor: 边角色
+    ///   - borderWidth: 边角宽
+    func viewClipCornerWithBorderColor(radius:CGFloat,fillColor:UIColor,borderColor:UIColor,borderWidth:CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: radius, height: radius))
+        let layer = CAShapeLayer()
+        layer.frame = bounds
+        layer.path = path.cgPath
+        layer.lineCap = kCALineCapSquare
+        layer.fillColor = fillColor.cgColor
+        layer.strokeColor = borderColor.cgColor
+        layer.lineWidth = borderWidth
+        self.layer.addSublayer(layer)
+        //        self.layer.mask = layer
     }
     
 }

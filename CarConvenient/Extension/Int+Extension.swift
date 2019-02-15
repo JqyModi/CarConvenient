@@ -52,7 +52,10 @@ extension Int {
         }
     }
     
-    
+    static func random(from: Int, to: Int) -> Int {
+        let temp = to - from + 1
+        return from + (Int(arc4random()) % temp)
+    }
 }
 extension Array {
     static func strWithString(str: String) {

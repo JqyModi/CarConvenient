@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0eV-D7-CAR" customClass="CCWelfareSigninCollectionViewCell" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTX-57-GUC">
+                        <rect key="frame" x="33.5" y="23.5" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="TLs-jA-mVJ"/>
+                            <constraint firstAttribute="height" constant="33" id="gDb-cX-rdK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-91-PSr">
+                        <rect key="frame" x="0.0" y="64.5" width="100" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NdF-91-PSr" firstAttribute="top" secondItem="BTX-57-GUC" secondAttribute="bottom" constant="8" id="4tC-xi-2tr"/>
+                <constraint firstItem="BTX-57-GUC" firstAttribute="centerY" secondItem="0eV-D7-CAR" secondAttribute="centerY" constant="-10" id="ClM-Kv-G3V"/>
+                <constraint firstAttribute="trailing" secondItem="NdF-91-PSr" secondAttribute="trailing" id="M2G-XA-sKq"/>
+                <constraint firstItem="NdF-91-PSr" firstAttribute="leading" secondItem="0eV-D7-CAR" secondAttribute="leading" id="dQg-9m-oz6"/>
+                <constraint firstItem="NdF-91-PSr" firstAttribute="centerX" secondItem="BTX-57-GUC" secondAttribute="centerX" id="pzo-ZQ-DIx"/>
+                <constraint firstItem="BTX-57-GUC" firstAttribute="centerX" secondItem="0eV-D7-CAR" secondAttribute="centerX" id="tgv-e0-aXv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eg0-dk-mi3"/>
+            <connections>
+                <outlet property="xib_image" destination="BTX-57-GUC" id="iPZ-vj-YPH"/>
+                <outlet property="xib_title" destination="NdF-91-PSr" id="qra-Gi-OID"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </collectionViewCell>
+    </objects>
+</document>
