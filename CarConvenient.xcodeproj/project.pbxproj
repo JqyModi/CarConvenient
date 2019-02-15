@@ -22,6 +22,9 @@
 		C52AB5D72216BCA80031A550 /* CCMyTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52AB5D52216BCA80031A550 /* CCMyTeamTableViewCell.xib */; };
 		C52AB5DA2216BECC0031A550 /* CCGroupDiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5D92216BECC0031A550 /* CCGroupDiscountViewController.swift */; };
 		C52AB5DD2216C3880031A550 /* CCTeamRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5DC2216C3880031A550 /* CCTeamRuleViewController.swift */; };
+		C52AB5E02216C6A40031A550 /* CCExchangeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5DF2216C6A40031A550 /* CCExchangeRecordViewController.swift */; };
+		C52AB5E42216C6BF0031A550 /* CCExchangeRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5E22216C6BF0031A550 /* CCExchangeRecordTableViewCell.swift */; };
+		C52AB5E52216C6BF0031A550 /* CCExchangeRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52AB5E32216C6BF0031A550 /* CCExchangeRecordTableViewCell.xib */; };
 		C5306AF921FF069E00B82697 /* CCBargainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5306AF821FF069E00B82697 /* CCBargainViewController.xib */; };
 		C532F52E21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532F52C21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift */; };
 		C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C532F52D21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib */; };
@@ -436,6 +439,9 @@
 		C52AB5D52216BCA80031A550 /* CCMyTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyTeamTableViewCell.xib; sourceTree = "<group>"; };
 		C52AB5D92216BECC0031A550 /* CCGroupDiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGroupDiscountViewController.swift; sourceTree = "<group>"; };
 		C52AB5DC2216C3880031A550 /* CCTeamRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTeamRuleViewController.swift; sourceTree = "<group>"; };
+		C52AB5DF2216C6A40031A550 /* CCExchangeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExchangeRecordViewController.swift; sourceTree = "<group>"; };
+		C52AB5E22216C6BF0031A550 /* CCExchangeRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExchangeRecordTableViewCell.swift; sourceTree = "<group>"; };
+		C52AB5E32216C6BF0031A550 /* CCExchangeRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCExchangeRecordTableViewCell.xib; sourceTree = "<group>"; };
 		C5306AF821FF069E00B82697 /* CCBargainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBargainViewController.xib; sourceTree = "<group>"; };
 		C532F52C21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		C532F52D21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCForgetPasswordViewController.xib; sourceTree = "<group>"; };
@@ -1008,6 +1014,24 @@
 			path = "TeamRule(成团规则)";
 			sourceTree = "<group>";
 		};
+		C52AB5DE2216C64F0031A550 /* ExchangeRecord(兑换记录) */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5E12216C6A70031A550 /* Cell */,
+				C52AB5DF2216C6A40031A550 /* CCExchangeRecordViewController.swift */,
+			);
+			path = "ExchangeRecord(兑换记录)";
+			sourceTree = "<group>";
+		};
+		C52AB5E12216C6A70031A550 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5E22216C6BF0031A550 /* CCExchangeRecordTableViewCell.swift */,
+				C52AB5E32216C6BF0031A550 /* CCExchangeRecordTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C532F52B21F98C4900AD7ED3 /* ForgetPassword(忘记密码) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1077,6 +1101,7 @@
 		C5384C3122127480002F9561 /* IntegralMall(积分商城) */ = {
 			isa = PBXGroup;
 			children = (
+				C52AB5DE2216C64F0031A550 /* ExchangeRecord(兑换记录) */,
 				C5384C392212791B002F9561 /* View */,
 				C5384C3422127522002F9561 /* Cell */,
 				C5384C3222127516002F9561 /* CCIntegralMallViewController.swift */,
@@ -2975,6 +3000,7 @@
 				C5E0D1462212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib in Resources */,
 				C566428921F55C8D008C8CC6 /* start _img_logo.png in Resources */,
 				C56641CF21F55C43008C8CC6 /* project_intro.css in Resources */,
+				C52AB5E52216C6BF0031A550 /* CCExchangeRecordTableViewCell.xib in Resources */,
 				C5E0D1622213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib in Resources */,
 				C566429E21F55C8D008C8CC6 /* MenuData.plist in Resources */,
 				C566428821F55C8D008C8CC6 /* start _img_logo@2x.png in Resources */,
@@ -3349,11 +3375,13 @@
 				C56641E821F55C43008C8CC6 /* NSArray+Category.m in Sources */,
 				C566420C21F55C43008C8CC6 /* UserDefault+Extension.swift in Sources */,
 				C566424321F55C43008C8CC6 /* FJAddressModel.swift in Sources */,
+				C52AB5E02216C6A40031A550 /* CCExchangeRecordViewController.swift in Sources */,
 				C566429321F55C8D008C8CC6 /* FCSearchHouseUModel.swift in Sources */,
 				C56641F021F55C43008C8CC6 /* NSObject+PerformBlock.m in Sources */,
 				C56641EE21F55C43008C8CC6 /* NSData+CommonCryptor.m in Sources */,
 				C56641A721F55C43008C8CC6 /* HFEngineConfiguration.swift in Sources */,
 				C566420021F55C43008C8CC6 /* NSMutableArray+Category.m in Sources */,
+				C52AB5E42216C6BF0031A550 /* CCExchangeRecordTableViewCell.swift in Sources */,
 				C56641D421F55C43008C8CC6 /* BaseTableViewController.swift in Sources */,
 				C5FA09CD21FEE0E9005AF09C /* CCCarCategoryDetailHeaderView.swift in Sources */,
 				C566420D21F55C43008C8CC6 /* Temp.swift in Sources */,

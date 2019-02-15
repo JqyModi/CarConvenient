@@ -14,6 +14,7 @@ class CCTeamRuleViewController: BaseViewController {
         super.viewDidLoad()
 
         title = "成团规则"
+        view.backgroundColor = UIColor.white
     }
 
 }

@@ -55,12 +55,22 @@
                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwE-dt-6W3">
+                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                    <connections>
+                                        <action selector="btn_DidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="jOa-ld-xCr"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="NwE-dt-6W3" firstAttribute="top" secondItem="e83-Th-wxw" secondAttribute="top" id="NuC-R8-PVe"/>
                                 <constraint firstItem="jem-8M-n9G" firstAttribute="centerX" secondItem="e83-Th-wxw" secondAttribute="centerX" constant="20" id="TBu-AV-pmz"/>
+                                <constraint firstAttribute="bottom" secondItem="NwE-dt-6W3" secondAttribute="bottom" id="UV8-RO-39L"/>
+                                <constraint firstItem="NwE-dt-6W3" firstAttribute="leading" secondItem="e83-Th-wxw" secondAttribute="leading" id="WYI-rW-yab"/>
                                 <constraint firstItem="x2l-0x-nEP" firstAttribute="centerY" secondItem="jem-8M-n9G" secondAttribute="centerY" id="ZMa-kD-iQE"/>
                                 <constraint firstItem="jem-8M-n9G" firstAttribute="leading" secondItem="x2l-0x-nEP" secondAttribute="trailing" constant="8" id="pU7-Im-qEg"/>
+                                <constraint firstAttribute="trailing" secondItem="NwE-dt-6W3" secondAttribute="trailing" id="uea-cB-J3h"/>
                                 <constraint firstItem="jem-8M-n9G" firstAttribute="centerY" secondItem="e83-Th-wxw" secondAttribute="centerY" id="vJH-3I-vj3"/>
                             </constraints>
                         </view>
