@@ -11,7 +11,15 @@ import UIKit
 private let menuIdentifier = "CCWelfareMenuCollectionViewCell"
 private let signinIdentifier = "CCWelfareSigninCollectionViewCell"
 
+@objc protocol CCWelfareHeaderViewDelegate {
+    func menuItemDidSelected(_ index: Int)
+    @objc optional func prizeDidSelected()
+    @objc optional func ruleDidSelected()
+}
+
 class CCWelfareHeaderView: BaseView {
+    
+    var delegate: CCWelfareHeaderViewDelegate?
     
     /// 菜单数据源
     private var signinDataSources: [[String: String]] = {
@@ -88,6 +96,15 @@ class CCWelfareHeaderView: BaseView {
         // Initialization code
     }
     
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        if let b = delegate {
+            if sender.tag == 10001 {
+                b.prizeDidSelected!()
+            }else {
+                b.ruleDidSelected!()
+            }
+        }
+    }
 }
 // MARK: - 抽奖UI设置、delegate
 extension CCWelfareHeaderView: ZXDrawPrizeDataSource, ZXDrawPrizeDelegate {
@@ -182,7 +199,9 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == menuCollectionView {
-            
+            if let b = delegate {
+                b.menuItemDidSelected(indexPath.row)
+            }
         }else if collectionView == signinCollectionView {
             
             /// 标记第一个正常

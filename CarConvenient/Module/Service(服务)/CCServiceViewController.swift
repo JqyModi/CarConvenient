@@ -27,7 +27,7 @@ class CCServiceViewController: BaseCollectionViewController {
 
     lazy var titlePic : UIImageView = {
         let imge = UIImageView()
-        imge.image = UIImage(named: "icon_name_login_n")
+        imge.image = UIImage(named: "icon_name_n-1")
         return imge
     }()
     

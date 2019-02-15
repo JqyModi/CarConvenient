@@ -12,6 +12,16 @@
 		C52A0D8821FFF4C80017D113 /* CCPersonalCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52A0D8621FFF4C80017D113 /* CCPersonalCenterViewController.xib */; };
 		C52A0D8B220033920017D113 /* CCPersonalCenterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52A0D8A220033920017D113 /* CCPersonalCenterHeaderView.swift */; };
 		C52A0D8D2200339B0017D113 /* CCPersonalCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52A0D8C2200339B0017D113 /* CCPersonalCenterHeaderView.xib */; };
+		C52AB5C82216AE7F0031A550 /* CCPrizesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52AB5C52216AE7F0031A550 /* CCPrizesTableViewCell.xib */; };
+		C52AB5C92216AE7F0031A550 /* CCPrizesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5C62216AE7F0031A550 /* CCPrizesTableViewCell.swift */; };
+		C52AB5CA2216AE7F0031A550 /* CCPrizesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5C72216AE7F0031A550 /* CCPrizesViewController.swift */; };
+		C52AB5CE2216B58E0031A550 /* CCInvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5CC2216B58E0031A550 /* CCInvitationViewController.swift */; };
+		C52AB5CF2216B58E0031A550 /* CCInvitationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52AB5CD2216B58E0031A550 /* CCInvitationViewController.xib */; };
+		C52AB5D22216B5C50031A550 /* CCMyTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5D12216B5C50031A550 /* CCMyTeamViewController.swift */; };
+		C52AB5D62216BCA80031A550 /* CCMyTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5D42216BCA80031A550 /* CCMyTeamTableViewCell.swift */; };
+		C52AB5D72216BCA80031A550 /* CCMyTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52AB5D52216BCA80031A550 /* CCMyTeamTableViewCell.xib */; };
+		C52AB5DA2216BECC0031A550 /* CCGroupDiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5D92216BECC0031A550 /* CCGroupDiscountViewController.swift */; };
+		C52AB5DD2216C3880031A550 /* CCTeamRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52AB5DC2216C3880031A550 /* CCTeamRuleViewController.swift */; };
 		C5306AF921FF069E00B82697 /* CCBargainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5306AF821FF069E00B82697 /* CCBargainViewController.xib */; };
 		C532F52E21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532F52C21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift */; };
 		C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C532F52D21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib */; };
@@ -278,12 +288,6 @@
 		C5A75114221566490010A183 /* CCMessageOutSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A75113221566490010A183 /* CCMessageOutSideViewController.swift */; };
 		C5A75118221574C30010A183 /* ZXSectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A75116221574C30010A183 /* ZXSectorModel.swift */; };
 		C5A75119221574C30010A183 /* ZXDrawPrizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A75117221574C30010A183 /* ZXDrawPrizeView.swift */; };
-		C5A75123221574E50010A183 /* ZAPointsLotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7511B221574E50010A183 /* ZAPointsLotteryViewController.swift */; };
-		C5A75124221574E50010A183 /* ZALotteryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7511D221574E50010A183 /* ZALotteryTableViewCell.swift */; };
-		C5A75125221574E50010A183 /* ZALotteryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A7511E221574E50010A183 /* ZALotteryTableViewCell.xib */; };
-		C5A75126221574E50010A183 /* ZALotteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A75120221574E50010A183 /* ZALotteryModel.swift */; };
-		C5A75127221574E50010A183 /* ZADrawLotteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A75121221574E50010A183 /* ZADrawLotteryModel.swift */; };
-		C5A75128221574E50010A183 /* ZAPointsLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A75122221574E50010A183 /* ZAPointsLotteryViewController.xib */; };
 		C5A7512C22164BB00010A183 /* CCWelfareHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7512A22164BB00010A183 /* CCWelfareHeaderView.swift */; };
 		C5A7512D22164BB00010A183 /* CCWelfareHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A7512B22164BB00010A183 /* CCWelfareHeaderView.xib */; };
 		C5A7513122165A480010A183 /* CCWelfareMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7512F22165A480010A183 /* CCWelfareMenuCollectionViewCell.swift */; };
@@ -422,6 +426,16 @@
 		C52A0D8621FFF4C80017D113 /* CCPersonalCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterViewController.xib; sourceTree = "<group>"; };
 		C52A0D8A220033920017D113 /* CCPersonalCenterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterHeaderView.swift; sourceTree = "<group>"; };
 		C52A0D8C2200339B0017D113 /* CCPersonalCenterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterHeaderView.xib; sourceTree = "<group>"; };
+		C52AB5C52216AE7F0031A550 /* CCPrizesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPrizesTableViewCell.xib; sourceTree = "<group>"; };
+		C52AB5C62216AE7F0031A550 /* CCPrizesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPrizesTableViewCell.swift; sourceTree = "<group>"; };
+		C52AB5C72216AE7F0031A550 /* CCPrizesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPrizesViewController.swift; sourceTree = "<group>"; };
+		C52AB5CC2216B58E0031A550 /* CCInvitationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCInvitationViewController.swift; sourceTree = "<group>"; };
+		C52AB5CD2216B58E0031A550 /* CCInvitationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCInvitationViewController.xib; sourceTree = "<group>"; };
+		C52AB5D12216B5C50031A550 /* CCMyTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyTeamViewController.swift; sourceTree = "<group>"; };
+		C52AB5D42216BCA80031A550 /* CCMyTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMyTeamTableViewCell.swift; sourceTree = "<group>"; };
+		C52AB5D52216BCA80031A550 /* CCMyTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCMyTeamTableViewCell.xib; sourceTree = "<group>"; };
+		C52AB5D92216BECC0031A550 /* CCGroupDiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGroupDiscountViewController.swift; sourceTree = "<group>"; };
+		C52AB5DC2216C3880031A550 /* CCTeamRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTeamRuleViewController.swift; sourceTree = "<group>"; };
 		C5306AF821FF069E00B82697 /* CCBargainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBargainViewController.xib; sourceTree = "<group>"; };
 		C532F52C21F98C8400AD7ED3 /* CCForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		C532F52D21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCForgetPasswordViewController.xib; sourceTree = "<group>"; };
@@ -783,12 +797,6 @@
 		C5A75113221566490010A183 /* CCMessageOutSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMessageOutSideViewController.swift; sourceTree = "<group>"; };
 		C5A75116221574C30010A183 /* ZXSectorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXSectorModel.swift; sourceTree = "<group>"; };
 		C5A75117221574C30010A183 /* ZXDrawPrizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXDrawPrizeView.swift; sourceTree = "<group>"; };
-		C5A7511B221574E50010A183 /* ZAPointsLotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAPointsLotteryViewController.swift; sourceTree = "<group>"; };
-		C5A7511D221574E50010A183 /* ZALotteryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZALotteryTableViewCell.swift; sourceTree = "<group>"; };
-		C5A7511E221574E50010A183 /* ZALotteryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZALotteryTableViewCell.xib; sourceTree = "<group>"; };
-		C5A75120221574E50010A183 /* ZALotteryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZALotteryModel.swift; sourceTree = "<group>"; };
-		C5A75121221574E50010A183 /* ZADrawLotteryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZADrawLotteryModel.swift; sourceTree = "<group>"; };
-		C5A75122221574E50010A183 /* ZAPointsLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZAPointsLotteryViewController.xib; sourceTree = "<group>"; };
 		C5A7512A22164BB00010A183 /* CCWelfareHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWelfareHeaderView.swift; sourceTree = "<group>"; };
 		C5A7512B22164BB00010A183 /* CCWelfareHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCWelfareHeaderView.xib; sourceTree = "<group>"; };
 		C5A7512F22165A480010A183 /* CCWelfareMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWelfareMenuCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -934,6 +942,70 @@
 				C52A0D8C2200339B0017D113 /* CCPersonalCenterHeaderView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C52AB5C32216AE7F0031A550 /* Prizes(奖品) */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5C42216AE7F0031A550 /* Cell */,
+				C52AB5C72216AE7F0031A550 /* CCPrizesViewController.swift */,
+			);
+			path = "Prizes(奖品)";
+			sourceTree = "<group>";
+		};
+		C52AB5C42216AE7F0031A550 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5C52216AE7F0031A550 /* CCPrizesTableViewCell.xib */,
+				C52AB5C62216AE7F0031A550 /* CCPrizesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C52AB5CB2216B5330031A550 /* Invitation(邀请成团) */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5CC2216B58E0031A550 /* CCInvitationViewController.swift */,
+				C52AB5CD2216B58E0031A550 /* CCInvitationViewController.xib */,
+			);
+			path = "Invitation(邀请成团)";
+			sourceTree = "<group>";
+		};
+		C52AB5D02216B5910031A550 /* MyTeam(我的团队) */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5D32216B6860031A550 /* Cell */,
+				C52AB5D12216B5C50031A550 /* CCMyTeamViewController.swift */,
+			);
+			path = "MyTeam(我的团队)";
+			sourceTree = "<group>";
+		};
+		C52AB5D32216B6860031A550 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5D42216BCA80031A550 /* CCMyTeamTableViewCell.swift */,
+				C52AB5D52216BCA80031A550 /* CCMyTeamTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C52AB5D82216BE8C0031A550 /* GroupDiscount(优惠团) */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5DB2216C3570031A550 /* TeamRule(成团规则) */,
+				C52AB5D02216B5910031A550 /* MyTeam(我的团队) */,
+				C52AB5CB2216B5330031A550 /* Invitation(邀请成团) */,
+				C52AB5D92216BECC0031A550 /* CCGroupDiscountViewController.swift */,
+			);
+			path = "GroupDiscount(优惠团)";
+			sourceTree = "<group>";
+		};
+		C52AB5DB2216C3570031A550 /* TeamRule(成团规则) */ = {
+			isa = PBXGroup;
+			children = (
+				C52AB5DC2216C3880031A550 /* CCTeamRuleViewController.swift */,
+			);
+			path = "TeamRule(成团规则)";
 			sourceTree = "<group>";
 		};
 		C532F52B21F98C4900AD7ED3 /* ForgetPassword(忘记密码) */ = {
@@ -1947,7 +2019,8 @@
 		C56642AA21F57B90008C8CC6 /* Welfare(福利) */ = {
 			isa = PBXGroup;
 			children = (
-				C5A7511A221574E50010A183 /* PointsLotteryControl(积分抽奖) */,
+				C52AB5D82216BE8C0031A550 /* GroupDiscount(优惠团) */,
+				C52AB5C32216AE7F0031A550 /* Prizes(奖品) */,
 				C5F6BE1821F6B8CB009FACD6 /* InviteCode(邀请码) */,
 				C5F6BE3421F71B97009FACD6 /* CCWelfareViewController.swift */,
 				C5A7512922164B8F0010A183 /* View */,
@@ -2124,35 +2197,6 @@
 				C5A75117221574C30010A183 /* ZXDrawPrizeView.swift */,
 			);
 			path = ZXDrawPrize;
-			sourceTree = "<group>";
-		};
-		C5A7511A221574E50010A183 /* PointsLotteryControl(积分抽奖) */ = {
-			isa = PBXGroup;
-			children = (
-				C5A7511B221574E50010A183 /* ZAPointsLotteryViewController.swift */,
-				C5A75122221574E50010A183 /* ZAPointsLotteryViewController.xib */,
-				C5A7511C221574E50010A183 /* Cell */,
-				C5A7511F221574E50010A183 /* Model */,
-			);
-			path = "PointsLotteryControl(积分抽奖)";
-			sourceTree = "<group>";
-		};
-		C5A7511C221574E50010A183 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C5A7511D221574E50010A183 /* ZALotteryTableViewCell.swift */,
-				C5A7511E221574E50010A183 /* ZALotteryTableViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		C5A7511F221574E50010A183 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C5A75120221574E50010A183 /* ZALotteryModel.swift */,
-				C5A75121221574E50010A183 /* ZADrawLotteryModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C5A7512922164B8F0010A183 /* View */ = {
@@ -2919,6 +2963,7 @@
 				C56641DD21F55C43008C8CC6 /* 1.plist in Resources */,
 				C5384C2B22125A33002F9561 /* CCBalanceRechargeViewController.xib in Resources */,
 				C5E0D1502213B6BD00C93EC1 /* CCConfirmOrderHeaderView.xib in Resources */,
+				C52AB5D72216BCA80031A550 /* CCMyTeamTableViewCell.xib in Resources */,
 				C5A750E3221513940010A183 /* CCVehicleRecordsTypeTwoBtnTableViewCell.xib in Resources */,
 				C5F6F9272214FA790094DC0E /* CCOwnersCertificationViewController.xib in Resources */,
 				C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */,
@@ -2956,7 +3001,7 @@
 				C5F6BE2D21F714FC009FACD6 /* CCCarCategoryHeaderCollectionViewCell.xib in Resources */,
 				C566404021F5579D008C8CC6 /* LaunchScreen.storyboard in Resources */,
 				C566429121F55C8D008C8CC6 /* LTCommentViewController.xib in Resources */,
-				C5A75125221574E50010A183 /* ZALotteryTableViewCell.xib in Resources */,
+				C52AB5C82216AE7F0031A550 /* CCPrizesTableViewCell.xib in Resources */,
 				C5306AF921FF069E00B82697 /* CCBargainViewController.xib in Resources */,
 				C566425B21F55C43008C8CC6 /* MDFlowView.xib in Resources */,
 				C5E0D17D2214060F00C93EC1 /* usersetting.plist in Resources */,
@@ -2980,9 +3025,9 @@
 				C5A7513622165A620010A183 /* CCWelfareSigninCollectionViewCell.xib in Resources */,
 				C5384C212211957E002F9561 /* myWallet.plist in Resources */,
 				C5A7512D22164BB00010A183 /* CCWelfareHeaderView.xib in Resources */,
-				C5A75128221574E50010A183 /* ZAPointsLotteryViewController.xib in Resources */,
 				C566403D21F5579D008C8CC6 /* Assets.xcassets in Resources */,
 				C5A7513222165A480010A183 /* CCWelfareMenuCollectionViewCell.xib in Resources */,
+				C52AB5CF2216B58E0031A550 /* CCInvitationViewController.xib in Resources */,
 				C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */,
 				C5FA096421FD5E21005AF09C /* CCCarTypeTableViewCell.xib in Resources */,
 				C566423D21F55C43008C8CC6 /* HXPhotoPicker.bundle in Resources */,
@@ -3194,6 +3239,7 @@
 				C566429B21F55C8D008C8CC6 /* LTLocationBottomView.swift in Sources */,
 				C56641EA21F55C43008C8CC6 /* NSString+Safe.m in Sources */,
 				C56641A621F55C43008C8CC6 /* AppConfiguration.swift in Sources */,
+				C52AB5D22216B5C50031A550 /* CCMyTeamViewController.swift in Sources */,
 				C5FA09DB21FEE9DC005AF09C /* CCBargainFooterView.swift in Sources */,
 				C566420121F55C43008C8CC6 /* HPYStarView.swift in Sources */,
 				C5FA096221FD5E21005AF09C /* CCCarTypeTableViewCell.swift in Sources */,
@@ -3223,6 +3269,7 @@
 				C56641F121F55C43008C8CC6 /* UIViewController+DDPopUpViewController.m in Sources */,
 				C566421621F55C43008C8CC6 /* SLPasswordInputView.m in Sources */,
 				C566423221F55C43008C8CC6 /* NSDate+HXExtension.m in Sources */,
+				C52AB5C92216AE7F0031A550 /* CCPrizesTableViewCell.swift in Sources */,
 				C566421F21F55C43008C8CC6 /* UIImageView+HXExtension.m in Sources */,
 				C56641ED21F55C43008C8CC6 /* UIView+Category.m in Sources */,
 				C566424121F55C43008C8CC6 /* MDBaseObject.swift in Sources */,
@@ -3234,7 +3281,9 @@
 				C56641CC21F55C43008C8CC6 /* HFWebViewController.swift in Sources */,
 				C566423B21F55C43008C8CC6 /* HXCircleProgressView.m in Sources */,
 				C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */,
+				C52AB5CE2216B58E0031A550 /* CCInvitationViewController.swift in Sources */,
 				C5A7510422153A240010A183 /* MCLocalCityGroup.swift in Sources */,
+				C52AB5DD2216C3880031A550 /* CCTeamRuleViewController.swift in Sources */,
 				C566423821F55C43008C8CC6 /* UIButton+HXExtension.m in Sources */,
 				C5384C3B2212793B002F9561 /* CCIntegralMallHeaderView.swift in Sources */,
 				C56641D121F55C43008C8CC6 /* BaseViewController.swift in Sources */,
@@ -3244,7 +3293,6 @@
 				C566422721F55C43008C8CC6 /* HXDatePhotoPreviewViewController.m in Sources */,
 				C566403821F5579B008C8CC6 /* ViewController.swift in Sources */,
 				C566421521F55C43008C8CC6 /* UIImage+SLAdd.m in Sources */,
-				C5A75127221574E50010A183 /* ZADrawLotteryModel.swift in Sources */,
 				C5E0D1832214166E00C93EC1 /* CCInvoiceTableViewCell.swift in Sources */,
 				C566420221F55C43008C8CC6 /* ZYStarRateView.swift in Sources */,
 				C566423421F55C43008C8CC6 /* HXDatePhotoViewTransition.m in Sources */,
@@ -3332,7 +3380,6 @@
 				C5FA096021FD5E21005AF09C /* CCCarTypeCollectionViewCell.swift in Sources */,
 				C5FA096321FD5E21005AF09C /* CCCarTypeDetailTableViewCell.swift in Sources */,
 				C56641A921F55C43008C8CC6 /* API.swift in Sources */,
-				C5A75124221574E50010A183 /* ZALotteryTableViewCell.swift in Sources */,
 				C566429D21F55C8D008C8CC6 /* YDMenuDataSource.swift in Sources */,
 				C566425521F55C43008C8CC6 /* CYPasswordView.m in Sources */,
 				C5A751082215431C0010A183 /* MCSearchBar.swift in Sources */,
@@ -3343,7 +3390,6 @@
 				C5E0D14A2213B29A00C93EC1 /* CCConfirmOrderViewController.swift in Sources */,
 				C5FA09D521FEE3D0005AF09C /* CCBargainTableViewCell.swift in Sources */,
 				C56641E021F55C43008C8CC6 /* UIFont+Extension.swift in Sources */,
-				C5A75123221574E50010A183 /* ZAPointsLotteryViewController.swift in Sources */,
 				C5A75118221574C30010A183 /* ZXSectorModel.swift in Sources */,
 				C566429621F55C8D008C8CC6 /* MDTaoPasswordParseModel.swift in Sources */,
 				C52A0D8721FFF4C80017D113 /* CCPersonalCenterViewController.swift in Sources */,
@@ -3362,6 +3408,7 @@
 				C56641FF21F55C43008C8CC6 /* NSAttributedString+Category.m in Sources */,
 				C566421221F55C43008C8CC6 /* BRAddressModel.m in Sources */,
 				C56641C821F55C43008C8CC6 /* HFThirdPartyManager.swift in Sources */,
+				C52AB5DA2216BECC0031A550 /* CCGroupDiscountViewController.swift in Sources */,
 				C566424F21F55C43008C8CC6 /* FJItemCVCell.swift in Sources */,
 				C5FA09BD21FEABE9005AF09C /* CCGroupBuyingViewController.swift in Sources */,
 				C5A750FF22153A240010A183 /* MCLocalModel.swift in Sources */,
@@ -3397,11 +3444,13 @@
 				C5E0D1572213C19900C93EC1 /* CCAddressManagerTableViewCell.swift in Sources */,
 				C56641DC21F55C43008C8CC6 /* HotSearchController.swift in Sources */,
 				C566421121F55C43008C8CC6 /* BRBaseView.m in Sources */,
+				C52AB5CA2216AE7F0031A550 /* CCPrizesViewController.swift in Sources */,
 				C566422021F55C43008C8CC6 /* UIFont+HXExtension.m in Sources */,
 				C566421A21F55C43008C8CC6 /* HXDownloadProgressView.m in Sources */,
 				DEA68AD52213BAB000EAEE9B /* STServiceCCell.swift in Sources */,
 				C56641E621F55C43008C8CC6 /* UIButton+Category.m in Sources */,
 				C566428D21F55C8D008C8CC6 /* MDWebViewController.swift in Sources */,
+				C52AB5D62216BCA80031A550 /* CCMyTeamTableViewCell.swift in Sources */,
 				C56641C421F55C43008C8CC6 /* MDHorizontalCircleMenuView.swift in Sources */,
 				C52A0D8B220033920017D113 /* CCPersonalCenterHeaderView.swift in Sources */,
 				C56641CB21F55C43008C8CC6 /* HFImagePickerManager.swift in Sources */,
@@ -3436,7 +3485,6 @@
 				C566429921F55C8D008C8CC6 /* CommonDataCent.swift in Sources */,
 				C5A751392216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.swift in Sources */,
 				C566421021F55C43008C8CC6 /* BRDatePickerView.m in Sources */,
-				C5A75126221574E50010A183 /* ZALotteryModel.swift in Sources */,
 				C56641A821F55C43008C8CC6 /* Macro.swift in Sources */,
 				C56641D021F55C43008C8CC6 /* BaseCollectionViewController.swift in Sources */,
 				C566422E21F55C43008C8CC6 /* HXCustomCollectionReusableView.m in Sources */,

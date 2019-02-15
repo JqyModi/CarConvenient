@@ -37,12 +37,13 @@ class CCBillingDetailOutSideViewController: BaseViewController {
         layout.lrMargin = lrMargin
         layout.lrMargin = 8
         layout.isAverage = true
+        layout.showsHorizontalScrollIndicator = false
         return layout
     }()
     
     private lazy var pageView: LTPageView = {
         let statusBarH = UIApplication.shared.statusBarFrame.size.height
-        let tabbarH: CGFloat = 44
+        let tabbarH: CGFloat = 0
         let Y: CGFloat = statusBarH + 44 + tabbarH
         let H: CGFloat = IPHONEX ? (SCREEN_HEIGHT - Y - 34) : (SCREEN_HEIGHT - Y)
         let pageView = LTPageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: H), currentViewController: self, viewControllers: viewControllers, titles: titles, layout: layout)
