@@ -2047,8 +2047,8 @@
 				C52AB5D82216BE8C0031A550 /* GroupDiscount(优惠团) */,
 				C52AB5C32216AE7F0031A550 /* Prizes(奖品) */,
 				C5F6BE1821F6B8CB009FACD6 /* InviteCode(邀请码) */,
-				C5F6BE3421F71B97009FACD6 /* CCWelfareViewController.swift */,
 				C5A7512922164B8F0010A183 /* View */,
+				C5F6BE3421F71B97009FACD6 /* CCWelfareViewController.swift */,
 			);
 			path = "Welfare(福利)";
 			sourceTree = "<group>";

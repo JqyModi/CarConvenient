@@ -10,6 +10,7 @@ import UIKit
 
 class CCWelfareHeaderSigninCollectionViewBgView: BaseView {
 
+    /// 起点
     lazy var leftPoint: CGPoint = {
         let x = (self.width/7)/2
         let y = (self.height)/2 - 10
@@ -17,6 +18,7 @@ class CCWelfareHeaderSigninCollectionViewBgView: BaseView {
         return leftPoint
     }()
     
+    /// 终点
     lazy var rightPoint: CGPoint = {
         let x = (self.width/7)/2
         let y = (self.height)/2 - 10
@@ -25,15 +27,12 @@ class CCWelfareHeaderSigninCollectionViewBgView: BaseView {
         return rightPoint
     }()
     
-    lazy var normalColor: UIColor = {
-        let c = UIColor(rgba: "#DDDDDD")
-        return c
-    }()
+    /// 正常色
+    lazy var normalColor: UIColor = UIColor(rgba: "#DDDDDD")
     
+    /// 高亮线段终点
     var rightDot: CGPoint = .zero {
         didSet {
-            self.rightPoint = rightDot
-            self.normalColor = UIColor(rgba: "#FFA118")
             self.highLightLine = true
             // 刷新view
             setNeedsDisplay()
@@ -42,13 +41,8 @@ class CCWelfareHeaderSigninCollectionViewBgView: BaseView {
     
     /// 是否绘制高亮线段
     private var highLightLine: Bool = false
-    
-    var lineColor: UIColor = UIColor(rgba: "#DDDDDD") {
-        didSet {
-            self.normalColor = lineColor
-        }
-    }
-    
+    /// 高亮色
+    var lineColor: UIColor = UIColor(rgba: "#FFA118")
     /// 线宽
     var lineWidth: CGFloat = 2
     
@@ -70,19 +64,19 @@ class CCWelfareHeaderSigninCollectionViewBgView: BaseView {
         
         // 是否绘制黄色线段
         if highLightLine {
-            drawSelectedLine()
+            drawSelectedLine(context: context)
         }
     }
     
-    private func drawSelectedLine() {
-        let context = UIGraphicsGetCurrentContext()
+    private func drawSelectedLine(context: CGContext?) {
+//        let context = UIGraphicsGetCurrentContext()
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(lineWidth)
         context?.setAllowsAntialiasing(true)
-        context?.setStrokeColor(normalColor.cgColor)
+        context?.setStrokeColor(lineColor.cgColor)
         context?.beginPath()
         context?.move(to: leftPoint)
-        context?.addLine(to: rightPoint)
+        context?.addLine(to: rightDot)
         context?.strokePath()
     }
     

@@ -67,6 +67,16 @@ class CCWelfareHeaderView: BaseView {
             bgv.frame = signinCollectionView.frame
             bgv.backgroundColor = UIColor(rgba: "#FFFDEF")
             signinCollectionView.backgroundView = bgv
+            
+            // 绘制已经签到的背景线段
+            var firstNormalCellIndex = -1
+            for i in 0..<signinDataSources.count {
+                if signinDataSources[i]["status"] == "0" {
+                    firstNormalCellIndex = i-1
+                    self.drawLine(index: firstNormalCellIndex)
+                    break
+                }
+            }
         }
     }
     
@@ -216,11 +226,7 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
                 signinDataSources[indexPath.row]["status"] = "1"
                 collectionView.reloadItems(at: [indexPath])
                 
-                let x = (collectionView.width/CGFloat(signinDataSources.count))/2
-                let y = (collectionView.height)/2 - 10
-                let x1 = CGFloat(indexPath.row)*(collectionView.width/CGFloat(signinDataSources.count)) + x
-                let rightPoint = CGPoint(x: x1, y: y)
-                signinCollectionViewBgView.rightDot = rightPoint
+                drawLine(index: firstNormalCellIndex)
             }
         }
     }
@@ -232,4 +238,16 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    /// 绘制线段
+    ///
+    /// - Parameter indexPath: 0 ~ 目标indexPath
+    private func drawLine(index: Int) {
+        let x = (signinCollectionView.width/CGFloat(signinDataSources.count))/2
+        let y = (signinCollectionView.height)/2 - 10
+        let x1 = CGFloat(index)*(signinCollectionView.width/CGFloat(signinDataSources.count)) + x
+        let rightPoint = CGPoint(x: x1, y: y)
+        signinCollectionViewBgView.rightDot = rightPoint
+    }
+    
 }
