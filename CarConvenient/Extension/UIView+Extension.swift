@@ -857,6 +857,40 @@ extension UILabel {
         //设置大小
         sizeToFit()
     }
+    
+    /// 通过Label计算字符串高度
+    ///
+    /// - Parameters:
+    ///   - str: 字符串
+    ///   - width: 最大宽度
+    ///   - fontSize: 字体大小
+    /// - Returns: 高度
+    static func heightForString(str: String, maxWidth width: CGFloat, fontSize: CGFloat) -> CGFloat {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: fontSize)
+        label.text = str
+        let size = label.sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
+        let contentHeight = size.height
+        return contentHeight
+    }
+    
+    /// 通过Label计算字符串宽度
+    ///
+    /// - Parameters:
+    ///   - str: 字符串
+    ///   - width: 最大宽度
+    ///   - fontSize: 字体大小
+    /// - Returns: 高度
+    static func widthForString(str: String, maxWidth width: CGFloat, fontSize: CGFloat) -> CGFloat {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: fontSize)
+        label.text = str
+        let size = label.sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
+        let contentHeight = size.height
+        return contentHeight
+    }
 }
 
 // MARK: - 扩展UITableView
@@ -1050,4 +1084,87 @@ extension UITextField {
         }
     }
     
+}
+// MARK: - 扩展UISegmentedControl - 修改系统UISegmentedControl样式
+extension UISegmentedControl {
+
+    var fontSize: CGFloat {
+        get {
+            return 14
+        }
+        set {
+            let attr = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: newValue)]
+            self.setTitleTextAttributes(attr, for: .normal)
+            self.setTitleTextAttributes(attr, for: .selected)
+        }
+    }
+    
+    var selectedTitleColor: UIColor {
+        get {
+            return UIColor.white
+        }
+        set {
+            let attr = [NSAttributedStringKey.foregroundColor : newValue]
+            self.setTitleTextAttributes(attr, for: .selected)
+        }
+    }
+    
+    var normalTitleColor: UIColor {
+        get {
+            return UIColor.init(rgba: "#333333")
+        }
+        set {
+            let attr = [NSAttributedStringKey.foregroundColor : newValue]
+            self.setTitleTextAttributes(attr, for: .normal)
+        }
+    }
+    var selectedBgColor: UIColor {
+        get {
+            return self.tintColor
+        }
+        set {
+            let attr = [NSAttributedStringKey.backgroundColor : newValue]
+            self.setTitleTextAttributes(attr, for: .selected)
+        }
+    }
+    
+    var normalBgColor: UIColor {
+        get {
+            return UIColor.white
+        }
+        set {
+            let attr = [NSAttributedStringKey.backgroundColor : newValue]
+            self.setTitleTextAttributes(attr, for: .normal)
+        }
+    }
+    
+    /// 自定义样式
+    ///
+    /// - Parameters:
+    ///   - normalColor: 普通状态下背景色
+    ///   - selectedColor: 选中状态下背景色
+    ///   - dividerColor: 选项之间的分割线颜色
+    func setSegmentStyle(normalColor: UIColor, selectedColor: UIColor, dividerColor: UIColor) {
+        
+        let normalColorImage = UIImage.md_imageWithColor(normalColor)
+        let selectedColorImage = UIImage.md_imageWithColor(selectedColor)
+        let dividerColorImage = UIImage.md_imageWithColor(dividerColor)
+        
+        setBackgroundImage(normalColorImage, for: .normal, barMetrics: .default)
+        setBackgroundImage(selectedColorImage, for: .selected, barMetrics: .default)
+        setDividerImage(dividerColorImage, forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
+        
+        let segAttributesNormal: NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor(rgba: "#333333"), NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)]
+        let segAttributesSeleted: NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.white,NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)]
+        
+        // 文字在两种状态下的颜色
+        setTitleTextAttributes(segAttributesNormal as [NSObject : AnyObject], for: UIControlState.normal)
+        setTitleTextAttributes(segAttributesSeleted as [NSObject : AnyObject], for: UIControlState.selected)
+        
+        // 边界颜色、圆角
+        self.layer.borderWidth = 0.5
+        self.layer.cornerRadius = 0.0
+        self.layer.borderColor = dividerColor.cgColor
+        self.layer.masksToBounds = true
+    }
 }

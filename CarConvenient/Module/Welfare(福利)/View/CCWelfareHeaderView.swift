@@ -80,6 +80,8 @@ class CCWelfareHeaderView: BaseView {
         }
     }
     
+    /// 标记上一次抽奖是否完成
+    var markPrizeFinished: Bool = true
     @IBOutlet weak var xib_prize: UIButton! {
         didSet {
             xib_prize.viewClipCornerDirectionRight(radius: 5, direct: clipCornerDirection.bottomRight, fillColor: UIColor(rgba: "#1B82D2"))
@@ -164,13 +166,18 @@ extension CCWelfareHeaderView: ZXDrawPrizeDataSource, ZXDrawPrizeDelegate {
     // MARK: - ZXDrawPrizeDelegate
     ///点击抽奖按钮
     func zxDrawPrizeStartAction(prizeView: ZXDrawPrizeView) {
-        prizeView.drawPrize(at: Int.random(from: 1, to: prizeDataSources.count)) { (finished) in
-            
+        if markPrizeFinished {
+            prizeView.drawPrize(at: Int.random(from: 1, to: prizeDataSources.count)) { (finished) in
+                if !finished {
+                    self.markPrizeFinished = true
+                }
+            }
+            markPrizeFinished = false
         }
     }
     ///动画执行结束
     func zxDrawPrizeEndAction(prizeView: ZXDrawPrizeView, prize index: NSInteger) {
-        
+        self.markPrizeFinished = true
     }
 }
 // MARK: - Delegate
@@ -214,7 +221,7 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
             }
         }else if collectionView == signinCollectionView {
             
-            /// 标记第一个正常
+            /// 标记第一个正常签到日
             var firstNormalCellIndex = -1
             for i in 0..<signinDataSources.count {
                 if signinDataSources[i]["status"] == "0" {

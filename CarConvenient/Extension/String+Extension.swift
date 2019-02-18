@@ -491,4 +491,88 @@ extension String {
             return []
         }
     }
+    /// 获取字符串所在位置信息
+    ///
+    /// - Parameter string: 目标字符串
+    /// - Returns: 位置信息数组[Range<String.Index>]
+    func ranges(of string: String) -> [Range<String.Index>] {
+        var rangeArray = [Range<String.Index>]()
+        var searchedRange: Range<String.Index>
+        guard let sr = self.range(of: self) else {
+            return rangeArray
+        }
+        searchedRange = sr
+        
+        var resultRange = self.range(of: string, options: .regularExpression, range: searchedRange, locale: nil)
+        while let range = resultRange {
+            rangeArray.append(range)
+            searchedRange = Range(uncheckedBounds: (range.upperBound, searchedRange.upperBound))
+            resultRange = self.range(of: string, options: .regularExpression, range: searchedRange, locale: nil)
+        }
+        return rangeArray
+    }
+    /*
+    /// Swift3：Range转NSRange
+    ///
+    /// - Parameter range: -
+    /// - Returns: -
+    func nsrange3(fromRange range : Range<String.Index>) -> NSRange {
+        let utf16view = self.utf16
+        let from = String.UTF16View.Index(range.lowerBound, within: utf16view)
+        let to = String.UTF16View.Index(range.upperBound, within: utf16view)
+        return NSMakeRange(utf16view.startIndex.distance(to: from), from.distance(to: to))
+    }
+     */
+    /// Swift4：Range转NSRange
+    ///
+    /// - Parameter range: -
+    /// - Returns: -
+    func nsrange(fromRange range : Range<String.Index>) -> NSRange {
+        return NSRange(range, in: self)
+    }
+    
+    /// 获取字符串所在位置信息
+    ///
+    /// - Parameter string: 目标字符串
+    /// - Returns: 位置信息数组[NSRange]
+    func nsranges(of string: String) -> [NSRange] {
+        return ranges(of: string).map { (range) -> NSRange in
+            self.nsrange(fromRange: range)
+        }
+    }
+}
+
+///字体颜色替换
+extension NSAttributedString{
+    
+    /// 设置富文本
+    class  func strForRichText(text: String, colorText: [String], colors: [UIColor], fontSizes: [UIFont]) -> NSAttributedString {
+        //        let strg = "【精选预测】广州恒大争三分，上海申花冲击三连胜"
+        //       let ranStr = "【精选预测】"
+        
+        //所有文字变为富文本
+        let attrstring:NSMutableAttributedString = NSMutableAttributedString(string:text)
+        
+        let str = NSString(string: text)
+        
+        //颜色处理的范围
+        for index in 0..<colorText.count {
+            let ranStr = colorText[index]
+            let theRange = str.range(of: ranStr)
+            //颜色处理
+            attrstring.addAttribute(NSAttributedStringKey.foregroundColor, value:colors[index], range: theRange)
+            attrstring.addAttribute(NSAttributedStringKey.font, value: fontSizes[index], range: theRange)
+        }
+        
+        //行间距
+        let paragraphStye = NSMutableParagraphStyle()
+        paragraphStye.lineSpacing = 5
+        //行间距的范围
+        let distanceRange = NSMakeRange(0, CFStringGetLength(text as CFString?))
+        
+        attrstring.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStye, range: distanceRange)
+        
+        return  attrstring//赋值方法
+        
+    }
 }
