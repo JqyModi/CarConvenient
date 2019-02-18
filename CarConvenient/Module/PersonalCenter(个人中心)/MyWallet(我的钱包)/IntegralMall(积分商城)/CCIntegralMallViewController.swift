@@ -29,6 +29,13 @@ class CCIntegralMallViewController: BaseCollectionViewController {
         let hv = CCIntegralMallHeaderView.md_viewFromXIB() as! CCIntegralMallHeaderView
         hv.autoresizingMask = .flexibleRightMargin
         collectionView.addSubview(hv)
+        
+        hv.clickBlock = {(sender) in
+            if let btn = sender as? UIButton {
+                let vc = CCExchangeRecordViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
 
 }

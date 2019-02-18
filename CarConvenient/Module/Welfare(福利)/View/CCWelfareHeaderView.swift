@@ -11,7 +11,15 @@ import UIKit
 private let menuIdentifier = "CCWelfareMenuCollectionViewCell"
 private let signinIdentifier = "CCWelfareSigninCollectionViewCell"
 
+@objc protocol CCWelfareHeaderViewDelegate {
+    func menuItemDidSelected(_ index: Int)
+    @objc optional func prizeDidSelected()
+    @objc optional func ruleDidSelected()
+}
+
 class CCWelfareHeaderView: BaseView {
+    
+    var delegate: CCWelfareHeaderViewDelegate?
     
     /// 菜单数据源
     private var signinDataSources: [[String: String]] = {
@@ -59,9 +67,21 @@ class CCWelfareHeaderView: BaseView {
             bgv.frame = signinCollectionView.frame
             bgv.backgroundColor = UIColor(rgba: "#FFFDEF")
             signinCollectionView.backgroundView = bgv
+            
+            // 绘制已经签到的背景线段
+            var firstNormalCellIndex = -1
+            for i in 0..<signinDataSources.count {
+                if signinDataSources[i]["status"] == "0" {
+                    firstNormalCellIndex = i-1
+                    self.drawLine(index: firstNormalCellIndex)
+                    break
+                }
+            }
         }
     }
     
+    /// 标记上一次抽奖是否完成
+    var markPrizeFinished: Bool = true
     @IBOutlet weak var xib_prize: UIButton! {
         didSet {
             xib_prize.viewClipCornerDirectionRight(radius: 5, direct: clipCornerDirection.bottomRight, fillColor: UIColor(rgba: "#1B82D2"))
@@ -88,6 +108,15 @@ class CCWelfareHeaderView: BaseView {
         // Initialization code
     }
     
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        if let b = delegate {
+            if sender.tag == 10001 {
+                b.prizeDidSelected!()
+            }else {
+                b.ruleDidSelected!()
+            }
+        }
+    }
 }
 // MARK: - 抽奖UI设置、delegate
 extension CCWelfareHeaderView: ZXDrawPrizeDataSource, ZXDrawPrizeDelegate {
@@ -137,13 +166,18 @@ extension CCWelfareHeaderView: ZXDrawPrizeDataSource, ZXDrawPrizeDelegate {
     // MARK: - ZXDrawPrizeDelegate
     ///点击抽奖按钮
     func zxDrawPrizeStartAction(prizeView: ZXDrawPrizeView) {
-        prizeView.drawPrize(at: Int.random(from: 1, to: prizeDataSources.count)) { (finished) in
-            
+        if markPrizeFinished {
+            prizeView.drawPrize(at: Int.random(from: 1, to: prizeDataSources.count)) { (finished) in
+                if !finished {
+                    self.markPrizeFinished = true
+                }
+            }
+            markPrizeFinished = false
         }
     }
     ///动画执行结束
     func zxDrawPrizeEndAction(prizeView: ZXDrawPrizeView, prize index: NSInteger) {
-        
+        self.markPrizeFinished = true
     }
 }
 // MARK: - Delegate
@@ -182,10 +216,12 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == menuCollectionView {
-            
+            if let b = delegate {
+                b.menuItemDidSelected(indexPath.row)
+            }
         }else if collectionView == signinCollectionView {
             
-            /// 标记第一个正常
+            /// 标记第一个正常签到日
             var firstNormalCellIndex = -1
             for i in 0..<signinDataSources.count {
                 if signinDataSources[i]["status"] == "0" {
@@ -197,11 +233,7 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
                 signinDataSources[indexPath.row]["status"] = "1"
                 collectionView.reloadItems(at: [indexPath])
                 
-                let x = (collectionView.width/CGFloat(signinDataSources.count))/2
-                let y = (collectionView.height)/2 - 10
-                let x1 = CGFloat(indexPath.row)*(collectionView.width/CGFloat(signinDataSources.count)) + x
-                let rightPoint = CGPoint(x: x1, y: y)
-                signinCollectionViewBgView.rightDot = rightPoint
+                drawLine(index: firstNormalCellIndex)
             }
         }
     }
@@ -213,4 +245,16 @@ extension CCWelfareHeaderView: UICollectionViewDataSource, UICollectionViewDeleg
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    /// 绘制线段
+    ///
+    /// - Parameter indexPath: 0 ~ 目标indexPath
+    private func drawLine(index: Int) {
+        let x = (signinCollectionView.width/CGFloat(signinDataSources.count))/2
+        let y = (signinCollectionView.height)/2 - 10
+        let x1 = CGFloat(index)*(signinCollectionView.width/CGFloat(signinDataSources.count)) + x
+        let rightPoint = CGPoint(x: x1, y: y)
+        signinCollectionViewBgView.rightDot = rightPoint
+    }
+    
 }

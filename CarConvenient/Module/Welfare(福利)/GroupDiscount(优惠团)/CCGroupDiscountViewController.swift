@@ -1,26 +1,25 @@
 //
-//  CCMessageOutSideViewController.swift
+//  CCGroupDiscountViewController.swift
 //  CarConvenient
 //
-//  Created by Modi on 2019/2/14.
+//  Created by Modi on 2019/2/15.
 //  Copyright © 2019年 modi. All rights reserved.
 //
 
 import UIKit
 import LTScrollView
 
-class CCMessageOutSideViewController: BaseViewController {
+class CCGroupDiscountViewController: BaseViewController {
 
     private lazy var viewControllers: [UIViewController] = {
         var vcs = [UIViewController]()
-        vcs.append(CCMessageViewController())
-        vcs.append(CCMessageViewController())
-        vcs.append(CCMessageViewController())
+        vcs.append(CCInvitationViewController())
+        vcs.append(CCMyTeamViewController())
         return vcs
     }()
     
     private lazy var titles: [String] = {
-        return ["优惠活动", "订单助手", "系统消息"]
+        return ["邀请成团", "我的团队"]
     }()
     
     private lazy var layout: LTLayout = {
@@ -55,7 +54,7 @@ class CCMessageOutSideViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "账单明细"
+        title = "优惠团"
         
         view.backgroundColor = UIColor.white
         automaticallyAdjustsScrollViewInsets = false
@@ -65,4 +64,18 @@ class CCMessageOutSideViewController: BaseViewController {
             print("pageView.didSelectIndexBlock", index)
         }
     }
+    
+    override func setupStyle() {
+        super.setupStyle()
+        
+        addRightItem(title: "成团规则", fontColor: UIColor(rgba: "#1B82D2"))
+    }
+    
+    override func clickRight(sender: UIButton) {
+        super.clickRight(sender: sender)
+        
+        let vc = CCTeamRuleViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

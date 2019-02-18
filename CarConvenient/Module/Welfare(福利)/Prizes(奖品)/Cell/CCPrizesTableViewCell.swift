@@ -8,16 +8,12 @@
 
 import UIKit
 
-class CCCouponsTableViewCell: UITableViewCell {
+class CCPrizesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var xib_bgView: UIView! {
         didSet {
-            let iv = UIImageView(image: UIImage(named: "bg_discount_coupon-1")!)
-            xib_bgView.addSubview(iv)
-            iv.snp.makeConstraints { (make) in
-                make.edges.equalToSuperview()
-            }
-            xib_bgView.sendSubview(toBack: iv)
+            xib_bgView.layer.borderWidth = 0.5
+            xib_bgView.layer.borderColor = UIColor(rgba: "#DDDDDD").cgColor
         }
     }
     @IBOutlet weak var xib_leftBgView: UIView! {
@@ -25,6 +21,7 @@ class CCCouponsTableViewCell: UITableViewCell {
             
         }
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

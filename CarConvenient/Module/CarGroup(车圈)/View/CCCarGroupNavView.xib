@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BKZ-IG-OeT" customClass="CCCarGroupNavView" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NM4-ts-P74">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NM4-ts-P74" secondAttribute="height" multiplier="240:33" id="LvO-2A-Wbq"/>
+                    </constraints>
+                    <segments>
+                        <segment title="车友圈"/>
+                        <segment title="俱乐部"/>
+                        <segment title="活动群"/>
+                    </segments>
+                    <color key="tintColor" red="0.1058823529" green="0.50980392159999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LdB-aF-zAf" firstAttribute="bottom" secondItem="NM4-ts-P74" secondAttribute="bottom" id="1GG-SL-RLX"/>
+                <constraint firstItem="NM4-ts-P74" firstAttribute="top" secondItem="LdB-aF-zAf" secondAttribute="top" id="9qr-qN-H0r"/>
+                <constraint firstItem="LdB-aF-zAf" firstAttribute="trailing" secondItem="NM4-ts-P74" secondAttribute="trailing" id="aNk-IG-yiE"/>
+                <constraint firstItem="NM4-ts-P74" firstAttribute="leading" secondItem="LdB-aF-zAf" secondAttribute="leading" id="gyo-yx-tgu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LdB-aF-zAf"/>
+            <connections>
+                <outlet property="xib_segment" destination="NM4-ts-P74" id="koi-g2-EZi"/>
+            </connections>
+            <point key="canvasLocation" x="89.599999999999994" y="156.97151424287858"/>
+        </view>
+    </objects>
+</document>
