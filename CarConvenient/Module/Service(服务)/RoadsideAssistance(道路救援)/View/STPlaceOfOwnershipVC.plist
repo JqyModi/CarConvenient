@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>京</string>
+	<string>沪</string>
+	<string>浙</string>
+	<string>苏</string>
+	<string>粤</string>
+	<string>鲁</string>
+	<string>普</string>
+	<string>冀</string>
+	<string>豫</string>
+	<string>川</string>
+	<string>渝</string>
+	<string>辽</string>
+	<string>吉</string>
+	<string>黑</string>
+	<string>皖</string>
+	<string>鄂</string>
+	<string>湘</string>
+	<string>赣</string>
+	<string>闽</string>
+	<string>陕</string>
+	<string>甘</string>
+	<string>宁</string>
+	<string>蒙</string>
+	<string>津</string>
+	<string>贵</string>
+	<string>云</string>
+	<string>桂</string>
+	<string>琼</string>
+	<string>青</string>
+	<string>藏</string>
+	<string>港</string>
+	<string>澳</string>
+</array>
+</plist>

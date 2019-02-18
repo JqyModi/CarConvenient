@@ -100,7 +100,8 @@ let is_iPhonex: Bool = UIScreen.main.bounds.height == 812 ? true : false
 
 let IPHONESE: Bool = UIScreen.main.bounds.width == 320 ? true : false
 
-let BottomSaveAreaHeight: CGFloat = 34
+let BottomSaveAreaHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height > 20 ? 34 : 0
+    
 //let StatusBarHeight: CGFloat = UIScreen.main.bounds.height == 812 ? 44 : 20
 
 let NavBarHeight: CGFloat = UIScreen.main.bounds.height == 812 ? 88 : 64

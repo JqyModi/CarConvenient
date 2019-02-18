@@ -43,4 +43,6 @@
 
 #import "BRPickerView.h"
 
+#import "SnailPopupController.h"
+
 #endif /* Bridge_Header_h */
