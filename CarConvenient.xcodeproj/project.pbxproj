@@ -67,6 +67,10 @@
 		C538583B221AF59600CFFF29 /* CCActivityGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385839221AF59600CFFF29 /* CCActivityGroupTableViewCell.xib */; };
 		C538583E221B960500CFFF29 /* CCGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538583D221B960500CFFF29 /* CCGroupViewController.swift */; };
 		C5385840221B9D6300CFFF29 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538583F221B9D6300CFFF29 /* BaseTabBarController.swift */; };
+		C5385843221BB71000CFFF29 /* CCActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5385841221BB71000CFFF29 /* CCActivityDetailViewController.swift */; };
+		C5385844221BB71000CFFF29 /* CCActivityDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385842221BB71000CFFF29 /* CCActivityDetailViewController.xib */; };
+		C5385849221BD0E600CFFF29 /* CCApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5385847221BD0E600CFFF29 /* CCApplyView.swift */; };
+		C538584A221BD0E600CFFF29 /* CCApplyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385848221BD0E600CFFF29 /* CCApplyView.xib */; };
 		C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403521F5579B008C8CC6 /* AppDelegate.swift */; };
 		C566403821F5579B008C8CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403721F5579B008C8CC6 /* ViewController.swift */; };
 		C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C566403921F5579B008C8CC6 /* Main.storyboard */; };
@@ -514,6 +518,10 @@
 		C5385839221AF59600CFFF29 /* CCActivityGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCActivityGroupTableViewCell.xib; sourceTree = "<group>"; };
 		C538583D221B960500CFFF29 /* CCGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGroupViewController.swift; sourceTree = "<group>"; };
 		C538583F221B9D6300CFFF29 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		C5385841221BB71000CFFF29 /* CCActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCActivityDetailViewController.swift; sourceTree = "<group>"; };
+		C5385842221BB71000CFFF29 /* CCActivityDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCActivityDetailViewController.xib; sourceTree = "<group>"; };
+		C5385847221BD0E600CFFF29 /* CCApplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCApplyView.swift; sourceTree = "<group>"; };
+		C5385848221BD0E600CFFF29 /* CCApplyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCApplyView.xib; sourceTree = "<group>"; };
 		C566403221F5579B008C8CC6 /* CarConvenient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarConvenient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C566403521F5579B008C8CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C566403721F5579B008C8CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1251,6 +1259,25 @@
 				C5385839221AF59600CFFF29 /* CCActivityGroupTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5385845221BD03200CFFF29 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C5385846221BD05600CFFF29 /* View */,
+				C5385841221BB71000CFFF29 /* CCActivityDetailViewController.swift */,
+				C5385842221BB71000CFFF29 /* CCActivityDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C5385846221BD05600CFFF29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5385847221BD0E600CFFF29 /* CCApplyView.swift */,
+				C5385848221BD0E600CFFF29 /* CCApplyView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C566402921F5579B008C8CC6 = {
@@ -2811,8 +2838,9 @@
 		C5F6BE1A21F6B986009FACD6 /* ActivityGroup(专项活动群) */ = {
 			isa = PBXGroup;
 			children = (
-				C5385835221AF56E00CFFF29 /* CCActivityGroupViewController.swift */,
+				C5385845221BD03200CFFF29 /* Detail */,
 				C5385837221AF57400CFFF29 /* Cell */,
+				C5385835221AF56E00CFFF29 /* CCActivityGroupViewController.swift */,
 			);
 			path = "ActivityGroup(专项活动群)";
 			sourceTree = "<group>";
@@ -3209,6 +3237,7 @@
 				C566425B21F55C43008C8CC6 /* MDFlowView.xib in Resources */,
 				C5E0D17D2214060F00C93EC1 /* usersetting.plist in Resources */,
 				C5384C1722115DD0002F9561 /* CCSettingViewController.xib in Resources */,
+				C5385844221BB71000CFFF29 /* CCActivityDetailViewController.xib in Resources */,
 				C5E0D19D2214508D00C93EC1 /* CCMyGroupViewController.xib in Resources */,
 				C566421321F55C43008C8CC6 /* BRPickerView.bundle in Resources */,
 				C566425D21F55C43008C8CC6 /* MDFlowViewCollectionViewCell.xib in Resources */,
@@ -3242,6 +3271,7 @@
 				C5E0D15D2213C5F000C93EC1 /* CCManagerAddressViewController.xib in Resources */,
 				C532F53C21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib in Resources */,
 				C56641C521F55C43008C8CC6 /* AlipaySDK.bundle in Resources */,
+				C538584A221BD0E600CFFF29 /* CCApplyView.xib in Resources */,
 				C5FA09C321FEAD5C005AF09C /* CCGroupBuyingCollectionViewCell.xib in Resources */,
 				DE8407492216B86900B352CB /* STRescueDataVC.xib in Resources */,
 				C5F68816221A8CB400982ECC /* CCCarGroupNavView.xib in Resources */,
@@ -3516,6 +3546,7 @@
 				DE84074D221A87BB00B352CB /* STPlaceOfOwnershipVC.swift in Sources */,
 				C5F6F92B2214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift in Sources */,
 				C5A7513122165A480010A183 /* CCWelfareMenuCollectionViewCell.swift in Sources */,
+				C5385843221BB71000CFFF29 /* CCActivityDetailViewController.swift in Sources */,
 				C538583A221AF59600CFFF29 /* CCActivityGroupTableViewCell.swift in Sources */,
 				C566422C21F55C43008C8CC6 /* HXCustomCameraController.m in Sources */,
 				C566429421F55C8D008C8CC6 /* MKGPX.swift in Sources */,
@@ -3637,6 +3668,7 @@
 				C566421221F55C43008C8CC6 /* BRAddressModel.m in Sources */,
 				C56641C821F55C43008C8CC6 /* HFThirdPartyManager.swift in Sources */,
 				C52AB5DA2216BECC0031A550 /* CCGroupDiscountViewController.swift in Sources */,
+				C5385849221BD0E600CFFF29 /* CCApplyView.swift in Sources */,
 				C566424F21F55C43008C8CC6 /* FJItemCVCell.swift in Sources */,
 				C5FA09BD21FEABE9005AF09C /* CCGroupBuyingViewController.swift in Sources */,
 				C5A750FF22153A240010A183 /* MCLocalModel.swift in Sources */,

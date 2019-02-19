@@ -34,4 +34,9 @@ extension CCActivityGroupViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CCActivityDetailViewController.init(nibName: "CCActivityDetailViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
