@@ -15,11 +15,6 @@ class CCCarGroupViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 将另外两个view添加到导航栏
-        let clubvc = CCRidersClubOutSideViewController()
-        self.navigationController?.viewControllers.append(clubvc)
-        let agvc = CCActivityGroupViewController()
-        self.navigationController?.viewControllers.append(agvc)
     }
     
     override func setupTableView() {
@@ -30,18 +25,27 @@ class CCCarGroupViewController: BaseTableViewController {
     
     override func setupStyle() {
         super.setupStyle()
+        //
+        setupAddBtn()
+    }
+    
+    /// 添加发布车友圈按钮
+    private func setupAddBtn() {
+        let btn = UIButton()
+        btn.setImage(UIImage(named: "btn_issue_n"), for: .normal)
+        btn.backgroundColor = UIColor.white
+        //        btn.bounds = CGRect(origin: .zero, size: CGSize(width: 30, height: 30))
+        btn.layer.cornerRadius = 40/2
+        btn.layer.masksToBounds = true
+        btn.add_BtnClickHandler { (tag) in
+            let vc = CCAddTimelineViewController.init(nibName: "CCAddTimelineViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        self.view.addSubview(btn)
         
-        let nav = CCCarGroupNavView.md_viewFromXIB() as! CCCarGroupNavView
-        nav.autoresizingMask = .flexibleWidth
-//        self.navigationController?.navigationItem.titleView = nav
-        self.navigationItem.titleView = nav
-        
-        nav.clickBlock = {(sender) in
-            if let sgm = sender as? UISegmentedControl {
-                if sgm.selectedSegmentIndex == 1 {
-                    
-                }
-            }
+        btn.snp.makeConstraints { (make) in
+            make.right.bottom.equalTo(self.view).offset(-20)
+            make.height.width.equalTo(40)
         }
     }
     

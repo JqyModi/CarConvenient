@@ -1168,3 +1168,16 @@ extension UISegmentedControl {
         self.layer.masksToBounds = true
     }
 }
+extension UITextView {
+    
+    /// 扩展替换文本
+    var md_placeholder: String {
+        get {return ""}
+        set {
+            //设置UITextView的提示文本
+            let placeh = QYTools.md_placeHolderLabel(text: newValue)
+            self.addSubview(placeh)
+            self.setValue(placeh, forKeyPath: "_placeholderLabel")
+        }
+    }
+}
