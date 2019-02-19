@@ -144,9 +144,13 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     @objc open func setStatusBarBackgroundColor(color: UIColor) {
         let statusBarView = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
         let statusBar = statusBarView.value(forKey: "statusBar") as! UIView
-        
         statusBar.backgroundColor = color
     }
+    
+    
+    
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -178,3 +182,14 @@ extension BaseViewController {
     
 }
 
+extension UIViewController {
+    
+    func showAlerView(showView:UIView,layoutType:PopupLayoutType = .center){
+        self.sl_popupController = SnailPopupController()
+        self.sl_popupController.layoutType = layoutType //default center
+        self.sl_popupController.transitStyle = .default//default
+        self.sl_popupController.allowPan = true //default = NO
+        self.sl_popupController.presentContentView(showView, duration: 0.75, elasticAnimated: true)
+    }
+    
+}

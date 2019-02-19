@@ -415,6 +415,13 @@
 		CCFC6A1850348143951E559B /* Pods_CarConvenient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C53F5ADD2825E02616778 /* Pods_CarConvenient.framework */; };
 		DE3CC9812212BB8300DA490D /* CCServiceViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3CC9802212BB8300DA490D /* CCServiceViewController.plist */; };
 		DE3CC9832212BE4A00DA490D /* STServiceViewControllerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CC9822212BE4A00DA490D /* STServiceViewControllerMode.swift */; };
+		DE8407492216B86900B352CB /* STRescueDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE8407472216B86800B352CB /* STRescueDataVC.xib */; };
+		DE84074A2216B86900B352CB /* STRescueDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8407482216B86900B352CB /* STRescueDataVC.swift */; };
+		DE84074D221A87BB00B352CB /* STPlaceOfOwnershipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE84074C221A87BB00B352CB /* STPlaceOfOwnershipVC.swift */; };
+		DE840750221A899C00B352CB /* STTitleCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE84074E221A899C00B352CB /* STTitleCCell.xib */; };
+		DE840751221A899C00B352CB /* STTitleCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE84074F221A899C00B352CB /* STTitleCCell.swift */; };
+		DE840753221A8A1600B352CB /* STPlaceOfOwnershipVC.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE840752221A8A1600B352CB /* STPlaceOfOwnershipVC.plist */; };
+		DE8F4EC5221A96E300EAF533 /* SnailPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8F4EC3221A96E300EAF533 /* SnailPopupController.m */; };
 		DEA68AD42213BAB000EAEE9B /* STServiceCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA68AD22213BAB000EAEE9B /* STServiceCCell.xib */; };
 		DEA68AD52213BAB000EAEE9B /* STServiceCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA68AD32213BAB000EAEE9B /* STServiceCCell.swift */; };
 		DEA68AD92213C08F00EAEE9B /* STRoadsideAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA68AD72213C08F00EAEE9B /* STRoadsideAssistanceVC.swift */; };
@@ -951,6 +958,14 @@
 		CD5844F0526DDF78D04FDCFD /* Pods-CarConvenientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarConvenientUITests.debug.xcconfig"; path = "Target Support Files/Pods-CarConvenientUITests/Pods-CarConvenientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3CC9802212BB8300DA490D /* CCServiceViewController.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CCServiceViewController.plist; sourceTree = "<group>"; };
 		DE3CC9822212BE4A00DA490D /* STServiceViewControllerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STServiceViewControllerMode.swift; sourceTree = "<group>"; };
+		DE8407472216B86800B352CB /* STRescueDataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STRescueDataVC.xib; sourceTree = "<group>"; };
+		DE8407482216B86900B352CB /* STRescueDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRescueDataVC.swift; sourceTree = "<group>"; };
+		DE84074C221A87BB00B352CB /* STPlaceOfOwnershipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPlaceOfOwnershipVC.swift; sourceTree = "<group>"; };
+		DE84074E221A899C00B352CB /* STTitleCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STTitleCCell.xib; sourceTree = "<group>"; };
+		DE84074F221A899C00B352CB /* STTitleCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTitleCCell.swift; sourceTree = "<group>"; };
+		DE840752221A8A1600B352CB /* STPlaceOfOwnershipVC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = STPlaceOfOwnershipVC.plist; sourceTree = "<group>"; };
+		DE8F4EC3221A96E300EAF533 /* SnailPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnailPopupController.m; path = "../../../../架构app/BasicFramework/BasicFramework/Classes/Core/AppEngine/Tool/SnailPopupController.m"; sourceTree = "<group>"; };
+		DE8F4EC4221A96E300EAF533 /* SnailPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnailPopupController.h; path = "../../../../架构app/BasicFramework/BasicFramework/Classes/Core/AppEngine/Tool/SnailPopupController.h"; sourceTree = "<group>"; };
 		DEA68AD22213BAB000EAEE9B /* STServiceCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STServiceCCell.xib; sourceTree = "<group>"; };
 		DEA68AD32213BAB000EAEE9B /* STServiceCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STServiceCCell.swift; sourceTree = "<group>"; };
 		DEA68AD62213C08F00EAEE9B /* STRoadsideAssistanceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STRoadsideAssistanceVC.xib; sourceTree = "<group>"; };
@@ -1496,6 +1511,7 @@
 				C566410A21F55C42008C8CC6 /* MDModifyKit */,
 				C566412621F55C42008C8CC6 /* SelectImage */,
 				C566412121F55C42008C8CC6 /* SLPasswordInputView */,
+				DE840754221A958300B352CB /* SnailPopupController */,
 				C56640F621F55C42008C8CC6 /* StarView */,
 			);
 			path = Extension;
@@ -2669,6 +2685,7 @@
 		C5F6BE0B21F6B496009FACD6 /* RoadsideAssistance(道路救援) */ = {
 			isa = PBXGroup;
 			children = (
+				DE84074B221A873D00B352CB /* View */,
 				DEA68ADA2213C16E00EAEE9B /* ViewController */,
 			);
 			path = "RoadsideAssistance(道路救援)";
@@ -2967,6 +2984,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DE84074B221A873D00B352CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE84074C221A87BB00B352CB /* STPlaceOfOwnershipVC.swift */,
+				DE84074E221A899C00B352CB /* STTitleCCell.xib */,
+				DE84074F221A899C00B352CB /* STTitleCCell.swift */,
+				DE840752221A8A1600B352CB /* STPlaceOfOwnershipVC.plist */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE840754221A958300B352CB /* SnailPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				DE8F4EC4221A96E300EAF533 /* SnailPopupController.h */,
+				DE8F4EC3221A96E300EAF533 /* SnailPopupController.m */,
+			);
+			name = SnailPopupController;
+			path = StarView;
+			sourceTree = "<group>";
+		};
 		DEA68AD12213BA6600EAEE9B /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -2981,6 +3019,8 @@
 			children = (
 				DEA68AD62213C08F00EAEE9B /* STRoadsideAssistanceVC.xib */,
 				DEA68AD72213C08F00EAEE9B /* STRoadsideAssistanceVC.swift */,
+				DE8407472216B86800B352CB /* STRescueDataVC.xib */,
+				DE8407482216B86900B352CB /* STRescueDataVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -3176,6 +3216,7 @@
 				C5F6881A221A9ADF00982ECC /* CCCarGroupHeaderView.xib in Resources */,
 				C566420721F55C43008C8CC6 /* setting_example.plist in Resources */,
 				C5384C382212754C002F9561 /* CCIntegralMallCollectionViewCell.xib in Resources */,
+				DE840750221A899C00B352CB /* STTitleCCell.xib in Resources */,
 				C5384C1B22116041002F9561 /* setting.plist in Resources */,
 				C5E0D1412212B1B700C93EC1 /* CCShoppingCartViewController.xib in Resources */,
 				C5FA095F21FD5E21005AF09C /* CCCarTypeDetailTableViewCell.xib in Resources */,
@@ -3202,6 +3243,7 @@
 				C532F53C21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib in Resources */,
 				C56641C521F55C43008C8CC6 /* AlipaySDK.bundle in Resources */,
 				C5FA09C321FEAD5C005AF09C /* CCGroupBuyingCollectionViewCell.xib in Resources */,
+				DE8407492216B86900B352CB /* STRescueDataVC.xib in Resources */,
 				C5F68816221A8CB400982ECC /* CCCarGroupNavView.xib in Resources */,
 				C566424521F55C43008C8CC6 /* icon_deleted @2x.png in Resources */,
 				C566424B21F55C43008C8CC6 /* icon_deleted@3x.png in Resources */,
@@ -3223,6 +3265,7 @@
 				C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */,
 				C566424A21F55C43008C8CC6 /* address_select_yes.png in Resources */,
 				C5F6BE3F21F86BD9009FACD6 /* CCRegisterViewController.xib in Resources */,
+				DE840753221A8A1600B352CB /* STPlaceOfOwnershipVC.plist in Resources */,
 				C532F53321F993F400AD7ED3 /* CCSendCodePopView.xib in Resources */,
 				C5E0D1842214166E00C93EC1 /* CCInvoiceTableViewCell.xib in Resources */,
 			);
@@ -3418,6 +3461,7 @@
 				C5F6F934221501470094DC0E /* CCOwnersCertificationFooterView.swift in Sources */,
 				C5A7512C22164BB00010A183 /* CCWelfareHeaderView.swift in Sources */,
 				C5F6BE3821F85430009FACD6 /* CCLoginViewController.swift in Sources */,
+				DE84074A2216B86900B352CB /* STRescueDataVC.swift in Sources */,
 				C5384C1622115DD0002F9561 /* CCSettingViewController.swift in Sources */,
 				C56641FE21F55C43008C8CC6 /* UITableView+CellAnimation.m in Sources */,
 				C566424921F55C43008C8CC6 /* AddressModel.swift in Sources */,
@@ -3469,6 +3513,7 @@
 				C566420221F55C43008C8CC6 /* ZYStarRateView.swift in Sources */,
 				C566423421F55C43008C8CC6 /* HXDatePhotoViewTransition.m in Sources */,
 				C56641F721F55C43008C8CC6 /* NSMutableString+Safe.m in Sources */,
+				DE84074D221A87BB00B352CB /* STPlaceOfOwnershipVC.swift in Sources */,
 				C5F6F92B2214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift in Sources */,
 				C5A7513122165A480010A183 /* CCWelfareMenuCollectionViewCell.swift in Sources */,
 				C538583A221AF59600CFFF29 /* CCActivityGroupTableViewCell.swift in Sources */,
@@ -3503,6 +3548,7 @@
 				C56641D921F55C43008C8CC6 /* MDFlowLayout.swift in Sources */,
 				C532F53721F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.swift in Sources */,
 				C56641EB21F55C43008C8CC6 /* UIView+Frame.m in Sources */,
+				DE8F4EC5221A96E300EAF533 /* SnailPopupController.m in Sources */,
 				C566422F21F55C43008C8CC6 /* HXCustomAssetModel.m in Sources */,
 				C566420921F55C43008C8CC6 /* SwiftyTextView.swift in Sources */,
 				C566422921F55C43008C8CC6 /* HXDatePhotoViewController.m in Sources */,
@@ -3605,6 +3651,7 @@
 				C5A750FC22153A240010A183 /* MCCitySearchViewModel.swift in Sources */,
 				C566422621F55C43008C8CC6 /* HXPhotoTools.m in Sources */,
 				C566422D21F55C43008C8CC6 /* UIImage+HXExtension.m in Sources */,
+				DE840751221A899C00B352CB /* STTitleCCell.swift in Sources */,
 				C56641E221F55C43008C8CC6 /* Int+Extension.swift in Sources */,
 				C566425C21F55C43008C8CC6 /* MDFlowView.swift in Sources */,
 				C5A7510122153A240010A183 /* MCSelectLocalHeaderView.swift in Sources */,

@@ -28,7 +28,8 @@ class STRoadsideAssistanceVC: BaseViewController {
     
     ///立即救援
     @IBAction func clickRescueBtn() {
-        
+        let vc = STRescueDataVC(nibName: "STRescueDataVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     ///订单记录
     override func clickRight(sender: UIButton) {
