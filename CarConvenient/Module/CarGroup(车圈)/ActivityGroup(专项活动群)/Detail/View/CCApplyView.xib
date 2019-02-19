@@ -32,13 +32,13 @@
                         <constraint firstItem="taV-do-tSr" firstAttribute="centerY" secondItem="2b2-Zj-AR7" secondAttribute="centerY" id="lXo-Lq-Yks"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHb-kM-TLH">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHb-kM-TLH">
                     <rect key="frame" x="91" y="61" width="159" height="26"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="af6-4H-ZcJ">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="af6-4H-ZcJ">
                     <rect key="frame" x="91" y="20" width="159" height="26"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="26" id="RxR-D3-F5q"/>
@@ -61,7 +61,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69739940068493156" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="mHb-kM-TLH" firstAttribute="height" secondItem="af6-4H-ZcJ" secondAttribute="height" id="1Aj-Ao-mQA"/>
                 <constraint firstItem="pi7-ot-dKo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3ps-Mx-1S1" secondAttribute="leading" constant="15" id="5OY-i4-2Fb"/>

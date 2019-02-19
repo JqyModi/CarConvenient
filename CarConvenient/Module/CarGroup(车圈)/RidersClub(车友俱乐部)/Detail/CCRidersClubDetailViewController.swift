@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CCActivityDetailViewController: BaseViewController {
+class CCRidersClubDetailViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "活动详情"
+        title = "俱乐部详情"
     }
 
     @IBAction func btn_DidClicked(_ sender: UIButton) {

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCRidersClubDetailViewController" customModule="CarConvenient" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOQ-X8-WMb">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一键报名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkO-5u-fT0">
+                            <rect key="frame" x="153" y="9.5" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSS-gj-epS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <connections>
+                                <action selector="btn_DidClicked:" destination="-1" eventType="touchUpInside" id="LcQ-ST-FbU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1058823529" green="0.50980392159999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9Nc-EV-NOF"/>
+                        <constraint firstAttribute="bottom" secondItem="iSS-gj-epS" secondAttribute="bottom" id="KiA-GM-gEW"/>
+                        <constraint firstItem="FkO-5u-fT0" firstAttribute="centerY" secondItem="zOQ-X8-WMb" secondAttribute="centerY" id="VlI-z3-QSp"/>
+                        <constraint firstItem="FkO-5u-fT0" firstAttribute="centerX" secondItem="zOQ-X8-WMb" secondAttribute="centerX" id="ZrZ-eO-qm0"/>
+                        <constraint firstItem="iSS-gj-epS" firstAttribute="top" secondItem="zOQ-X8-WMb" secondAttribute="top" id="vPg-1v-EYe"/>
+                        <constraint firstAttribute="trailing" secondItem="iSS-gj-epS" secondAttribute="trailing" id="yko-mb-RfX"/>
+                        <constraint firstItem="iSS-gj-epS" firstAttribute="leading" secondItem="zOQ-X8-WMb" secondAttribute="leading" id="z9v-Zq-uaU"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAF-zc-QDw">
+                    <rect key="frame" x="8" y="597" width="359" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="我已阅读并同意《车友俱乐部信息服务协议》" image="global_btn_select_n">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="global_btn_select_s"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zOQ-X8-WMb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0A8-uv-9o0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GAF-zc-QDw" secondAttribute="trailing" constant="8" id="4dU-o0-fsd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zOQ-X8-WMb" secondAttribute="trailing" id="79k-YN-lPx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zOQ-X8-WMb" secondAttribute="bottom" id="7Go-dO-RGt"/>
+                <constraint firstItem="zOQ-X8-WMb" firstAttribute="top" secondItem="GAF-zc-QDw" secondAttribute="bottom" constant="8" id="EWA-uN-zMy"/>
+                <constraint firstItem="GAF-zc-QDw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Kd9-AT-bkv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="global_btn_select_n" width="22" height="22"/>
+        <image name="global_btn_select_s" width="22" height="22"/>
+    </resources>
+</document>

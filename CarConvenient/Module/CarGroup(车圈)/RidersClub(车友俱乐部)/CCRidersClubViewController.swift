@@ -34,4 +34,9 @@ extension CCRidersClubViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CCRidersClubDetailViewController.init(nibName: "CCRidersClubDetailViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

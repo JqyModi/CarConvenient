@@ -71,6 +71,8 @@
 		C5385844221BB71000CFFF29 /* CCActivityDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385842221BB71000CFFF29 /* CCActivityDetailViewController.xib */; };
 		C5385849221BD0E600CFFF29 /* CCApplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5385847221BD0E600CFFF29 /* CCApplyView.swift */; };
 		C538584A221BD0E600CFFF29 /* CCApplyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385848221BD0E600CFFF29 /* CCApplyView.xib */; };
+		C5385853221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */; };
+		C5385854221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */; };
 		C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403521F5579B008C8CC6 /* AppDelegate.swift */; };
 		C566403821F5579B008C8CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403721F5579B008C8CC6 /* ViewController.swift */; };
 		C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C566403921F5579B008C8CC6 /* Main.storyboard */; };
@@ -522,6 +524,8 @@
 		C5385842221BB71000CFFF29 /* CCActivityDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCActivityDetailViewController.xib; sourceTree = "<group>"; };
 		C5385847221BD0E600CFFF29 /* CCApplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCApplyView.swift; sourceTree = "<group>"; };
 		C5385848221BD0E600CFFF29 /* CCApplyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCApplyView.xib; sourceTree = "<group>"; };
+		C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCRidersClubDetailViewController.swift; sourceTree = "<group>"; };
+		C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRidersClubDetailViewController.xib; sourceTree = "<group>"; };
 		C566403221F5579B008C8CC6 /* CarConvenient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarConvenient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C566403521F5579B008C8CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C566403721F5579B008C8CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1278,6 +1282,15 @@
 				C5385848221BD0E600CFFF29 /* CCApplyView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C538584B221BD84D00CFFF29 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */,
+				C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C566402921F5579B008C8CC6 = {
@@ -2827,6 +2840,7 @@
 		C5F6BE1921F6B94F009FACD6 /* RidersClub(车友俱乐部) */ = {
 			isa = PBXGroup;
 			children = (
+				C538584B221BD84D00CFFF29 /* Detail */,
 				C538582E221ABCBD00CFFF29 /* Cell */,
 				C538582A221ABC9800CFFF29 /* CCRidersClubViewController.swift */,
 				C538582B221ABC9800CFFF29 /* CCRidersClubViewController.xib */,
@@ -3240,6 +3254,7 @@
 				C5E0D19D2214508D00C93EC1 /* CCMyGroupViewController.xib in Resources */,
 				C566421321F55C43008C8CC6 /* BRPickerView.bundle in Resources */,
 				C566425D21F55C43008C8CC6 /* MDFlowViewCollectionViewCell.xib in Resources */,
+				C5385854221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib in Resources */,
 				C5384C2622119F8F002F9561 /* CCMyWalletHeaderView.xib in Resources */,
 				C5F6881A221A9ADF00982ECC /* CCCarGroupHeaderView.xib in Resources */,
 				C566420721F55C43008C8CC6 /* setting_example.plist in Resources */,
@@ -3710,6 +3725,7 @@
 				C566421A21F55C43008C8CC6 /* HXDownloadProgressView.m in Sources */,
 				DEA68AD52213BAB000EAEE9B /* STServiceCCell.swift in Sources */,
 				C56641E621F55C43008C8CC6 /* UIButton+Category.m in Sources */,
+				C5385853221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift in Sources */,
 				C566428D21F55C8D008C8CC6 /* MDWebViewController.swift in Sources */,
 				C52AB5D62216BCA80031A550 /* CCMyTeamTableViewCell.swift in Sources */,
 				C56641C421F55C43008C8CC6 /* MDHorizontalCircleMenuView.swift in Sources */,
