@@ -73,7 +73,7 @@ extension CCCarGroupViewController {
                     break
                 case 10003:
                     let bv = CCCommmentView.md_viewFromXIB() as! CCCommmentView
-                    bv.frame = CGRect(x: 0, y: 0, width: bv.width, height: bv.height+BottomSaveAreaHeight)
+                    bv.frame = CGRect(x: 0, y: 0, width: bv.width, height: bv.height+SaveAreaHeight)
                     bv.xib_inputDesc.becomeFirstResponder()
                     HFAlertController.showCustomView(view: bv, type: HFAlertType.ActionSheet)
                     

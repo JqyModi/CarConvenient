@@ -36,7 +36,7 @@ class CCGroupBuyingViewController: BaseCollectionViewController {
 //        let fv = CCGroupBuyingFooterView.md_viewFromXIB() as! CCGroupBuyingFooterView
 //        fv.autoresizingMask = .flexibleWidth
 //        self.view.addSubview(fv)
-//        let saveAreaHeight = IPONEX ? BottomSaveAreaHeight : 0
+//        let saveAreaHeight = IPONEX ? SaveAreaHeight : 0
 //        let height = SCREEN_WIDTH*(50/375)+saveAreaHeight
 //        fv.snp.makeConstraints { (make) in
 //            make.left.right.bottom.equalToSuperview()

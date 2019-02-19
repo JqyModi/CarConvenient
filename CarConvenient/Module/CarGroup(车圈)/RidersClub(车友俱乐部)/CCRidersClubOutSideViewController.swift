@@ -25,6 +25,7 @@ class CCRidersClubOutSideViewController: BaseViewController {
     private lazy var layout: LTLayout = {
         let layout = LTLayout()
         layout.sliderWidth = 30
+        layout.sliderHeight = 40
         layout.titleMargin = 5.0
         layout.titleFont = UIFont.systemFont(ofSize: 14)
         layout.titleColor = UIColor.init(rgba: "#333333")
@@ -42,11 +43,9 @@ class CCRidersClubOutSideViewController: BaseViewController {
     }()
     
     private lazy var pageView: LTPageView = {
-        let statusBarH = UIApplication.shared.statusBarFrame.size.height
-        let tabbarH: CGFloat = 0
-        let Y: CGFloat = statusBarH + 44 + tabbarH
-        let H: CGFloat = IPHONEX ? (SCREEN_HEIGHT - Y - 34) : (SCREEN_HEIGHT - Y)
+        let H: CGFloat = (SCREEN_HEIGHT - NavBarHeight - TabBarHeight)
         let pageView = LTPageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: H), currentViewController: self, viewControllers: viewControllers, titles: titles, layout: layout)
+        pageView.backgroundColor = UIColor.red
         pageView.isClickScrollAnimation = true
         return pageView
     }()

@@ -100,11 +100,11 @@ let is_iPhonex: Bool = UIScreen.main.bounds.height == 812 ? true : false
 
 let IPHONESE: Bool = UIScreen.main.bounds.width == 320 ? true : false
 
-let BottomSaveAreaHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height > 20 ? 34 : 0
-    
-//let StatusBarHeight: CGFloat = UIScreen.main.bounds.height == 812 ? 44 : 20
+let SaveAreaHeight: CGFloat = StatusBarHeight > 20 ? 34 : 0
 
-let NavBarHeight: CGFloat = UIScreen.main.bounds.height == 812 ? 88 : 64
+let NavBarHeight: CGFloat = StatusBarHeight > 20 ? 88 : 64
+
+let TabBarHeight: CGFloat = StatusBarHeight > 20 ? 49+SaveAreaHeight : 49
 
 /// 状态栏高度
 let StatusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height

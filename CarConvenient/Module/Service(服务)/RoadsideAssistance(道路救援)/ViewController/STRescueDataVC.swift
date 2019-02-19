@@ -41,7 +41,7 @@ class STRescueDataVC: BaseViewController {
         ///行
         let hang = dataArr.count/9 + (dataArr.count%9 == 0 ? 0 : 1)
         let height = (SCREEN_WIDTH-8)/9 * CGFloat(hang) 
-        let vie = STPlaceOfOwnershipVC(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: height + BottomSaveAreaHeight))
+        let vie = STPlaceOfOwnershipVC(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: height + SaveAreaHeight))
         return vie
     }()
     

@@ -42,10 +42,7 @@ class CCBillingDetailOutSideViewController: BaseViewController {
     }()
     
     private lazy var pageView: LTPageView = {
-        let statusBarH = UIApplication.shared.statusBarFrame.size.height
-        let tabbarH: CGFloat = 0
-        let Y: CGFloat = statusBarH + 44 + tabbarH
-        let H: CGFloat = IPHONEX ? (SCREEN_HEIGHT - Y - 34) : (SCREEN_HEIGHT - Y)
+        let H: CGFloat = (SCREEN_HEIGHT - NavBarHeight - SaveAreaHeight)
         let pageView = LTPageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: H), currentViewController: self, viewControllers: viewControllers, titles: titles, layout: layout)
         pageView.isClickScrollAnimation = true
         return pageView
