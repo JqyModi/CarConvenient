@@ -144,9 +144,13 @@ class BaseViewController: UIViewController, PlaceholderViewDelegate {
     @objc open func setStatusBarBackgroundColor(color: UIColor) {
         let statusBarView = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
         let statusBar = statusBarView.value(forKey: "statusBar") as! UIView
-        
         statusBar.backgroundColor = color
     }
+    
+    
+    
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
