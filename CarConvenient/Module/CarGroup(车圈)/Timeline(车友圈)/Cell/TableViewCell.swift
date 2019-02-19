@@ -12,9 +12,11 @@ private let withReuseIdentifier = "CollectionViewCell"
 
 private let tableViewIdentifier = "CCCommentTableViewCell"
 
-class TableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell, ViewClickedDelegate {
+    
+    var clickBlock: ((Any?) -> ())?
 
-    var updateBlock: (() -> Void)?
+    var commentSelectedBlock: ((_ touser: String) -> Void)?
     
     var model: TimelineModel?
     
@@ -69,6 +71,9 @@ class TableViewCell: UITableViewCell {
     
     @IBAction func btn_DidClicked(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        if let b = clickBlock {
+            b(sender)
+        }
     }
     
     func updateData(model: TimelineModel) {
@@ -143,6 +148,16 @@ extension TableViewCell: UITableViewDataSource, UITableViewDelegate {
         }
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let commentModel = model?.commentModels[indexPath.row] {
+            if let touser = commentModel["user"] {
+                if let b = commentSelectedBlock {
+                    b(touser)
+                }
+            }
+        }
     }
 }
 

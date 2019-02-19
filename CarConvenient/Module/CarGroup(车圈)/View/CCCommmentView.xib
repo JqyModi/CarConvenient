@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CCCommmentView" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOT-C1-NRF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="评论" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZbQ-0I-Jj9">
+                            <rect key="frame" x="20" y="8" width="297" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ZbQ-0I-Jj9" secondAttribute="height" multiplier="290:35" id="KOj-kB-SpK"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" tag="10001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-oD-jZ5">
+                            <rect key="frame" x="325" y="15" width="42" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="8Oq-5n-I7x"/>
+                                <constraint firstAttribute="width" constant="42" id="GdF-Ln-etY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="xib_send:" destination="iN0-l3-epB" eventType="touchUpInside" id="g0a-iT-IpQ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-8I-vI2">
+                            <rect key="frame" x="20" y="47" width="297" height="0.5"/>
+                            <color key="backgroundColor" red="0.13725490196078433" green="0.67843137254901964" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="6MF-mM-wn4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1ig-oD-jZ5" firstAttribute="leading" secondItem="ZbQ-0I-Jj9" secondAttribute="trailing" constant="8" symbolic="YES" id="7Y0-Wr-Pdq"/>
+                        <constraint firstItem="ZbQ-0I-Jj9" firstAttribute="leading" secondItem="MOT-C1-NRF" secondAttribute="leading" constant="20" symbolic="YES" id="BJp-TV-fZe"/>
+                        <constraint firstItem="3BW-8I-vI2" firstAttribute="trailing" secondItem="ZbQ-0I-Jj9" secondAttribute="trailing" id="NDB-KM-eiw"/>
+                        <constraint firstItem="ZbQ-0I-Jj9" firstAttribute="top" secondItem="MOT-C1-NRF" secondAttribute="top" constant="8" id="Vxp-UI-ZdJ"/>
+                        <constraint firstAttribute="trailing" secondItem="1ig-oD-jZ5" secondAttribute="trailing" constant="8" id="bY6-A4-TaA"/>
+                        <constraint firstItem="3BW-8I-vI2" firstAttribute="leading" secondItem="ZbQ-0I-Jj9" secondAttribute="leading" id="f8C-8K-fRp"/>
+                        <constraint firstItem="1ig-oD-jZ5" firstAttribute="centerY" secondItem="ZbQ-0I-Jj9" secondAttribute="centerY" id="kt4-XQ-FhD"/>
+                        <constraint firstItem="3BW-8I-vI2" firstAttribute="top" secondItem="ZbQ-0I-Jj9" secondAttribute="bottom" constant="3" id="pqJ-mn-sJr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MOT-C1-NRF" secondAttribute="trailing" id="1wo-aD-LaU"/>
+                <constraint firstAttribute="bottom" secondItem="MOT-C1-NRF" secondAttribute="bottom" id="Rw6-td-qAh"/>
+                <constraint firstItem="MOT-C1-NRF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hIa-CR-q5J"/>
+                <constraint firstItem="MOT-C1-NRF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uIi-Tt-P6L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="xib_inputDesc" destination="ZbQ-0I-Jj9" id="mc8-fW-KXV"/>
+                <outlet property="xib_send" destination="1ig-oD-jZ5" id="2LZ-XR-R56"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="76"/>
+        </view>
+    </objects>
+</document>

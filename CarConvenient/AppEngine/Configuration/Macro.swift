@@ -114,7 +114,7 @@ let TabBarDataSource: [[String: String]] = {
     let dic1 = ["title": "车品", "imageNameS": "btn_product_s", "imageNameN": "btn_product_n", "viewController": "CCCarCategoryViewController"]
     let dic2 = ["title": "服务", "imageNameS": "btn_serve_s", "imageNameN": "btn_serve_n", "viewController": "CCServiceViewController"]
     let dic3 = ["title": "洗车", "imageNameS": "btn_carwash_s", "imageNameN": "btn_carwash_n", "viewController": "CCWashCarViewController"]
-    let dic4 = ["title": "车圈", "imageNameS": "btn_rim_s", "imageNameN": "btn_rim_n", "viewController": "CCCarGroupViewController"]
+    let dic4 = ["title": "车圈", "imageNameS": "btn_rim_s", "imageNameN": "btn_rim_n", "viewController": "CCGroupViewController"]
     let dic5 = ["title": "福利", "imageNameS": "btn_welfare_s", "imageNameN": "btn_welfare_n", "viewController": "CCWelfareViewController"]
     return [dic1, dic2, dic3, dic4, dic5]
 }()
