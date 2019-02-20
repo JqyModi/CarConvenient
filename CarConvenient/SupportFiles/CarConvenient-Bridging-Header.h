@@ -45,4 +45,6 @@
 
 #import "SnailPopupController.h"
 
+#import "SVProgressHUD/SVProgressHUD.h"
+
 #endif /* Bridge_Header_h */
