@@ -66,29 +66,11 @@ class CCWashCarOutSideViewController: BaseViewController {
 }
 */
 import UIKit
-import MJRefresh
 import LTScrollView
 
 class CCWashCarOutSideViewController: BaseViewController {
     
     private let headerHeight: CGFloat = 180.0
-    //防止侧滑的时候透明度变化
-    private var currentProgress: CGFloat = 0.0
-    private let navHeight: CGFloat = UIApplication.shared.statusBarFrame.height + 44
-    
-    /*
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.alpha = currentProgress
-        navigationController?.navigationBar.barTintColor = UIColor.white
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.navigationBar.barStyle = .default
-        navigationController?.navigationBar.alpha = 1.0
-    }
-    */
     
     private lazy var viewControllers: [UIViewController] = {
         var vcs = [UIViewController]()
@@ -153,13 +135,9 @@ class CCWashCarOutSideViewController: BaseViewController {
         let Y: CGFloat = 0.0
         let H: CGFloat = view.bounds.height - NavBarHeight - TabBarHeight
         let simpleManager = LTSimpleManager(frame: CGRect(x: 0, y: Y, width: view.bounds.width, height: H), viewControllers: viewControllers, titles: titles, currentViewController: self, layout: layout)
-        simpleManager.backgroundColor = UIColor.red
-        
-        /* 设置代理 监听滚动 */
-//        simpleManager.delegate = self
         
         /* 设置悬停位置 */
-        simpleManager.hoverY = navHeight
+        simpleManager.hoverY = NavBarHeight
         
         return simpleManager
     }()
@@ -197,50 +175,5 @@ extension CCWashCarOutSideViewController {
         }
         
     }
-    
-    @objc private func tapLabel(_ gesture: UITapGestureRecognizer)  {
-        print("tapLabel☄")
-    }
 }
-/*
-extension CCWashCarOutSideViewController: LTSimpleScrollViewDelegate {
-    
-    //MARK: 滚动代理方法
-    func glt_scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetY = scrollView.contentOffset.y
-        var headerImageViewY: CGFloat = offsetY
-        var headerImageViewH: CGFloat = headerHeight - offsetY
-        if offsetY <= 0.0 {
-            navigationController?.navigationBar.alpha = 0
-            currentProgress = 0.0
-        }else {
-            
-            headerImageViewY = 0
-            headerImageViewH = headerHeight
-            
-            let adjustHeight: CGFloat = headerHeight - navHeight
-            let progress = 1 - (offsetY / adjustHeight)
-            //设置状态栏
-            navigationController?.navigationBar.barStyle = progress > 0.5 ? .black : .default
-            
-            //设置导航栏透明度
-            navigationController?.navigationBar.alpha = 1 - progress
-            currentProgress = 1 - progress
-            
-        }
-        headerImageView.frame.origin.y = headerImageViewY
-        headerImageView.frame.size.height = headerImageViewH
-    }
-    
-    //MARK: 控制器刷新事件代理方法
-    func glt_refreshScrollView(_ scrollView: UIScrollView, _ index: Int) {
-        //注意这里循环引用问题。
-        scrollView.mj_header = MJRefreshNormalHeader {[weak scrollView] in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                print("对应控制器的刷新自己玩吧，这里就不做处理了🙂-----\(index)")
-                scrollView?.mj_header.endRefreshing()
-            })
-        }
-    }
-}
-*/
+

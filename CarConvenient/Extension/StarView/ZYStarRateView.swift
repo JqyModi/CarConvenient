@@ -128,9 +128,9 @@ extension ZYStarRateView{
         //星星宽度
         starWidth =  self.bounds.size.width/CGFloat(numberOfStar)
         //背景view
-        self.backgroundView = self.creatStarView(image: #imageLiteral(resourceName: "ic_favor_normat"))
+        self.backgroundView = self.creatStarView(image: #imageLiteral(resourceName: "btn_grade_n"))
         //选择view
-         self.foreView = self.creatStarView(image: #imageLiteral(resourceName: "ic_favor_active"))
+         self.foreView = self.creatStarView(image: #imageLiteral(resourceName: "btn_grade_s"))
         
         self.foreView.frame = CGRect(x: 0, y: 0, width: starWidth * CGFloat(selectNumberOfStar), height: self.bounds.size.height)
         self.addSubview(self.backgroundView)

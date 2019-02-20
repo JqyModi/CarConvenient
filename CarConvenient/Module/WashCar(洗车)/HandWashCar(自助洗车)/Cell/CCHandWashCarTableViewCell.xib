@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CCHandWashCarTableViewCell" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_car_wash_n" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-CE-VnC">
+                        <rect key="frame" x="8" y="19.5" width="60" height="54"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备码：001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cE-r6-FR6">
+                        <rect key="frame" x="85" y="37.5" width="86.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfp-Cw-747">
+                        <rect key="frame" x="262" y="21.5" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.0" green="0.82745098039999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="VWQ-36-ETG"/>
+                            <constraint firstAttribute="width" constant="50" id="grm-oO-nVv"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="空闲">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="selected" title="忙碌"/>
+                        <state key="highlighted" title="离线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rEa-CE-VnC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5Bb-HJ-dS1"/>
+                    <constraint firstItem="Yfp-Cw-747" firstAttribute="centerY" secondItem="0cE-r6-FR6" secondAttribute="centerY" id="LyA-nS-FyL"/>
+                    <constraint firstItem="rEa-CE-VnC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MCJ-UL-vBq"/>
+                    <constraint firstItem="Yfp-Cw-747" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="TPa-bn-Zz9"/>
+                    <constraint firstItem="Yfp-Cw-747" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0cE-r6-FR6" secondAttribute="trailing" constant="8" id="TVM-Jj-0sF"/>
+                    <constraint firstItem="0cE-r6-FR6" firstAttribute="centerY" secondItem="rEa-CE-VnC" secondAttribute="centerY" id="fBj-NP-M27"/>
+                    <constraint firstItem="0cE-r6-FR6" firstAttribute="leading" secondItem="rEa-CE-VnC" secondAttribute="trailing" constant="17" id="oVs-Gu-iE2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_car_wash_n" width="60" height="54"/>
+    </resources>
+</document>
