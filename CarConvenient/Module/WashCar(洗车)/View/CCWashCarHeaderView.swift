@@ -15,4 +15,9 @@ class CCWashCarHeaderView: BaseView {
         // Initialization code
     }
     
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        if let b = clickBlock {
+            b(sender)
+        }
+    }
 }

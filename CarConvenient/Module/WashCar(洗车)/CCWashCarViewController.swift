@@ -21,12 +21,15 @@ class CCWashCarViewController: BaseTableViewController {
         
         self.identifier = "CCWashCarTableViewCell"
         tableView.rowHeight = 93
+        
+//        tableView.mj_header = nil
+//        tableView.mj_footer = nil
     }
     
 }
 extension CCWashCarViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,7 +40,10 @@ extension CCWashCarViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = CCRidersClubDetailViewController.init(nibName: "CCRidersClubDetailViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
     }
 }

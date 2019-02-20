@@ -76,18 +76,19 @@ class CCWashCarOutSideViewController: BaseViewController {
     private var currentProgress: CGFloat = 0.0
     private let navHeight: CGFloat = UIApplication.shared.statusBarFrame.height + 44
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        navigationController?.navigationBar.alpha = currentProgress
-//        navigationController?.navigationBar.barTintColor = UIColor.white
-//        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0)]
-//    }
-//
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        navigationController?.navigationBar.barStyle = .default
-//        navigationController?.navigationBar.alpha = 1.0
-//    }
+    /*
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.alpha = currentProgress
+        navigationController?.navigationBar.barTintColor = UIColor.white
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.barStyle = .default
+        navigationController?.navigationBar.alpha = 1.0
+    }
+    */
     
     private lazy var viewControllers: [UIViewController] = {
         var vcs = [UIViewController]()
@@ -109,6 +110,22 @@ class CCWashCarOutSideViewController: BaseViewController {
     private lazy var headerImageView: UIView = {
         let hv = CCWashCarHeaderView.md_viewFromXIB() as! CCWashCarHeaderView
         hv.autoresizingMask = .flexibleWidth
+        
+        hv.clickBlock = {(sender) in
+            if let btn = sender as? UIButton {
+                switch btn.tag {
+                case 10001: // 地区选择
+                    let vc = MCSelectLocalController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    break
+                case 10002: // 搜索
+                    
+                    break
+                default:
+                    break
+                }
+            }
+        }
         return hv
     }()
     
@@ -134,7 +151,7 @@ class CCWashCarOutSideViewController: BaseViewController {
     
     private lazy var simpleManager: LTSimpleManager = {
         let Y: CGFloat = 0.0
-        let H: CGFloat = IPHONEX ? (view.bounds.height - 34) : view.bounds.height
+        let H: CGFloat = view.bounds.height - NavBarHeight - TabBarHeight
         let simpleManager = LTSimpleManager(frame: CGRect(x: 0, y: Y, width: view.bounds.width, height: H), viewControllers: viewControllers, titles: titles, currentViewController: self, layout: layout)
         simpleManager.backgroundColor = UIColor.red
         

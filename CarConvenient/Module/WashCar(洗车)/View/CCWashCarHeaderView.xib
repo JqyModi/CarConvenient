@@ -49,14 +49,24 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <button opaque="NO" tag="10002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzE-uM-7m6">
+                                    <rect key="frame" x="0.0" y="0.0" width="309" height="33"/>
+                                    <connections>
+                                        <action selector="btn_DidClicked:" destination="Xtp-Bm-0oK" eventType="touchUpInside" id="UWE-L7-8Yt"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="6ce-dL-IdD" firstAttribute="leading" secondItem="iUC-no-ZZW" secondAttribute="leading" constant="8" id="55K-bb-UHr"/>
+                                <constraint firstItem="TzE-uM-7m6" firstAttribute="top" secondItem="iUC-no-ZZW" secondAttribute="top" id="Gus-13-n3S"/>
                                 <constraint firstItem="tew-k4-R2b" firstAttribute="leading" secondItem="6ce-dL-IdD" secondAttribute="trailing" constant="8" id="LOS-Ow-CQR"/>
                                 <constraint firstItem="6ce-dL-IdD" firstAttribute="centerY" secondItem="iUC-no-ZZW" secondAttribute="centerY" id="Sdc-uI-aza"/>
                                 <constraint firstItem="tew-k4-R2b" firstAttribute="top" secondItem="iUC-no-ZZW" secondAttribute="top" constant="2" id="WhS-zA-bw1"/>
+                                <constraint firstAttribute="bottom" secondItem="TzE-uM-7m6" secondAttribute="bottom" id="XIP-pU-AYQ"/>
+                                <constraint firstAttribute="trailing" secondItem="TzE-uM-7m6" secondAttribute="trailing" id="d76-VZ-8JS"/>
                                 <constraint firstAttribute="bottom" secondItem="tew-k4-R2b" secondAttribute="bottom" constant="2" id="fgf-4p-3A9"/>
+                                <constraint firstItem="TzE-uM-7m6" firstAttribute="leading" secondItem="iUC-no-ZZW" secondAttribute="leading" id="hoJ-ua-tnW"/>
                                 <constraint firstAttribute="trailing" secondItem="tew-k4-R2b" secondAttribute="trailing" constant="8" id="kmA-sA-s2F"/>
                                 <constraint firstAttribute="height" constant="33" id="zmO-Pc-BjT"/>
                             </constraints>
@@ -67,7 +77,7 @@
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6q-MF-X94" customClass="MDRightIconButton" customModule="CarConvenient" customModuleProvider="target">
+                        <button opaque="NO" tag="10001" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6q-MF-X94" customClass="MDRightIconButton" customModule="CarConvenient" customModuleProvider="target">
                             <rect key="frame" x="8" y="16.5" width="42" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="广州" image="global_btn_down_n">
@@ -78,6 +88,9 @@
                                     <integer key="value" value="3"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btn_DidClicked:" destination="Xtp-Bm-0oK" eventType="touchUpInside" id="yPU-9N-rDA"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
