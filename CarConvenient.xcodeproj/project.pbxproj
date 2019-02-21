@@ -300,6 +300,8 @@
 		C5A3A799221D32910080DA57 /* MDPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A3A797221D32910080DA57 /* MDPasswordView.xib */; };
 		C5A3A79D221D3FE70080DA57 /* CCPayPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3A79B221D3FE70080DA57 /* CCPayPopView.swift */; };
 		C5A3A79E221D3FE70080DA57 /* CCPayPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A3A79C221D3FE70080DA57 /* CCPayPopView.xib */; };
+		C5A4F707221D54B000650CE9 /* CCScanCodeWashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A4F705221D54B000650CE9 /* CCScanCodeWashViewController.swift */; };
+		C5A4F708221D54B000650CE9 /* CCScanCodeWashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A4F706221D54B000650CE9 /* CCScanCodeWashViewController.xib */; };
 		C5A750D422150BE70010A183 /* CCVehicleRecordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750CA22150BE70010A183 /* CCVehicleRecordsViewController.xib */; };
 		C5A750D522150BE70010A183 /* CCVehicleRecordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A750CC22150BE70010A183 /* CCVehicleRecordsTableViewCell.swift */; };
 		C5A750D622150BE70010A183 /* CCVehicleRecordsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A750CD22150BE70010A183 /* CCVehicleRecordsTableViewCell.xib */; };
@@ -873,6 +875,8 @@
 		C5A3A797221D32910080DA57 /* MDPasswordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MDPasswordView.xib; sourceTree = "<group>"; };
 		C5A3A79B221D3FE70080DA57 /* CCPayPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPayPopView.swift; sourceTree = "<group>"; };
 		C5A3A79C221D3FE70080DA57 /* CCPayPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPayPopView.xib; sourceTree = "<group>"; };
+		C5A4F705221D54B000650CE9 /* CCScanCodeWashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCScanCodeWashViewController.swift; sourceTree = "<group>"; };
+		C5A4F706221D54B000650CE9 /* CCScanCodeWashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCScanCodeWashViewController.xib; sourceTree = "<group>"; };
 		C5A750CA22150BE70010A183 /* CCVehicleRecordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsViewController.xib; sourceTree = "<group>"; };
 		C5A750CC22150BE70010A183 /* CCVehicleRecordsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVehicleRecordsTableViewCell.swift; sourceTree = "<group>"; };
 		C5A750CD22150BE70010A183 /* CCVehicleRecordsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCVehicleRecordsTableViewCell.xib; sourceTree = "<group>"; };
@@ -2244,6 +2248,7 @@
 		C56642A821F57B16008C8CC6 /* WashCar(洗车) */ = {
 			isa = PBXGroup;
 			children = (
+				C5A4F704221D541700650CE9 /* ScanCodeWash(扫码洗车) */,
 				C5A3A76E221CFA0A0080DA57 /* Search(搜索) */,
 				C5BA72F3221BFFDC0036E409 /* View */,
 				C5BA72EC221BF1E30036E409 /* Cell */,
@@ -2399,6 +2404,23 @@
 				C5A3A79C221D3FE70080DA57 /* CCPayPopView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C5A4F704221D541700650CE9 /* ScanCodeWash(扫码洗车) */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4F709221E4EB400650CE9 /* SelectCar(选择车辆) */,
+				C5A4F705221D54B000650CE9 /* CCScanCodeWashViewController.swift */,
+				C5A4F706221D54B000650CE9 /* CCScanCodeWashViewController.xib */,
+			);
+			path = "ScanCodeWash(扫码洗车)";
+			sourceTree = "<group>";
+		};
+		C5A4F709221E4EB400650CE9 /* SelectCar(选择车辆) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SelectCar(选择车辆)";
 			sourceTree = "<group>";
 		};
 		C5A750C922150BE70010A183 /* VehicleRecords(爱车档案) */ = {
@@ -3393,6 +3415,7 @@
 				C566424E21F55C43008C8CC6 /* icon_deleted@3x copy.png in Resources */,
 				C5A3A799221D32910080DA57 /* MDPasswordView.xib in Resources */,
 				C5FA096121FD5E21005AF09C /* CCCarTypeCollectionViewCell.xib in Resources */,
+				C5A4F708221D54B000650CE9 /* CCScanCodeWashViewController.xib in Resources */,
 				C5FA09CF21FEE0F2005AF09C /* CCCarCategoryDetailHeaderView.xib in Resources */,
 				C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */,
 				C5E0D1A42214559D00C93EC1 /* CCMyBargainViewController.xib in Resources */,
@@ -3850,6 +3873,7 @@
 				C5A7510322153A240010A183 /* MCLocalButton.swift in Sources */,
 				C5E0D18822141D5A00C93EC1 /* CCMyPropertyViewController.swift in Sources */,
 				C5F6BE2F21F71B15009FACD6 /* CCServiceViewController.swift in Sources */,
+				C5A4F707221D54B000650CE9 /* CCScanCodeWashViewController.swift in Sources */,
 				C5A7510622153F9C0010A183 /* ColorConfiguation.swift in Sources */,
 				C56641FC21F55C43008C8CC6 /* UIColor+Category.m in Sources */,
 				C56641FF21F55C43008C8CC6 /* NSAttributedString+Category.m in Sources */,

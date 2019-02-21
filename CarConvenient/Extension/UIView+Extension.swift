@@ -17,6 +17,10 @@ enum clipCornerDirection :Int {
     case topRight = 1
     case bottomLeft = 2
     case bottomRight = 3
+    case left = 4
+    case top  = 5
+    case right = 6
+    case bottom = 7
 }
 
 // MARK: - 扩展UIView
@@ -255,7 +259,7 @@ extension UIView {
     ///   - radius: 切的幅度
     ///   - direct: 方向 -
     ///   - fillColor: 填充色
-    func viewClipCornerDirection(radius:CGFloat,direct:clipCornerDirection,fillColor:UIColor) {
+    func viewClipCornerDirection(radius:CGFloat,fillColor:UIColor) {
         
         //
         let corners:UIRectCorner = [UIRectCorner.topLeft,UIRectCorner.bottomLeft]
@@ -268,6 +272,54 @@ extension UIView {
         self.layer.addSublayer(layer)
         self.layer.mask = layer
         
+        
+    }
+    
+    func viewClipCornerDirection(radius:CGFloat,direct:clipCornerDirection,fillColor:UIColor = UIColor.white) {
+        
+        var corners:UIRectCorner = [UIRectCorner.topLeft]
+        switch direct {
+        case clipCornerDirection.topLeft:
+            corners = [UIRectCorner.topLeft]
+            break
+        case clipCornerDirection.topRight:
+            corners = [UIRectCorner.topRight]
+            break
+        case clipCornerDirection.bottomLeft:
+            corners = [UIRectCorner.bottomLeft]
+            break
+        case clipCornerDirection.bottomRight:
+            corners = [UIRectCorner.bottomRight]
+            break
+        case clipCornerDirection.left:
+            corners = [UIRectCorner.topLeft, UIRectCorner.bottomLeft]
+            break
+        case clipCornerDirection.top:
+            corners = [UIRectCorner.topLeft, UIRectCorner.topRight]
+            break
+        case clipCornerDirection.right:
+            corners = [UIRectCorner.topRight, UIRectCorner.bottomRight]
+            break
+        case clipCornerDirection.bottom:
+            corners = [UIRectCorner.bottomLeft, UIRectCorner.bottomRight]
+            break
+            
+        default:
+            break
+        }
+        var tempBounds = bounds
+        if bounds.width > bounds.height {
+            tempBounds = CGRect(origin: .zero, size: CGSize(width: bounds.width, height: bounds.width))
+        }else {
+            tempBounds = CGRect(origin: .zero, size: CGSize(width: bounds.height, height: bounds.height))
+        }
+        let path = UIBezierPath(roundedRect: tempBounds, byRoundingCorners:corners, cornerRadii: CGSize(width: radius, height: radius))
+        let layer = CAShapeLayer()
+        layer.frame = bounds
+        layer.path = path.cgPath
+        layer.fillColor = fillColor.cgColor
+        self.layer.addSublayer(layer)
+        self.layer.mask = layer
         
     }
     

@@ -149,9 +149,9 @@ class HFAppEngine: NSObject, UITabBarControllerDelegate, CLLocationManagerDelega
                 
             // 已登录
             case .DidLogin:
-                
-                let VC = self.setupMainViewController()
-                self.execute!(VC)                           // 显示主控制器
+                let VC = CCScanCodeWashViewController()
+                let NVC = MDNavigationController(vc: VC)
+                self.execute!(NVC)                           // 显示主控制器
                 
             }
             
@@ -177,6 +177,7 @@ class HFAppEngine: NSObject, UITabBarControllerDelegate, CLLocationManagerDelega
 //        }else {
 //            self.mainViewController?.selectedIndex = 2
 //        }
+        self.mainViewController?.selectedIndex = 2
         return mainViewController!
         
     }
