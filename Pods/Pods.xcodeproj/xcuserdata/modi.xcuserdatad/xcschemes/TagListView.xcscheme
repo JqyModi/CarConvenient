@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "34B2FAF70A242E74BE34512E79801745"
-               BlueprintName = "TencentOpenAPI"
+               BlueprintIdentifier = "2E0E888910052F6EF7BD8E60993C2B44"
+               BlueprintName = "TagListView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "TencentOpenAPI">
+               BuildableName = "TagListView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

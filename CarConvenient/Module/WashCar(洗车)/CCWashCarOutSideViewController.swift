@@ -101,7 +101,8 @@ class CCWashCarOutSideViewController: BaseViewController {
                     self.navigationController?.pushViewController(vc, animated: true)
                     break
                 case 10002: // 搜索
-                    
+                    let vc = CCSearchViewController.init(nibName: "CCSearchViewController", bundle: nil)
+                    self.navigationController?.pushViewController(vc, animated: true)
                     break
                 default:
                     break

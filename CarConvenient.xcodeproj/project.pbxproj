@@ -287,6 +287,10 @@
 		C58F372C221E7D4D00C122B0 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F372B221E7D4D00C122B0 /* Tool.swift */; };
 		C58F3730221E7E0600C122B0 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F372E221E7E0500C122B0 /* UIImage+QRCode.swift */; };
 		C58F3731221E7E0600C122B0 /* String+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F372F221E7E0500C122B0 /* String+QRCode.swift */; };
+		C58F3739221E934100C122B0 /* CCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F3737221E934100C122B0 /* CCSearchViewController.swift */; };
+		C58F373A221E934100C122B0 /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3738221E934100C122B0 /* CCSearchViewController.xib */; };
+		C58F373E221E9A7D00C122B0 /* CCSearchNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F373C221E9A7D00C122B0 /* CCSearchNavView.swift */; };
+		C58F373F221E9A7D00C122B0 /* CCSearchNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F373D221E9A7D00C122B0 /* CCSearchNavView.xib */; };
 		C59A1A42221E4F64006B00DE /* CCSelectCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */; };
 		C59A1A43221E4F64006B00DE /* CCSelectCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */; };
 		C59A1A47221E4FB6006B00DE /* CCSelectCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */; };
@@ -871,6 +875,10 @@
 		C58F372B221E7D4D00C122B0 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		C58F372E221E7E0500C122B0 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRCode.swift"; sourceTree = "<group>"; };
 		C58F372F221E7E0500C122B0 /* String+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QRCode.swift"; sourceTree = "<group>"; };
+		C58F3737221E934100C122B0 /* CCSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSearchViewController.swift; sourceTree = "<group>"; };
+		C58F3738221E934100C122B0 /* CCSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSearchViewController.xib; sourceTree = "<group>"; };
+		C58F373C221E9A7D00C122B0 /* CCSearchNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSearchNavView.swift; sourceTree = "<group>"; };
+		C58F373D221E9A7D00C122B0 /* CCSearchNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSearchNavView.xib; sourceTree = "<group>"; };
 		C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSelectCarViewController.xib; sourceTree = "<group>"; };
 		C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSelectCarViewController.swift; sourceTree = "<group>"; };
 		C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSelectCarTableViewCell.swift; sourceTree = "<group>"; };
@@ -2388,6 +2396,15 @@
 			path = QRCode;
 			sourceTree = "<group>";
 		};
+		C58F373B221E9A4800C122B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C58F373C221E9A7D00C122B0 /* CCSearchNavView.swift */,
+				C58F373D221E9A7D00C122B0 /* CCSearchNavView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C59A1A44221E4F9F006B00DE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -2400,6 +2417,9 @@
 		C5A3A76E221CFA0A0080DA57 /* Search(搜索) */ = {
 			isa = PBXGroup;
 			children = (
+				C58F373B221E9A4800C122B0 /* View */,
+				C58F3737221E934100C122B0 /* CCSearchViewController.swift */,
+				C58F3738221E934100C122B0 /* CCSearchViewController.xib */,
 			);
 			path = "Search(搜索)";
 			sourceTree = "<group>";
@@ -3452,6 +3472,7 @@
 				C5E0D1462212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib in Resources */,
 				C566428921F55C8D008C8CC6 /* start _img_logo.png in Resources */,
 				C56641CF21F55C43008C8CC6 /* project_intro.css in Resources */,
+				C58F373F221E9A7D00C122B0 /* CCSearchNavView.xib in Resources */,
 				C52AB5E52216C6BF0031A550 /* CCExchangeRecordTableViewCell.xib in Resources */,
 				C5E0D1622213C64D00C93EC1 /* CCManagerAddressTableViewCell.xib in Resources */,
 				C566429E21F55C8D008C8CC6 /* MenuData.plist in Resources */,
@@ -3542,6 +3563,7 @@
 				C566424521F55C43008C8CC6 /* icon_deleted @2x.png in Resources */,
 				C566424B21F55C43008C8CC6 /* icon_deleted@3x.png in Resources */,
 				C566428A21F55C8D008C8CC6 /* start _img_logo@3x.png in Resources */,
+				C58F373A221E934100C122B0 /* CCSearchViewController.xib in Resources */,
 				C5E0D1582213C19900C93EC1 /* CCAddressManagerTableViewCell.xib in Resources */,
 				C5A7510A221543860010A183 /* citydict.plist in Resources */,
 				C5F6F92C2214FE180094DC0E /* CCOwnersCertificationTableViewCell.xib in Resources */,
@@ -3694,6 +3716,7 @@
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -3714,6 +3737,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3880,6 +3904,7 @@
 				C52AB5E02216C6A40031A550 /* CCExchangeRecordViewController.swift in Sources */,
 				C566429321F55C8D008C8CC6 /* FCSearchHouseUModel.swift in Sources */,
 				C56641F021F55C43008C8CC6 /* NSObject+PerformBlock.m in Sources */,
+				C58F373E221E9A7D00C122B0 /* CCSearchNavView.swift in Sources */,
 				C56641EE21F55C43008C8CC6 /* NSData+CommonCryptor.m in Sources */,
 				C56641A721F55C43008C8CC6 /* HFEngineConfiguration.swift in Sources */,
 				C566420021F55C43008C8CC6 /* NSMutableArray+Category.m in Sources */,
@@ -3908,6 +3933,7 @@
 				C56641F321F55C43008C8CC6 /* UINavigationController+NavManager.m in Sources */,
 				C56641E921F55C43008C8CC6 /* UIImage+Category.m in Sources */,
 				C566429F21F55C8D008C8CC6 /* YDMenu.swift in Sources */,
+				C58F3739221E934100C122B0 /* CCSearchViewController.swift in Sources */,
 				C56641D221F55C43008C8CC6 /* BaseHeaderView.swift in Sources */,
 				C5FA096021FD5E21005AF09C /* CCCarTypeCollectionViewCell.swift in Sources */,
 				C5FA096321FD5E21005AF09C /* CCCarTypeDetailTableViewCell.swift in Sources */,

@@ -68,6 +68,8 @@ target 'CarConvenient' do
     # 链式添加事件等处理
 #    pod 'ReactiveCocoa'
 
+    pod 'TagListView'
+
   target 'CarConvenientTests' do
     inherit! :search_paths
     # Pods for testing
