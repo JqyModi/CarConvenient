@@ -72,6 +72,8 @@ class CCScanCodeWashViewController: BaseViewController {
             self.clickLeft()
             break
         case 10002:
+            let vc = CCSelectCarViewController.init(nibName: "CCSelectCarViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 10003:
             self.clickRight(sender: sender)
@@ -79,6 +81,8 @@ class CCScanCodeWashViewController: BaseViewController {
         case 10004:
             break
         case 10005:
+            let vc = ScanViewController.init(nibName: "ScanViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 10006:
             break

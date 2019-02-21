@@ -282,6 +282,15 @@
 		C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */; };
 		C56E20CA2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */; };
 		C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */; };
+		C58F3728221E78F400C122B0 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F3726221E78F400C122B0 /* ScanViewController.swift */; };
+		C58F3729221E78F400C122B0 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3727221E78F400C122B0 /* ScanViewController.xib */; };
+		C58F372C221E7D4D00C122B0 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F372B221E7D4D00C122B0 /* Tool.swift */; };
+		C58F3730221E7E0600C122B0 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F372E221E7E0500C122B0 /* UIImage+QRCode.swift */; };
+		C58F3731221E7E0600C122B0 /* String+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F372F221E7E0500C122B0 /* String+QRCode.swift */; };
+		C59A1A42221E4F64006B00DE /* CCSelectCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */; };
+		C59A1A43221E4F64006B00DE /* CCSelectCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */; };
+		C59A1A47221E4FB6006B00DE /* CCSelectCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */; };
+		C59A1A48221E4FB6006B00DE /* CCSelectCarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59A1A46221E4FB6006B00DE /* CCSelectCarTableViewCell.xib */; };
 		C5A3A770221CFBE50080DA57 /* CCHandWashCarOutSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3A76F221CFBE50080DA57 /* CCHandWashCarOutSideViewController.swift */; };
 		C5A3A772221CFC3B0080DA57 /* CCHandWashCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3A771221CFC3B0080DA57 /* CCHandWashCarViewController.swift */; };
 		C5A3A776221CFC940080DA57 /* CCHandWashCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3A774221CFC940080DA57 /* CCHandWashCarTableViewCell.swift */; };
@@ -857,6 +866,15 @@
 		C56E20C422110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSpecialAreaTableViewCell.xib; sourceTree = "<group>"; };
 		C56E20C82211413300E9BB47 /* CCPersonalCenterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPersonalCenterCollectionViewCell.swift; sourceTree = "<group>"; };
 		C56E20C92211413300E9BB47 /* CCPersonalCenterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPersonalCenterCollectionViewCell.xib; sourceTree = "<group>"; };
+		C58F3726221E78F400C122B0 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		C58F3727221E78F400C122B0 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		C58F372B221E7D4D00C122B0 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		C58F372E221E7E0500C122B0 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRCode.swift"; sourceTree = "<group>"; };
+		C58F372F221E7E0500C122B0 /* String+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QRCode.swift"; sourceTree = "<group>"; };
+		C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSelectCarViewController.xib; sourceTree = "<group>"; };
+		C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSelectCarViewController.swift; sourceTree = "<group>"; };
+		C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSelectCarTableViewCell.swift; sourceTree = "<group>"; };
+		C59A1A46221E4FB6006B00DE /* CCSelectCarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSelectCarTableViewCell.xib; sourceTree = "<group>"; };
 		C5A3A76F221CFBE50080DA57 /* CCHandWashCarOutSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHandWashCarOutSideViewController.swift; sourceTree = "<group>"; };
 		C5A3A771221CFC3B0080DA57 /* CCHandWashCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHandWashCarViewController.swift; sourceTree = "<group>"; };
 		C5A3A774221CFC940080DA57 /* CCHandWashCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHandWashCarTableViewCell.swift; sourceTree = "<group>"; };
@@ -2342,6 +2360,43 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C58F3725221E78DE00C122B0 /* ScanCode(扫码) */ = {
+			isa = PBXGroup;
+			children = (
+				C58F372A221E7D4D00C122B0 /* Tool */,
+				C58F3726221E78F400C122B0 /* ScanViewController.swift */,
+				C58F3727221E78F400C122B0 /* ScanViewController.xib */,
+			);
+			path = "ScanCode(扫码)";
+			sourceTree = "<group>";
+		};
+		C58F372A221E7D4D00C122B0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C58F372D221E7E0500C122B0 /* QRCode */,
+				C58F372B221E7D4D00C122B0 /* Tool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C58F372D221E7E0500C122B0 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C58F372E221E7E0500C122B0 /* UIImage+QRCode.swift */,
+				C58F372F221E7E0500C122B0 /* String+QRCode.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		C59A1A44221E4F9F006B00DE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */,
+				C59A1A46221E4FB6006B00DE /* CCSelectCarTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C5A3A76E221CFA0A0080DA57 /* Search(搜索) */ = {
 			isa = PBXGroup;
 			children = (
@@ -2409,6 +2464,7 @@
 		C5A4F704221D541700650CE9 /* ScanCodeWash(扫码洗车) */ = {
 			isa = PBXGroup;
 			children = (
+				C58F3725221E78DE00C122B0 /* ScanCode(扫码) */,
 				C5A4F709221E4EB400650CE9 /* SelectCar(选择车辆) */,
 				C5A4F705221D54B000650CE9 /* CCScanCodeWashViewController.swift */,
 				C5A4F706221D54B000650CE9 /* CCScanCodeWashViewController.xib */,
@@ -2419,6 +2475,9 @@
 		C5A4F709221E4EB400650CE9 /* SelectCar(选择车辆) */ = {
 			isa = PBXGroup;
 			children = (
+				C59A1A44221E4F9F006B00DE /* Cell */,
+				C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */,
+				C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */,
 			);
 			path = "SelectCar(选择车辆)";
 			sourceTree = "<group>";
@@ -3410,6 +3469,7 @@
 				C532F52F21F98C8400AD7ED3 /* CCForgetPasswordViewController.xib in Resources */,
 				C566424C21F55C43008C8CC6 /* FJItemCVCell.xib in Resources */,
 				C5F68811221A4D4A00982ECC /* CCCommentTableViewCell.xib in Resources */,
+				C59A1A42221E4F64006B00DE /* CCSelectCarViewController.xib in Resources */,
 				C5FA09DD21FEEC1D005AF09C /* CCBargainFooterView.xib in Resources */,
 				C5384C3D22127942002F9561 /* CCIntegralMallHeaderView.xib in Resources */,
 				C566424E21F55C43008C8CC6 /* icon_deleted@3x copy.png in Resources */,
@@ -3449,6 +3509,7 @@
 				C5BA72F7221C000E0036E409 /* CCWashCarHeaderView.xib in Resources */,
 				DE840750221A899C00B352CB /* STTitleCCell.xib in Resources */,
 				C5384C1B22116041002F9561 /* setting.plist in Resources */,
+				C58F3729221E78F400C122B0 /* ScanViewController.xib in Resources */,
 				C5E0D1412212B1B700C93EC1 /* CCShoppingCartViewController.xib in Resources */,
 				C5FA095F21FD5E21005AF09C /* CCCarTypeDetailTableViewCell.xib in Resources */,
 				C56641B221F55C43008C8CC6 /* HFStartViewController.xib in Resources */,
@@ -3470,6 +3531,7 @@
 				C5FA096421FD5E21005AF09C /* CCCarTypeTableViewCell.xib in Resources */,
 				C566423D21F55C43008C8CC6 /* HXPhotoPicker.bundle in Resources */,
 				C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */,
+				C59A1A48221E4FB6006B00DE /* CCSelectCarTableViewCell.xib in Resources */,
 				C5E0D15D2213C5F000C93EC1 /* CCManagerAddressViewController.xib in Resources */,
 				C532F53C21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib in Resources */,
 				C56641C521F55C43008C8CC6 /* AlipaySDK.bundle in Resources */,
@@ -3682,6 +3744,7 @@
 				C5F6881E221AA2D400982ECC /* CCCommmentView.swift in Sources */,
 				C5A3A79D221D3FE70080DA57 /* CCPayPopView.swift in Sources */,
 				C56641F521F55C43008C8CC6 /* NSMutableDictionary+Category.m in Sources */,
+				C59A1A47221E4FB6006B00DE /* CCSelectCarTableViewCell.swift in Sources */,
 				C566422A21F55C43008C8CC6 /* HXPhotoManager.m in Sources */,
 				C566429B21F55C8D008C8CC6 /* LTLocationBottomView.swift in Sources */,
 				C56641EA21F55C43008C8CC6 /* NSString+Safe.m in Sources */,
@@ -3714,6 +3777,7 @@
 				C566421B21F55C43008C8CC6 /* HXPhoto3DTouchViewController.m in Sources */,
 				C532F53B21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.swift in Sources */,
 				C56641F821F55C43008C8CC6 /* NSDictionary+Category.m in Sources */,
+				C59A1A43221E4F64006B00DE /* CCSelectCarViewController.swift in Sources */,
 				C56641EC21F55C43008C8CC6 /* UIButton+Category.m in Sources */,
 				C532F53F21F99A7D00AD7ED3 /* CCModifyPasswordViewController.swift in Sources */,
 				C5A3A781221D00EE0080DA57 /* CCOtherWashCarTableViewCell.swift in Sources */,
@@ -3726,6 +3790,7 @@
 				C56641ED21F55C43008C8CC6 /* UIView+Category.m in Sources */,
 				C566424121F55C43008C8CC6 /* MDBaseObject.swift in Sources */,
 				C566429221F55C8D008C8CC6 /* LTCommentViewController.swift in Sources */,
+				C58F3728221E78F400C122B0 /* ScanViewController.swift in Sources */,
 				C56641FA21F55C43008C8CC6 /* NSDate+Format.m in Sources */,
 				C56641C021F55C43008C8CC6 /* TLWelcomeCollectionViewCell.swift in Sources */,
 				C566423A21F55C43008C8CC6 /* HXDatePhotoPersentInteractiveTransition.m in Sources */,
@@ -3738,6 +3803,7 @@
 				C52AB5DD2216C3880031A550 /* CCTeamRuleViewController.swift in Sources */,
 				C566423821F55C43008C8CC6 /* UIButton+HXExtension.m in Sources */,
 				C5384C3B2212793B002F9561 /* CCIntegralMallHeaderView.swift in Sources */,
+				C58F372C221E7D4D00C122B0 /* Tool.swift in Sources */,
 				C56641D121F55C43008C8CC6 /* BaseViewController.swift in Sources */,
 				C56641C121F55C43008C8CC6 /* HFWelcomeViewController.swift in Sources */,
 				C5FA09C221FEAD5C005AF09C /* CCGroupBuyingCollectionViewCell.swift in Sources */,
@@ -3879,6 +3945,7 @@
 				C56641FF21F55C43008C8CC6 /* NSAttributedString+Category.m in Sources */,
 				C566421221F55C43008C8CC6 /* BRAddressModel.m in Sources */,
 				C56641C821F55C43008C8CC6 /* HFThirdPartyManager.swift in Sources */,
+				C58F3730221E7E0600C122B0 /* UIImage+QRCode.swift in Sources */,
 				C52AB5DA2216BECC0031A550 /* CCGroupDiscountViewController.swift in Sources */,
 				C5385849221BD0E600CFFF29 /* CCApplyView.swift in Sources */,
 				C566424F21F55C43008C8CC6 /* FJItemCVCell.swift in Sources */,
@@ -3927,6 +3994,7 @@
 				DEA68AD52213BAB000EAEE9B /* STServiceCCell.swift in Sources */,
 				C5A3A772221CFC3B0080DA57 /* CCHandWashCarViewController.swift in Sources */,
 				C56641E621F55C43008C8CC6 /* UIButton+Category.m in Sources */,
+				C58F3731221E7E0600C122B0 /* String+QRCode.swift in Sources */,
 				C5385853221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift in Sources */,
 				C566428D21F55C8D008C8CC6 /* MDWebViewController.swift in Sources */,
 				C52AB5D62216BCA80031A550 /* CCMyTeamTableViewCell.swift in Sources */,
