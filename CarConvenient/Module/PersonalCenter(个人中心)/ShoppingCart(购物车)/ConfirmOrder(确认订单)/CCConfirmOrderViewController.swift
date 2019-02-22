@@ -60,6 +60,8 @@ class CCConfirmOrderViewController: BaseTableViewController {
                     self.navigationController?.pushViewController(vc, animated: true)
                     break
                 case 10004: // 发票
+                    let vc = CCInvoiceViewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
                     break
                 default:
                     break

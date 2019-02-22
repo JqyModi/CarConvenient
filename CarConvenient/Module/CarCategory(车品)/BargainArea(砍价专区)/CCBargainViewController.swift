@@ -73,6 +73,12 @@ extension CCBargainViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! CCBargainTableViewCell
+        cell.clickBlock = {(sender) in
+            if let btn = sender as? UIButton {
+                let vc = CCBargainDetailViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

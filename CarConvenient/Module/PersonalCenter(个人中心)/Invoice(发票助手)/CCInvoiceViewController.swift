@@ -20,7 +20,22 @@ class CCInvoiceViewController: BaseTableViewController {
         super.setupTableView()
         
         self.identifier = "CCInvoiceTableViewCell"
+        tableView.backgroundColor = UIColor.white
+    }
+    
+    override func setupTableFooterView() {
+        super.setupTableFooterView()
         
+        let fv = CCInvoiceFooterView.md_viewFromXIB() as! CCInvoiceFooterView
+        fv.autoresizingMask = .flexibleWidth
+        tableView.tableFooterView = fv
+        
+        fv.clickBlock = {(sender) in
+            if let btn = sender as? UIButton {
+                let vc = CCAddInvoiceViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
     
 }

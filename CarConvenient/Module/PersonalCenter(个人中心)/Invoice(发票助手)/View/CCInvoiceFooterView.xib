@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2n5-hT-ADf" customClass="CCInvoiceFooterView" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ua-KM-TxC">
+                    <rect key="frame" x="15" y="10" width="320" height="60"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="btn_add_invoice_n" translatesAutoresizingMaskIntoConstraints="NO" id="pJf-GJ-Ssw">
+                            <rect key="frame" x="12" y="22" width="16" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加发票信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qb-hW-Rnj">
+                            <rect key="frame" x="36" y="21.5" width="86" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9G-PT-Trd">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                            <connections>
+                                <action selector="btn_DidClicked:" destination="2n5-hT-ADf" eventType="touchUpInside" id="pom-Hq-flI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pJf-GJ-Ssw" firstAttribute="leading" secondItem="2Ua-KM-TxC" secondAttribute="leading" constant="12" id="097-3H-6ng"/>
+                        <constraint firstItem="pJf-GJ-Ssw" firstAttribute="centerY" secondItem="2Ua-KM-TxC" secondAttribute="centerY" id="8dn-Vt-nUi"/>
+                        <constraint firstItem="G9G-PT-Trd" firstAttribute="leading" secondItem="2Ua-KM-TxC" secondAttribute="leading" id="9yi-mU-xce"/>
+                        <constraint firstAttribute="bottom" secondItem="G9G-PT-Trd" secondAttribute="bottom" id="bh6-uY-BP0"/>
+                        <constraint firstItem="1qb-hW-Rnj" firstAttribute="centerY" secondItem="pJf-GJ-Ssw" secondAttribute="centerY" id="d81-J2-6qv"/>
+                        <constraint firstItem="G9G-PT-Trd" firstAttribute="top" secondItem="2Ua-KM-TxC" secondAttribute="top" id="dAn-hd-IT7"/>
+                        <constraint firstItem="1qb-hW-Rnj" firstAttribute="leading" secondItem="pJf-GJ-Ssw" secondAttribute="trailing" constant="8" id="jkC-sv-PsH"/>
+                        <constraint firstAttribute="trailing" secondItem="G9G-PT-Trd" secondAttribute="trailing" id="rqd-en-HXh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="czC-4D-AeU" firstAttribute="trailing" secondItem="2Ua-KM-TxC" secondAttribute="trailing" constant="15" id="NAQ-YE-Sgs"/>
+                <constraint firstItem="2Ua-KM-TxC" firstAttribute="top" secondItem="2n5-hT-ADf" secondAttribute="top" constant="10" id="QgS-IM-gPB"/>
+                <constraint firstAttribute="bottom" secondItem="2Ua-KM-TxC" secondAttribute="bottom" id="ZMO-Wt-eav"/>
+                <constraint firstItem="2Ua-KM-TxC" firstAttribute="leading" secondItem="czC-4D-AeU" secondAttribute="leading" constant="15" id="aaA-vc-oDh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="czC-4D-AeU"/>
+            <point key="canvasLocation" x="-26" y="160"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_add_invoice_n" width="16" height="16"/>
+    </resources>
+</document>
