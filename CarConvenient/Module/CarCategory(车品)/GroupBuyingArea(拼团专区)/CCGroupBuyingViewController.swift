@@ -76,6 +76,12 @@ extension CCGroupBuyingViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CCGroupBuyingCollectionViewCell
+        cell.clickBlock = {(sender) in
+            if let btn = sender as? UIButton {
+                let vc = CCGoodsViewController.init(nibName: "CCGoodsViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
         return cell
     }
     

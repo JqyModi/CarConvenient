@@ -291,6 +291,18 @@
 		C58F373A221E934100C122B0 /* CCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3738221E934100C122B0 /* CCSearchViewController.xib */; };
 		C58F373E221E9A7D00C122B0 /* CCSearchNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F373C221E9A7D00C122B0 /* CCSearchNavView.swift */; };
 		C58F373F221E9A7D00C122B0 /* CCSearchNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F373D221E9A7D00C122B0 /* CCSearchNavView.xib */; };
+		C58F3743221EACEC00C122B0 /* CCGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F3741221EACEC00C122B0 /* CCGoodsViewController.swift */; };
+		C58F3744221EACEC00C122B0 /* CCGoodsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3742221EACEC00C122B0 /* CCGoodsViewController.xib */; };
+		C58F3748221EAD1600C122B0 /* CCGoodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F3746221EAD1600C122B0 /* CCGoodsTableViewCell.swift */; };
+		C58F3749221EAD1600C122B0 /* CCGoodsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3747221EAD1600C122B0 /* CCGoodsTableViewCell.xib */; };
+		C58F374D221F930C00C122B0 /* CCGoodsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F374B221F930C00C122B0 /* CCGoodsHeaderView.swift */; };
+		C58F374E221F930C00C122B0 /* CCGoodsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F374C221F930C00C122B0 /* CCGoodsHeaderView.xib */; };
+		C58F3751221F962100C122B0 /* CCGoodsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F374F221F962100C122B0 /* CCGoodsFooterView.swift */; };
+		C58F3752221F962100C122B0 /* CCGoodsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3750221F962100C122B0 /* CCGoodsFooterView.xib */; };
+		C58F3755221F9FC400C122B0 /* CCServicePopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F3753221F9FC400C122B0 /* CCServicePopView.swift */; };
+		C58F3756221F9FC400C122B0 /* CCServicePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3754221F9FC400C122B0 /* CCServicePopView.xib */; };
+		C58F375A221FA26C00C122B0 /* CCServicePopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F3758221FA26C00C122B0 /* CCServicePopTableViewCell.swift */; };
+		C58F375B221FA26C00C122B0 /* CCServicePopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58F3759221FA26C00C122B0 /* CCServicePopTableViewCell.xib */; };
 		C59A1A42221E4F64006B00DE /* CCSelectCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */; };
 		C59A1A43221E4F64006B00DE /* CCSelectCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */; };
 		C59A1A47221E4FB6006B00DE /* CCSelectCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */; };
@@ -353,6 +365,8 @@
 		C5A7513622165A620010A183 /* CCWelfareSigninCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A7513422165A620010A183 /* CCWelfareSigninCollectionViewCell.xib */; };
 		C5A751392216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A751372216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.swift */; };
 		C5A7513A2216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A751382216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.xib */; };
+		C5B9F13D221FC543003C78FA /* CCBuyingPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B9F13B221FC543003C78FA /* CCBuyingPopView.swift */; };
+		C5B9F13E221FC543003C78FA /* CCBuyingPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B9F13C221FC543003C78FA /* CCBuyingPopView.xib */; };
 		C5BA72EA221BEBDD0036E409 /* CCAddTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BA72E8221BEBDD0036E409 /* CCAddTimelineViewController.swift */; };
 		C5BA72EB221BEBDD0036E409 /* CCAddTimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5BA72E9221BEBDD0036E409 /* CCAddTimelineViewController.xib */; };
 		C5BA72EF221BF21D0036E409 /* CCWashCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BA72ED221BF21D0036E409 /* CCWashCarTableViewCell.swift */; };
@@ -879,6 +893,18 @@
 		C58F3738221E934100C122B0 /* CCSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSearchViewController.xib; sourceTree = "<group>"; };
 		C58F373C221E9A7D00C122B0 /* CCSearchNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSearchNavView.swift; sourceTree = "<group>"; };
 		C58F373D221E9A7D00C122B0 /* CCSearchNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCSearchNavView.xib; sourceTree = "<group>"; };
+		C58F3741221EACEC00C122B0 /* CCGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoodsViewController.swift; sourceTree = "<group>"; };
+		C58F3742221EACEC00C122B0 /* CCGoodsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCGoodsViewController.xib; sourceTree = "<group>"; };
+		C58F3746221EAD1600C122B0 /* CCGoodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoodsTableViewCell.swift; sourceTree = "<group>"; };
+		C58F3747221EAD1600C122B0 /* CCGoodsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCGoodsTableViewCell.xib; sourceTree = "<group>"; };
+		C58F374B221F930C00C122B0 /* CCGoodsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoodsHeaderView.swift; sourceTree = "<group>"; };
+		C58F374C221F930C00C122B0 /* CCGoodsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCGoodsHeaderView.xib; sourceTree = "<group>"; };
+		C58F374F221F962100C122B0 /* CCGoodsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoodsFooterView.swift; sourceTree = "<group>"; };
+		C58F3750221F962100C122B0 /* CCGoodsFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCGoodsFooterView.xib; sourceTree = "<group>"; };
+		C58F3753221F9FC400C122B0 /* CCServicePopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCServicePopView.swift; sourceTree = "<group>"; };
+		C58F3754221F9FC400C122B0 /* CCServicePopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCServicePopView.xib; sourceTree = "<group>"; };
+		C58F3758221FA26C00C122B0 /* CCServicePopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCServicePopTableViewCell.swift; sourceTree = "<group>"; };
+		C58F3759221FA26C00C122B0 /* CCServicePopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCServicePopTableViewCell.xib; sourceTree = "<group>"; };
 		C59A1A40221E4F64006B00DE /* CCSelectCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSelectCarViewController.xib; sourceTree = "<group>"; };
 		C59A1A41221E4F64006B00DE /* CCSelectCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSelectCarViewController.swift; sourceTree = "<group>"; };
 		C59A1A45221E4FB6006B00DE /* CCSelectCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSelectCarTableViewCell.swift; sourceTree = "<group>"; };
@@ -941,6 +967,8 @@
 		C5A7513422165A620010A183 /* CCWelfareSigninCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCWelfareSigninCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5A751372216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWelfareHeaderSigninCollectionViewBgView.swift; sourceTree = "<group>"; };
 		C5A751382216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCWelfareHeaderSigninCollectionViewBgView.xib; sourceTree = "<group>"; };
+		C5B9F13B221FC543003C78FA /* CCBuyingPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBuyingPopView.swift; sourceTree = "<group>"; };
+		C5B9F13C221FC543003C78FA /* CCBuyingPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBuyingPopView.xib; sourceTree = "<group>"; };
 		C5BA72E8221BEBDD0036E409 /* CCAddTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAddTimelineViewController.swift; sourceTree = "<group>"; };
 		C5BA72E9221BEBDD0036E409 /* CCAddTimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCAddTimelineViewController.xib; sourceTree = "<group>"; };
 		C5BA72ED221BF21D0036E409 /* CCWashCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWashCarTableViewCell.swift; sourceTree = "<group>"; };
@@ -2405,6 +2433,51 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C58F3740221EAC4A00C122B0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C58F374A221F92F800C122B0 /* View */,
+				C58F3745221EAD0000C122B0 /* Cell */,
+				C58F3741221EACEC00C122B0 /* CCGoodsViewController.swift */,
+				C58F3742221EACEC00C122B0 /* CCGoodsViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C58F3745221EAD0000C122B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C58F3746221EAD1600C122B0 /* CCGoodsTableViewCell.swift */,
+				C58F3747221EAD1600C122B0 /* CCGoodsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C58F374A221F92F800C122B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C58F3757221FA25200C122B0 /* Cell */,
+				C58F374B221F930C00C122B0 /* CCGoodsHeaderView.swift */,
+				C58F374C221F930C00C122B0 /* CCGoodsHeaderView.xib */,
+				C58F374F221F962100C122B0 /* CCGoodsFooterView.swift */,
+				C58F3750221F962100C122B0 /* CCGoodsFooterView.xib */,
+				C58F3753221F9FC400C122B0 /* CCServicePopView.swift */,
+				C58F3754221F9FC400C122B0 /* CCServicePopView.xib */,
+				C5B9F13B221FC543003C78FA /* CCBuyingPopView.swift */,
+				C5B9F13C221FC543003C78FA /* CCBuyingPopView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C58F3757221FA25200C122B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C58F3758221FA26C00C122B0 /* CCServicePopTableViewCell.swift */,
+				C58F3759221FA26C00C122B0 /* CCServicePopTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C59A1A44221E4F9F006B00DE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -2933,6 +3006,7 @@
 		C5F6BE0621F6B292009FACD6 /* GroupBuyingArea(拼团专区) */ = {
 			isa = PBXGroup;
 			children = (
+				C58F3740221EAC4A00C122B0 /* Detail */,
 				C5E0D1992214506400C93EC1 /* MyGroup(我的拼团) */,
 				C5FA09C421FED935005AF09C /* FooterView */,
 				C5FA09BF21FEAD31005AF09C /* Cell */,
@@ -3444,7 +3518,9 @@
 			files = (
 				DEA68ADB2213C99B00EAEE9B /* STRoadsideAssistanceVC.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
+				C58F3756221F9FC400C122B0 /* CCServicePopView.xib in Resources */,
 				DEA68AD42213BAB000EAEE9B /* STServiceCCell.xib in Resources */,
+				C58F3749221EAD1600C122B0 /* CCGoodsTableViewCell.xib in Resources */,
 				C5E0D198221449A500C93EC1 /* CCCooperationViewController.xib in Resources */,
 				C5E0D1932214430000C93EC1 /* CCMyPropertyHeaderView.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
@@ -3466,6 +3542,7 @@
 				C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */,
 				C5E0D1692213CD9F00C93EC1 /* CCAddAddressViewController.xib in Resources */,
 				C566425021F55C43008C8CC6 /* icon_deleted@2x.png in Resources */,
+				C5B9F13E221FC543003C78FA /* CCBuyingPopView.xib in Resources */,
 				C566428F21F55C8D008C8CC6 /* MDWebViewController.xib in Resources */,
 				C5E0D1762213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib in Resources */,
 				C532F54021F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib in Resources */,
@@ -3517,6 +3594,7 @@
 				C5A3A792221D272F0080DA57 /* CCWashCarBillingViewController.xib in Resources */,
 				C5384C1722115DD0002F9561 /* CCSettingViewController.xib in Resources */,
 				C5385844221BB71000CFFF29 /* CCActivityDetailViewController.xib in Resources */,
+				C58F3744221EACEC00C122B0 /* CCGoodsViewController.xib in Resources */,
 				C5A3A79E221D3FE70080DA57 /* CCPayPopView.xib in Resources */,
 				C5E0D19D2214508D00C93EC1 /* CCMyGroupViewController.xib in Resources */,
 				C566421321F55C43008C8CC6 /* BRPickerView.bundle in Resources */,
@@ -3540,6 +3618,7 @@
 				C566428C21F55C8D008C8CC6 /* LTLocationViewController.xib in Resources */,
 				DE3CC9812212BB8300DA490D /* CCServiceViewController.plist in Resources */,
 				C5F6F935221501470094DC0E /* CCOwnersCertificationFooterView.xib in Resources */,
+				C58F374E221F930C00C122B0 /* CCGoodsHeaderView.xib in Resources */,
 				C5F6881D221AA2D400982ECC /* CCCommmentView.xib in Resources */,
 				C5A7513622165A620010A183 /* CCWelfareSigninCollectionViewCell.xib in Resources */,
 				C5384C212211957E002F9561 /* myWallet.plist in Resources */,
@@ -3553,7 +3632,9 @@
 				C566423D21F55C43008C8CC6 /* HXPhotoPicker.bundle in Resources */,
 				C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */,
 				C59A1A48221E4FB6006B00DE /* CCSelectCarTableViewCell.xib in Resources */,
+				C58F3752221F962100C122B0 /* CCGoodsFooterView.xib in Resources */,
 				C5E0D15D2213C5F000C93EC1 /* CCManagerAddressViewController.xib in Resources */,
+				C58F375B221FA26C00C122B0 /* CCServicePopTableViewCell.xib in Resources */,
 				C532F53C21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.xib in Resources */,
 				C56641C521F55C43008C8CC6 /* AlipaySDK.bundle in Resources */,
 				C538584A221BD0E600CFFF29 /* CCApplyView.xib in Resources */,
@@ -3799,6 +3880,7 @@
 				C5F6F930221500280094DC0E /* CCOwnersCertificationHeaderView.swift in Sources */,
 				C56641DE21F55C43008C8CC6 /* HotSearchView.swift in Sources */,
 				C566421B21F55C43008C8CC6 /* HXPhoto3DTouchViewController.m in Sources */,
+				C58F375A221FA26C00C122B0 /* CCServicePopTableViewCell.swift in Sources */,
 				C532F53B21F999FC00AD7ED3 /* CCModifyPayPasswordViewController.swift in Sources */,
 				C56641F821F55C43008C8CC6 /* NSDictionary+Category.m in Sources */,
 				C59A1A43221E4F64006B00DE /* CCSelectCarViewController.swift in Sources */,
@@ -3848,11 +3930,13 @@
 				C566422C21F55C43008C8CC6 /* HXCustomCameraController.m in Sources */,
 				C566429421F55C8D008C8CC6 /* MKGPX.swift in Sources */,
 				C566424021F55C43008C8CC6 /* String+Extension.swift in Sources */,
+				C58F3743221EACEC00C122B0 /* CCGoodsViewController.swift in Sources */,
 				C538582C221ABC9800CFFF29 /* CCRidersClubViewController.swift in Sources */,
 				C56642A521F577E6008C8CC6 /* TokenModel.swift in Sources */,
 				C5FA09E421FEFFDD005AF09C /* CCSpikeViewController.swift in Sources */,
 				C5F68815221A8CB400982ECC /* CCCarGroupNavView.swift in Sources */,
 				C56641F221F55C43008C8CC6 /* NSString+Category.m in Sources */,
+				C58F374D221F930C00C122B0 /* CCGoodsHeaderView.swift in Sources */,
 				C566425821F55C43008C8CC6 /* UIView+Extension.m in Sources */,
 				C5F6BE1C21F6F6FE009FACD6 /* CCCarCategoryViewController.swift in Sources */,
 				C566421D21F55C43008C8CC6 /* NSBundle+HXPhotoPicker.m in Sources */,
@@ -3873,6 +3957,7 @@
 				C5E0D1A32214559D00C93EC1 /* CCMyBargainViewController.swift in Sources */,
 				C56641AC21F55C43008C8CC6 /* HFDataCent.swift in Sources */,
 				C5A750E7221528460010A183 /* CCVehicleRecordsFooterView.swift in Sources */,
+				C58F3748221EAD1600C122B0 /* CCGoodsTableViewCell.swift in Sources */,
 				C56641D921F55C43008C8CC6 /* MDFlowLayout.swift in Sources */,
 				C532F53721F998FA00AD7ED3 /* CCModifyPasswordByPhoneViewController.swift in Sources */,
 				C56641EB21F55C43008C8CC6 /* UIView+Frame.m in Sources */,
@@ -3880,6 +3965,7 @@
 				C566420921F55C43008C8CC6 /* SwiftyTextView.swift in Sources */,
 				C566422921F55C43008C8CC6 /* HXDatePhotoViewController.m in Sources */,
 				C566423921F55C43008C8CC6 /* HXCustomPreviewView.m in Sources */,
+				C58F3755221F9FC400C122B0 /* CCServicePopView.swift in Sources */,
 				C5384C2E22126BE2002F9561 /* CCBalanceRechargeHeaderView.swift in Sources */,
 				C5E0D1752213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.swift in Sources */,
 				C56E20C122110CCD00E9BB47 /* CCSpecialAreaViewController.swift in Sources */,
@@ -4040,6 +4126,7 @@
 				C566420621F55C43008C8CC6 /* MDSettingController.swift in Sources */,
 				C5A75114221566490010A183 /* CCMessageOutSideViewController.swift in Sources */,
 				C566428E21F55C8D008C8CC6 /* LTWebViewController.swift in Sources */,
+				C5B9F13D221FC543003C78FA /* CCBuyingPopView.swift in Sources */,
 				C5FA09CA21FEE083005AF09C /* CCCarCategoryDetailViewController.swift in Sources */,
 				C56641B121F55C43008C8CC6 /* AppDelegate+Extension.swift in Sources */,
 				C566425421F55C43008C8CC6 /* CYConst.m in Sources */,
@@ -4049,6 +4136,7 @@
 				C566424221F55C43008C8CC6 /* AddressAttribute.swift in Sources */,
 				C5FA09D121FEE399005AF09C /* CCBargainViewController.swift in Sources */,
 				C56641AD21F55C43008C8CC6 /* HFUserData.swift in Sources */,
+				C58F3751221F962100C122B0 /* CCGoodsFooterView.swift in Sources */,
 				C5A7513522165A620010A183 /* CCWelfareSigninCollectionViewCell.swift in Sources */,
 				C5385836221AF56E00CFFF29 /* CCActivityGroupViewController.swift in Sources */,
 				C566423721F55C43008C8CC6 /* HXAlbumlistView.m in Sources */,

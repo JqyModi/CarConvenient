@@ -123,3 +123,15 @@ let TabBarDataSource: [[String: String]] = {
 protocol ViewClickedDelegate {
     var clickBlock: ((_ sender: Any?) -> ())? {get set}
 }
+
+/*
+ layer.cornerRadius
+ layer.masksToBounds
+ 
+ <userDefinedRuntimeAttributes>
+ <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+ <integer key="value" value="20"/>
+ </userDefinedRuntimeAttribute>
+ <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+ </userDefinedRuntimeAttributes>
+ */

@@ -1,15 +1,14 @@
 //
-//  CCGroupBuyingCollectionViewCell.swift
+//  CCGoodsHeaderView.swift
 //  CarConvenient
 //
-//  Created by Modi on 2019/1/28.
+//  Created by Modi on 2019/2/22.
 //  Copyright © 2019年 modi. All rights reserved.
 //
 
 import UIKit
 
-class CCGroupBuyingCollectionViewCell: UICollectionViewCell, ViewClickedDelegate {
-    
+class CCGoodsHeaderView: UITableViewCell, ViewClickedDelegate {
     var clickBlock: ((Any?) -> ())?
     
 
