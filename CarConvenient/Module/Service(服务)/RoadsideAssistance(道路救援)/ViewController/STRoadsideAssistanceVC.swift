@@ -14,8 +14,6 @@ class STRoadsideAssistanceVC: BaseViewController {
     
     @IBOutlet weak var pirceL: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

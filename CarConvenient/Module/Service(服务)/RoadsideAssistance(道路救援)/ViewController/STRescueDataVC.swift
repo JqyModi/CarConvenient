@@ -10,7 +10,6 @@ import UIKit
 
 class STRescueDataVC: BaseViewController {
     
-    
     @IBOutlet weak var carPic: UIImageView!
     ///北京奔驰GLC260
     @IBOutlet weak var carNameL: UILabel!
@@ -57,7 +56,7 @@ class STRescueDataVC: BaseViewController {
         //carPic
         //carNameL
         //carTimeL
-        
+        QYTools.shared.Log(log: "手势~~~")
     }
     
     ///粤A
@@ -68,7 +67,8 @@ class STRescueDataVC: BaseViewController {
     
     ///下一步
     @IBAction func clickNextStepBtn() {
-        
+        let vc = CCImmediateAssistanceViewController.init(nibName: "CCImmediateAssistanceViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

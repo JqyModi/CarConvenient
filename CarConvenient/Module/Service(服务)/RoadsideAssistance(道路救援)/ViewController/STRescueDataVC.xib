@@ -302,18 +302,18 @@
                         <constraint firstItem="td2-tF-Tp2" firstAttribute="leading" secondItem="eCm-Lw-pm4" secondAttribute="leading" constant="12" id="yIZ-r0-9k5"/>
                     </constraints>
                 </view>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0B-74-4Nr">
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0B-74-4Nr">
                     <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                     <color key="backgroundColor" red="0.10588235294117647" green="0.50980392156862742" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="W1d-2R-WKB"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="下一步" image="global_btn_right_n">
+                    <state key="normal" title="下一步">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="clickNextStepBtn" destination="-1" eventType="touchUpInside" id="7Yh-vl-yRc"/>
+                        <action selector="clickNextStepBtn" destination="-1" eventType="touchUpInside" id="b0X-Zg-Atb"/>
                     </connections>
                 </button>
             </subviews>

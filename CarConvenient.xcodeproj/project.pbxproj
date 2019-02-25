@@ -73,6 +73,10 @@
 		C538584A221BD0E600CFFF29 /* CCApplyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385848221BD0E600CFFF29 /* CCApplyView.xib */; };
 		C5385853221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */; };
 		C5385854221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */; };
+		C55955462223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55955442223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift */; };
+		C55955472223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55955452223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib */; };
+		C559554B2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55955492223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift */; };
+		C559554C2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C559554A2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.xib */; };
 		C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403521F5579B008C8CC6 /* AppDelegate.swift */; };
 		C566403821F5579B008C8CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566403721F5579B008C8CC6 /* ViewController.swift */; };
 		C566403B21F5579B008C8CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C566403921F5579B008C8CC6 /* Main.storyboard */; };
@@ -586,6 +590,10 @@
 		C5385848221BD0E600CFFF29 /* CCApplyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCApplyView.xib; sourceTree = "<group>"; };
 		C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCRidersClubDetailViewController.swift; sourceTree = "<group>"; };
 		C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRidersClubDetailViewController.xib; sourceTree = "<group>"; };
+		C55955442223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCImmediateAssistanceViewController.swift; sourceTree = "<group>"; };
+		C55955452223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCImmediateAssistanceViewController.xib; sourceTree = "<group>"; };
+		C55955492223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCImmediateAssistanceTableViewCell.swift; sourceTree = "<group>"; };
+		C559554A2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCImmediateAssistanceTableViewCell.xib; sourceTree = "<group>"; };
 		C566403221F5579B008C8CC6 /* CarConvenient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarConvenient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C566403521F5579B008C8CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C566403721F5579B008C8CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1412,6 +1420,25 @@
 				C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		C55955432223B7AE00A7A5BD /* ImmediateAssistance(立即救援) */ = {
+			isa = PBXGroup;
+			children = (
+				C55955482223B87900A7A5BD /* Cell */,
+				C55955442223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift */,
+				C55955452223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib */,
+			);
+			path = "ImmediateAssistance(立即救援)";
+			sourceTree = "<group>";
+		};
+		C55955482223B87900A7A5BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C55955492223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift */,
+				C559554A2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C566402921F5579B008C8CC6 = {
@@ -3095,6 +3122,7 @@
 		C5F6BE0B21F6B496009FACD6 /* RoadsideAssistance(道路救援) */ = {
 			isa = PBXGroup;
 			children = (
+				C55955432223B7AE00A7A5BD /* ImmediateAssistance(立即救援) */,
 				DE84074B221A873D00B352CB /* View */,
 				DEA68ADA2213C16E00EAEE9B /* ViewController */,
 			);
@@ -3672,6 +3700,7 @@
 				C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */,
 				C5FA096421FD5E21005AF09C /* CCCarTypeTableViewCell.xib in Resources */,
 				C566423D21F55C43008C8CC6 /* HXPhotoPicker.bundle in Resources */,
+				C55955472223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib in Resources */,
 				C5F6BE2121F6F768009FACD6 /* CCCarCategoryHeaderView.xib in Resources */,
 				C59A1A48221E4FB6006B00DE /* CCSelectCarTableViewCell.xib in Resources */,
 				C58F3752221F962100C122B0 /* CCGoodsFooterView.xib in Resources */,
@@ -3701,6 +3730,7 @@
 				C5E0D14B2213B29A00C93EC1 /* CCConfirmOrderViewController.xib in Resources */,
 				C52A0D8821FFF4C80017D113 /* CCPersonalCenterViewController.xib in Resources */,
 				C5A750D422150BE70010A183 /* CCVehicleRecordsViewController.xib in Resources */,
+				C559554C2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.xib in Resources */,
 				C5FA09BE21FEABE9005AF09C /* CCGroupBuyingViewController.xib in Resources */,
 				C538582D221ABC9800CFFF29 /* CCRidersClubViewController.xib in Resources */,
 				C5B9F14D221FE0D9003C78FA /* CCBargainDetailViewController.xib in Resources */,
@@ -3948,6 +3978,7 @@
 				C5E0D1402212B1B700C93EC1 /* CCShoppingCartViewController.swift in Sources */,
 				C56641CC21F55C43008C8CC6 /* HFWebViewController.swift in Sources */,
 				C566423B21F55C43008C8CC6 /* HXCircleProgressView.m in Sources */,
+				C55955462223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift in Sources */,
 				C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */,
 				C52AB5CE2216B58E0031A550 /* CCInvitationViewController.swift in Sources */,
 				C5A7510422153A240010A183 /* MCLocalCityGroup.swift in Sources */,
@@ -4066,6 +4097,7 @@
 				C56641F321F55C43008C8CC6 /* UINavigationController+NavManager.m in Sources */,
 				C56641E921F55C43008C8CC6 /* UIImage+Category.m in Sources */,
 				C566429F21F55C8D008C8CC6 /* YDMenu.swift in Sources */,
+				C559554B2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift in Sources */,
 				C58F3739221E934100C122B0 /* CCSearchViewController.swift in Sources */,
 				C56641D221F55C43008C8CC6 /* BaseHeaderView.swift in Sources */,
 				C5FA096021FD5E21005AF09C /* CCCarTypeCollectionViewCell.swift in Sources */,
