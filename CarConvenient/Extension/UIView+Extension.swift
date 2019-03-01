@@ -120,13 +120,16 @@ extension UIView {
     /// 通过XIB创建View
     ///
     /// - Returns: XIB View
-    class func md_viewFromXIB() -> UIView? {
+    class func md_viewFromXIB(cornerRadius: CGFloat = 0) -> UIView? {
         let str = NSStringFromClass(self)
 //        debugPrint("str --------------------------> \(str)")
         let arr = str.components(separatedBy: ".")
         if let endIndex = arr.last {
 //            debugPrint("endIndex --------------------------> \(endIndex)")
-            return Bundle.main.loadNibNamed(endIndex, owner: nil, options: nil)?.last as! UIView
+            let view = Bundle.main.loadNibNamed(endIndex, owner: nil, options: nil)?.last as! UIView
+            view.layer.cornerRadius = cornerRadius
+            view.layer.masksToBounds = true
+            return view
         }
         return nil
     }

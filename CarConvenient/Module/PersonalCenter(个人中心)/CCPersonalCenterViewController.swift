@@ -74,6 +74,8 @@ class CCPersonalCenterViewController: BaseCollectionViewController {
                     self.navigationController?.pushViewController(vc, animated: true)
                     break
                 case 10006:
+                    let vc = CCOrderOutSideViewController.init(Titles: ["全部", "代付款", "待发货", "已发货", "待评价"], vc: [CCOrderViewController(), CCOrderViewController(), CCOrderViewController(), CCOrderViewController(), CCOrderViewController()])
+                    self.navigationController?.pushViewController(vc, animated: true)
                     break
                 case 10007:
                     break
@@ -82,6 +84,7 @@ class CCPersonalCenterViewController: BaseCollectionViewController {
                 case 10009:
                     break
                 case 10010:
+                    
                     break
                 default:
                     break

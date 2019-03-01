@@ -14,6 +14,7 @@ class MDFlowLayout: UICollectionViewFlowLayout {
     var centerBlock: ((_ point: CGPoint) -> Void)?
     
     //来控制cell的大小
+//    var setSize:()->(Array<CGSize>) = { return []}
     var setSize:()->(Array<UIImage>) = { return []}
     
     /// 列数，默认为两列
@@ -82,9 +83,8 @@ class MDFlowLayout: UICollectionViewFlowLayout {
             var minIndex:CGFloat = 0
             var w:CGFloat = 0
             (minIndex,w) = minW(wws: ws)
-//            attributes.center = CGPoint(x:(nub+0.5)*(gap+width), y:h+(width/attributes.size.width*attributes.size.height+gap)/2)
-            attributes.center = CGPoint(x:w+(height/attributes.size.height*attributes.size.width+gap)/2, y:(minIndex+0.5)*(gap+width))
-            debugPrint("center --------------------------> \(attributes.center)")
+            print("minIndex--->\(minIndex) w-->\(w)")
+            attributes.center = CGPoint(x:w+(height/attributes.size.height*attributes.size.width+gap)/2, y:(minIndex+0.5)*(gap+height))
             if centerBlock != nil {
                 centerBlock!(attributes.center)
             }
@@ -114,13 +114,7 @@ class MDFlowLayout: UICollectionViewFlowLayout {
     //swift3.0废弃了上面这个方法，所以我们改成重写collectionViewContentSize属性
     override var collectionViewContentSize: CGSize {
         get {
-            if self.scrollDirection == .vertical {
-                return CGSize(width: (collectionView?.bounds.width)!, height: maxH(hhs: hs))
-            }else if self.scrollDirection == .horizontal {
-                return CGSize(width: maxW(wws: ws), height: (collectionView?.bounds.height)!)
-            }
-            return CGSize.zero
-//            return CGSize(width: (collectionView?.bounds.width)!, height: maxH(hhs: hs))
+            return CGSize(width: maxW(wws: ws), height: maxH(hhs: hs))
         }
         set {
             self.collectionViewContentSize = newValue
@@ -182,10 +176,9 @@ class MDFlowLayout: UICollectionViewFlowLayout {
     // 画圆点
     func drawCircle(point: CGPoint) {
         let bPath = UIBezierPath()
-        bPath.addArc(withCenter: point, radius: 10, startAngle: 0, endAngle: CGFloat(Double.pi * 2 * 5), clockwise: true)
-        UIColor.red.setStroke()
+        bPath.addArc(withCenter: point, radius: 10, startAngle: 0, endAngle: CGFloat(Double.pi * 2 * 10), clockwise: true)
+        UIColor.red.set()
         bPath.lineWidth = 5
-//        bPath.fill()
         bPath.stroke()
     }
 

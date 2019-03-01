@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FsG-9O-Zsz" customClass="CCEvaluationFooterView" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="给商品评分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10v-ZU-FTB">
+                    <rect key="frame" x="8" y="8" width="359" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJ8-NE-aXp" customClass="ZYStarRateView" customModule="CarConvenient" customModuleProvider="target">
+                    <rect key="frame" x="120" y="36" width="135" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="9M0-Xf-3Un"/>
+                        <constraint firstAttribute="height" constant="20" id="iHR-pU-Kwp"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-wS-F6W">
+                    <rect key="frame" x="263" y="35.5" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Q1-SV-HO3">
+                    <rect key="frame" x="8" y="64.5" width="359" height="171.5"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dJ8-NE-aXp" firstAttribute="top" secondItem="10v-ZU-FTB" secondAttribute="bottom" constant="11" id="0JT-Ie-WaL"/>
+                <constraint firstItem="Hhw-wS-F6W" firstAttribute="centerY" secondItem="dJ8-NE-aXp" secondAttribute="centerY" id="48B-jb-4Zi"/>
+                <constraint firstItem="0Q1-SV-HO3" firstAttribute="leading" secondItem="9GJ-vf-YaG" secondAttribute="leading" constant="8" id="Ee0-nT-AQp"/>
+                <constraint firstItem="Hhw-wS-F6W" firstAttribute="leading" secondItem="dJ8-NE-aXp" secondAttribute="trailing" constant="8" id="J3u-Oy-N8a"/>
+                <constraint firstItem="9GJ-vf-YaG" firstAttribute="trailing" secondItem="10v-ZU-FTB" secondAttribute="trailing" constant="8" id="QOs-Nk-Yg8"/>
+                <constraint firstAttribute="bottom" secondItem="0Q1-SV-HO3" secondAttribute="bottom" constant="8" id="WNv-5B-ub7"/>
+                <constraint firstItem="0Q1-SV-HO3" firstAttribute="top" secondItem="Hhw-wS-F6W" secondAttribute="bottom" constant="8" id="aow-4X-JRx"/>
+                <constraint firstItem="10v-ZU-FTB" firstAttribute="leading" secondItem="9GJ-vf-YaG" secondAttribute="leading" constant="8" id="btK-4b-C6l"/>
+                <constraint firstItem="dJ8-NE-aXp" firstAttribute="centerX" secondItem="10v-ZU-FTB" secondAttribute="centerX" id="qck-Q8-Xio"/>
+                <constraint firstItem="10v-ZU-FTB" firstAttribute="top" secondItem="9GJ-vf-YaG" secondAttribute="top" constant="8" id="r0t-ww-SqG"/>
+                <constraint firstItem="9GJ-vf-YaG" firstAttribute="trailing" secondItem="0Q1-SV-HO3" secondAttribute="trailing" constant="8" id="xXy-Xo-eJi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="9GJ-vf-YaG"/>
+            <connections>
+                <outlet property="xib_content" destination="0Q1-SV-HO3" id="GdM-T8-Wd6"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="152"/>
+        </view>
+    </objects>
+</document>

@@ -73,6 +73,19 @@
 		C538584A221BD0E600CFFF29 /* CCApplyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385848221BD0E600CFFF29 /* CCApplyView.xib */; };
 		C5385853221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */; };
 		C5385854221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */; };
+		C558C0262227B23900F9F51F /* CCOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C0242227B23900F9F51F /* CCOrderTableViewCell.swift */; };
+		C558C0272227B23900F9F51F /* CCOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C558C0252227B23900F9F51F /* CCOrderTableViewCell.xib */; };
+		C558C02D2227B43800F9F51F /* CCOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C02C2227B43800F9F51F /* CCOrderViewController.swift */; };
+		C558C0312227B65000F9F51F /* CCOrderSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C02F2227B65000F9F51F /* CCOrderSectionHeaderView.swift */; };
+		C558C0322227B65000F9F51F /* CCOrderSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C558C0302227B65000F9F51F /* CCOrderSectionHeaderView.xib */; };
+		C558C0352227B70200F9F51F /* CCOrderSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C0332227B70200F9F51F /* CCOrderSectionFooterView.swift */; };
+		C558C0362227B70200F9F51F /* CCOrderSectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C558C0342227B70200F9F51F /* CCOrderSectionFooterView.xib */; };
+		C558C03A2227C37A00F9F51F /* FYLSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C558C0372227C37A00F9F51F /* FYLSegmentView.m */; };
+		C558C03B2227C37A00F9F51F /* BasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C0392227C37A00F9F51F /* BasePageViewController.swift */; };
+		C558C03D2227C8F500F9F51F /* CCOrderOutSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C03C2227C8F500F9F51F /* CCOrderOutSideViewController.swift */; };
+		C558C0412227D11E00F9F51F /* CCFinishOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C0402227D11E00F9F51F /* CCFinishOrderViewController.swift */; };
+		C558C0452227DA7300F9F51F /* CCRebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558C0432227DA7300F9F51F /* CCRebateViewController.swift */; };
+		C558C0462227DA7300F9F51F /* CCRebateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C558C0442227DA7300F9F51F /* CCRebateViewController.xib */; };
 		C55955462223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55955442223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift */; };
 		C55955472223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55955452223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib */; };
 		C559554B2223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55955492223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift */; };
@@ -384,6 +397,20 @@
 		C5BA72F2221BF79A0036E409 /* CCWashCarOutSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BA72F1221BF79A0036E409 /* CCWashCarOutSideViewController.swift */; };
 		C5BA72F6221C000E0036E409 /* CCWashCarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BA72F4221C000E0036E409 /* CCWashCarHeaderView.swift */; };
 		C5BA72F7221C000E0036E409 /* CCWashCarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5BA72F5221C000E0036E409 /* CCWashCarHeaderView.xib */; };
+		C5D3963C2227E00C0007FD05 /* CCEvaluationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3963A2227E00C0007FD05 /* CCEvaluationViewController.swift */; };
+		C5D3963D2227E00C0007FD05 /* CCEvaluationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D3963B2227E00C0007FD05 /* CCEvaluationViewController.xib */; };
+		C5D396412227E0700007FD05 /* CCEvaluationFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3963F2227E0700007FD05 /* CCEvaluationFooterView.swift */; };
+		C5D396422227E0700007FD05 /* CCEvaluationFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D396402227E0700007FD05 /* CCEvaluationFooterView.xib */; };
+		C5D3964B2227E89C0007FD05 /* CCWashCarEvaluationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D396492227E89C0007FD05 /* CCWashCarEvaluationViewController.xib */; };
+		C5D3964C2227E89C0007FD05 /* CCWashCarEvaluationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3964A2227E89C0007FD05 /* CCWashCarEvaluationViewController.swift */; };
+		C5D3964F2227E8A90007FD05 /* CCWashCarEvaluationFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D3964D2227E8A90007FD05 /* CCWashCarEvaluationFooterView.xib */; };
+		C5D396502227E8A90007FD05 /* CCWashCarEvaluationFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3964E2227E8A90007FD05 /* CCWashCarEvaluationFooterView.swift */; };
+		C5D396532228D9910007FD05 /* CCWelfarePopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D396512228D9910007FD05 /* CCWelfarePopView.swift */; };
+		C5D396542228D9910007FD05 /* CCWelfarePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D396522228D9910007FD05 /* CCWelfarePopView.xib */; };
+		C5D396582228E38A0007FD05 /* CCReleaseNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D396562228E38A0007FD05 /* CCReleaseNotesView.swift */; };
+		C5D396592228E38A0007FD05 /* CCReleaseNotesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D396572228E38A0007FD05 /* CCReleaseNotesView.xib */; };
+		C5D3965D2228FDFA0007FD05 /* CCPushSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D3965B2228FDFA0007FD05 /* CCPushSuccessViewController.swift */; };
+		C5D3965E2228FDFA0007FD05 /* CCPushSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D3965C2228FDFA0007FD05 /* CCPushSuccessViewController.xib */; };
 		C5E0D1312212A0D200C93EC1 /* CCBillingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */; };
 		C5E0D1352212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */; };
 		C5E0D1362212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */; };
@@ -590,6 +617,20 @@
 		C5385848221BD0E600CFFF29 /* CCApplyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCApplyView.xib; sourceTree = "<group>"; };
 		C5385851221BD8FC00CFFF29 /* CCRidersClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCRidersClubDetailViewController.swift; sourceTree = "<group>"; };
 		C5385852221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRidersClubDetailViewController.xib; sourceTree = "<group>"; };
+		C558C0242227B23900F9F51F /* CCOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOrderTableViewCell.swift; sourceTree = "<group>"; };
+		C558C0252227B23900F9F51F /* CCOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOrderTableViewCell.xib; sourceTree = "<group>"; };
+		C558C02C2227B43800F9F51F /* CCOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOrderViewController.swift; sourceTree = "<group>"; };
+		C558C02F2227B65000F9F51F /* CCOrderSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOrderSectionHeaderView.swift; sourceTree = "<group>"; };
+		C558C0302227B65000F9F51F /* CCOrderSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOrderSectionHeaderView.xib; sourceTree = "<group>"; };
+		C558C0332227B70200F9F51F /* CCOrderSectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOrderSectionFooterView.swift; sourceTree = "<group>"; };
+		C558C0342227B70200F9F51F /* CCOrderSectionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCOrderSectionFooterView.xib; sourceTree = "<group>"; };
+		C558C0372227C37A00F9F51F /* FYLSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLSegmentView.m; sourceTree = "<group>"; };
+		C558C0382227C37A00F9F51F /* FYLSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLSegmentView.h; sourceTree = "<group>"; };
+		C558C0392227C37A00F9F51F /* BasePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageViewController.swift; sourceTree = "<group>"; };
+		C558C03C2227C8F500F9F51F /* CCOrderOutSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCOrderOutSideViewController.swift; sourceTree = "<group>"; };
+		C558C0402227D11E00F9F51F /* CCFinishOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFinishOrderViewController.swift; sourceTree = "<group>"; };
+		C558C0432227DA7300F9F51F /* CCRebateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCRebateViewController.swift; sourceTree = "<group>"; };
+		C558C0442227DA7300F9F51F /* CCRebateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCRebateViewController.xib; sourceTree = "<group>"; };
 		C55955442223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCImmediateAssistanceViewController.swift; sourceTree = "<group>"; };
 		C55955452223B85D00A7A5BD /* CCImmediateAssistanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCImmediateAssistanceViewController.xib; sourceTree = "<group>"; };
 		C55955492223B88B00A7A5BD /* CCImmediateAssistanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCImmediateAssistanceTableViewCell.swift; sourceTree = "<group>"; };
@@ -996,6 +1037,20 @@
 		C5BA72F1221BF79A0036E409 /* CCWashCarOutSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWashCarOutSideViewController.swift; sourceTree = "<group>"; };
 		C5BA72F4221C000E0036E409 /* CCWashCarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWashCarHeaderView.swift; sourceTree = "<group>"; };
 		C5BA72F5221C000E0036E409 /* CCWashCarHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCWashCarHeaderView.xib; sourceTree = "<group>"; };
+		C5D3963A2227E00C0007FD05 /* CCEvaluationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCEvaluationViewController.swift; sourceTree = "<group>"; };
+		C5D3963B2227E00C0007FD05 /* CCEvaluationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCEvaluationViewController.xib; sourceTree = "<group>"; };
+		C5D3963F2227E0700007FD05 /* CCEvaluationFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCEvaluationFooterView.swift; sourceTree = "<group>"; };
+		C5D396402227E0700007FD05 /* CCEvaluationFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCEvaluationFooterView.xib; sourceTree = "<group>"; };
+		C5D396492227E89C0007FD05 /* CCWashCarEvaluationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCWashCarEvaluationViewController.xib; sourceTree = "<group>"; };
+		C5D3964A2227E89C0007FD05 /* CCWashCarEvaluationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWashCarEvaluationViewController.swift; sourceTree = "<group>"; };
+		C5D3964D2227E8A90007FD05 /* CCWashCarEvaluationFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCWashCarEvaluationFooterView.xib; sourceTree = "<group>"; };
+		C5D3964E2227E8A90007FD05 /* CCWashCarEvaluationFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWashCarEvaluationFooterView.swift; sourceTree = "<group>"; };
+		C5D396512228D9910007FD05 /* CCWelfarePopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWelfarePopView.swift; sourceTree = "<group>"; };
+		C5D396522228D9910007FD05 /* CCWelfarePopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCWelfarePopView.xib; sourceTree = "<group>"; };
+		C5D396562228E38A0007FD05 /* CCReleaseNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCReleaseNotesView.swift; sourceTree = "<group>"; };
+		C5D396572228E38A0007FD05 /* CCReleaseNotesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCReleaseNotesView.xib; sourceTree = "<group>"; };
+		C5D3965B2228FDFA0007FD05 /* CCPushSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPushSuccessViewController.swift; sourceTree = "<group>"; };
+		C5D3965C2228FDFA0007FD05 /* CCPushSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCPushSuccessViewController.xib; sourceTree = "<group>"; };
 		C5E0D1302212A0D200C93EC1 /* CCBillingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailViewController.swift; sourceTree = "<group>"; };
 		C5E0D1332212A0EC00C93EC1 /* CCBillingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBillingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C5E0D1342212A0EC00C93EC1 /* CCBillingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCBillingDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -1422,6 +1477,52 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		C558C0232227B22200F9F51F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C558C0242227B23900F9F51F /* CCOrderTableViewCell.swift */,
+				C558C0252227B23900F9F51F /* CCOrderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C558C02E2227B63100F9F51F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C558C02F2227B65000F9F51F /* CCOrderSectionHeaderView.swift */,
+				C558C0302227B65000F9F51F /* CCOrderSectionHeaderView.xib */,
+				C558C0332227B70200F9F51F /* CCOrderSectionFooterView.swift */,
+				C558C0342227B70200F9F51F /* CCOrderSectionFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C558C03E2227CE8D00F9F51F /* PageTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				C558C0382227C37A00F9F51F /* FYLSegmentView.h */,
+				C558C0372227C37A00F9F51F /* FYLSegmentView.m */,
+			);
+			path = PageTitleView;
+			sourceTree = "<group>";
+		};
+		C558C03F2227D0E700F9F51F /* FinishOrder(已完成订单) */ = {
+			isa = PBXGroup;
+			children = (
+				C558C0402227D11E00F9F51F /* CCFinishOrderViewController.swift */,
+			);
+			path = "FinishOrder(已完成订单)";
+			sourceTree = "<group>";
+		};
+		C558C0422227D9F900F9F51F /* Rebate(退款) */ = {
+			isa = PBXGroup;
+			children = (
+				C558C0432227DA7300F9F51F /* CCRebateViewController.swift */,
+				C558C0442227DA7300F9F51F /* CCRebateViewController.xib */,
+			);
+			path = "Rebate(退款)";
+			sourceTree = "<group>";
+		};
 		C55955432223B7AE00A7A5BD /* ImmediateAssistance(立即救援) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1625,6 +1726,7 @@
 		C566409B21F55C3F008C8CC6 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C558C03E2227CE8D00F9F51F /* PageTitleView */,
 				C566409E21F55C3F008C8CC6 /* BaseView */,
 				C56640A421F55C3F008C8CC6 /* BaseModel */,
 				C566409C21F55C3F008C8CC6 /* BaseCollectionViewController.swift */,
@@ -1634,6 +1736,7 @@
 				C566419121F55C43008C8CC6 /* AppDefaultStyle.swift */,
 				C56640B421F55C42008C8CC6 /* MDNavigationController.swift */,
 				C538583F221B9D6300CFFF29 /* BaseTabBarController.swift */,
+				C558C0392227C37A00F9F51F /* BasePageViewController.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -2341,6 +2444,7 @@
 		C56642A821F57B16008C8CC6 /* WashCar(洗车) */ = {
 			isa = PBXGroup;
 			children = (
+				C5D396432227E6F10007FD05 /* WashCarEvaluation(洗车评价) */,
 				C5A4F704221D541700650CE9 /* ScanCodeWash(扫码洗车) */,
 				C5A3A76E221CFA0A0080DA57 /* Search(搜索) */,
 				C5BA72F3221BFFDC0036E409 /* View */,
@@ -2804,6 +2908,64 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C5D396392227DF8E0007FD05 /* Evaluation(评价) */ = {
+			isa = PBXGroup;
+			children = (
+				C5D3963E2227E0400007FD05 /* View */,
+				C5D3963A2227E00C0007FD05 /* CCEvaluationViewController.swift */,
+				C5D3963B2227E00C0007FD05 /* CCEvaluationViewController.xib */,
+			);
+			path = "Evaluation(评价)";
+			sourceTree = "<group>";
+		};
+		C5D3963E2227E0400007FD05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5D3963F2227E0700007FD05 /* CCEvaluationFooterView.swift */,
+				C5D396402227E0700007FD05 /* CCEvaluationFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5D396432227E6F10007FD05 /* WashCarEvaluation(洗车评价) */ = {
+			isa = PBXGroup;
+			children = (
+				C5D396462227E6F10007FD05 /* View */,
+				C5D3964A2227E89C0007FD05 /* CCWashCarEvaluationViewController.swift */,
+				C5D396492227E89C0007FD05 /* CCWashCarEvaluationViewController.xib */,
+			);
+			path = "WashCarEvaluation(洗车评价)";
+			sourceTree = "<group>";
+		};
+		C5D396462227E6F10007FD05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5D3964E2227E8A90007FD05 /* CCWashCarEvaluationFooterView.swift */,
+				C5D3964D2227E8A90007FD05 /* CCWashCarEvaluationFooterView.xib */,
+				C5D396512228D9910007FD05 /* CCWelfarePopView.swift */,
+				C5D396522228D9910007FD05 /* CCWelfarePopView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5D396552228E33E0007FD05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5D396562228E38A0007FD05 /* CCReleaseNotesView.swift */,
+				C5D396572228E38A0007FD05 /* CCReleaseNotesView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5D3965A2228FD950007FD05 /* PushSuccess(发布成功) */ = {
+			isa = PBXGroup;
+			children = (
+				C5D3965B2228FDFA0007FD05 /* CCPushSuccessViewController.swift */,
+				C5D3965C2228FDFA0007FD05 /* CCPushSuccessViewController.xib */,
+			);
+			path = "PushSuccess(发布成功)";
+			sourceTree = "<group>";
+		};
 		C5E0D12F2212A09600C93EC1 /* BillingDetail(账单明细) */ = {
 			isa = PBXGroup;
 			children = (
@@ -3053,6 +3215,8 @@
 		C5F6BE0421F6B03A009FACD6 /* OtherWashCar(他人代洗) */ = {
 			isa = PBXGroup;
 			children = (
+				C5D3965A2228FD950007FD05 /* PushSuccess(发布成功) */,
+				C5D396552228E33E0007FD05 /* View */,
 				C5A3A77E221D00D20080DA57 /* Cell */,
 				C5A3A77A221D00C20080DA57 /* CCOtherWashCarViewController.swift */,
 				C5A3A77B221D00C20080DA57 /* CCOtherWashCarViewController.xib */,
@@ -3190,6 +3354,13 @@
 		C5F6BE1321F6B725009FACD6 /* Order(订单) */ = {
 			isa = PBXGroup;
 			children = (
+				C5D396392227DF8E0007FD05 /* Evaluation(评价) */,
+				C558C0422227D9F900F9F51F /* Rebate(退款) */,
+				C558C03F2227D0E700F9F51F /* FinishOrder(已完成订单) */,
+				C558C02E2227B63100F9F51F /* View */,
+				C558C0232227B22200F9F51F /* Cell */,
+				C558C02C2227B43800F9F51F /* CCOrderViewController.swift */,
+				C558C03C2227C8F500F9F51F /* CCOrderOutSideViewController.swift */,
 			);
 			path = "Order(订单)";
 			sourceTree = "<group>";
@@ -3588,12 +3759,14 @@
 			files = (
 				DEA68ADB2213C99B00EAEE9B /* STRoadsideAssistanceVC.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
+				C558C0272227B23900F9F51F /* CCOrderTableViewCell.xib in Resources */,
 				C58F3756221F9FC400C122B0 /* CCServicePopView.xib in Resources */,
 				DEA68AD42213BAB000EAEE9B /* STServiceCCell.xib in Resources */,
 				C58F3749221EAD1600C122B0 /* CCGoodsTableViewCell.xib in Resources */,
 				C5E0D198221449A500C93EC1 /* CCCooperationViewController.xib in Resources */,
 				C5E0D1932214430000C93EC1 /* CCMyPropertyHeaderView.xib in Resources */,
 				C5F6BE3921F85430009FACD6 /* CCLoginViewController.xib in Resources */,
+				C558C0362227B70200F9F51F /* CCOrderSectionFooterView.xib in Resources */,
 				C5A750D622150BE70010A183 /* CCVehicleRecordsTableViewCell.xib in Resources */,
 				C56E20CB2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.xib in Resources */,
 				C5A750EA221528690010A183 /* CCVehicleRecordsHeaderView.xib in Resources */,
@@ -3611,10 +3784,12 @@
 				C5F6F9272214FA790094DC0E /* CCOwnersCertificationViewController.xib in Resources */,
 				C5FA095721FD5DB1005AF09C /* CCCarTypeViewController.xib in Resources */,
 				C5E0D1692213CD9F00C93EC1 /* CCAddAddressViewController.xib in Resources */,
+				C5D396542228D9910007FD05 /* CCWelfarePopView.xib in Resources */,
 				C566425021F55C43008C8CC6 /* icon_deleted@2x.png in Resources */,
 				C5B9F13E221FC543003C78FA /* CCBuyingPopView.xib in Resources */,
 				C566428F21F55C8D008C8CC6 /* MDWebViewController.xib in Resources */,
 				C5E0D1762213F6D800C93EC1 /* CCConfirmOrderCollectionViewCell.xib in Resources */,
+				C5D3965E2228FDFA0007FD05 /* CCPushSuccessViewController.xib in Resources */,
 				C532F54021F99A7D00AD7ED3 /* CCModifyPasswordViewController.xib in Resources */,
 				C5E0D1462212B1F100C93EC1 /* CCShoppingCartTableViewCell.xib in Resources */,
 				C566428921F55C8D008C8CC6 /* start _img_logo.png in Resources */,
@@ -3642,6 +3817,7 @@
 				C5384C3D22127942002F9561 /* CCIntegralMallHeaderView.xib in Resources */,
 				C566424E21F55C43008C8CC6 /* icon_deleted@3x copy.png in Resources */,
 				C5A3A799221D32910080DA57 /* MDPasswordView.xib in Resources */,
+				C5D3964F2227E8A90007FD05 /* CCWashCarEvaluationFooterView.xib in Resources */,
 				C5FA096121FD5E21005AF09C /* CCCarTypeCollectionViewCell.xib in Resources */,
 				C5A4F708221D54B000650CE9 /* CCScanCodeWashViewController.xib in Resources */,
 				C5FA09CF21FEE0F2005AF09C /* CCCarCategoryDetailHeaderView.xib in Resources */,
@@ -3654,6 +3830,7 @@
 				C566429021F55C8D008C8CC6 /* LTWebViewController.xib in Resources */,
 				C5F6BE2D21F714FC009FACD6 /* CCCarCategoryHeaderCollectionViewCell.xib in Resources */,
 				C566404021F5579D008C8CC6 /* LaunchScreen.storyboard in Resources */,
+				C558C0462227DA7300F9F51F /* CCRebateViewController.xib in Resources */,
 				C5A3A78D221D22EE0080DA57 /* CCHandWashCarPopView.xib in Resources */,
 				C566429121F55C8D008C8CC6 /* LTCommentViewController.xib in Resources */,
 				C52AB5C82216AE7F0031A550 /* CCPrizesTableViewCell.xib in Resources */,
@@ -3667,15 +3844,18 @@
 				C58F3744221EACEC00C122B0 /* CCGoodsViewController.xib in Resources */,
 				C5A3A79E221D3FE70080DA57 /* CCPayPopView.xib in Resources */,
 				C5E0D19D2214508D00C93EC1 /* CCMyGroupViewController.xib in Resources */,
+				C5D3964B2227E89C0007FD05 /* CCWashCarEvaluationViewController.xib in Resources */,
 				C566421321F55C43008C8CC6 /* BRPickerView.bundle in Resources */,
 				C566425D21F55C43008C8CC6 /* MDFlowViewCollectionViewCell.xib in Resources */,
 				C5385854221BD8FC00CFFF29 /* CCRidersClubDetailViewController.xib in Resources */,
 				C5384C2622119F8F002F9561 /* CCMyWalletHeaderView.xib in Resources */,
+				C558C0322227B65000F9F51F /* CCOrderSectionHeaderView.xib in Resources */,
 				C5F6881A221A9ADF00982ECC /* CCCarGroupHeaderView.xib in Resources */,
 				C566420721F55C43008C8CC6 /* setting_example.plist in Resources */,
 				C5384C382212754C002F9561 /* CCIntegralMallCollectionViewCell.xib in Resources */,
 				C5A3A782221D00EE0080DA57 /* CCOtherWashCarTableViewCell.xib in Resources */,
 				C5BA72F7221C000E0036E409 /* CCWashCarHeaderView.xib in Resources */,
+				C5D396592228E38A0007FD05 /* CCReleaseNotesView.xib in Resources */,
 				DE840750221A899C00B352CB /* STTitleCCell.xib in Resources */,
 				C5384C1B22116041002F9561 /* setting.plist in Resources */,
 				C58F3729221E78F400C122B0 /* ScanViewController.xib in Resources */,
@@ -3690,11 +3870,13 @@
 				C5F6F935221501470094DC0E /* CCOwnersCertificationFooterView.xib in Resources */,
 				C58F374E221F930C00C122B0 /* CCGoodsHeaderView.xib in Resources */,
 				C5F6881D221AA2D400982ECC /* CCCommmentView.xib in Resources */,
+				C5D3963D2227E00C0007FD05 /* CCEvaluationViewController.xib in Resources */,
 				C5A7513622165A620010A183 /* CCWelfareSigninCollectionViewCell.xib in Resources */,
 				C5384C212211957E002F9561 /* myWallet.plist in Resources */,
 				C52AB5F4221948260031A550 /* CollectionViewCell.xib in Resources */,
 				C5A7512D22164BB00010A183 /* CCWelfareHeaderView.xib in Resources */,
 				C566403D21F5579D008C8CC6 /* Assets.xcassets in Resources */,
+				C5D396422227E0700007FD05 /* CCEvaluationFooterView.xib in Resources */,
 				C5A7513222165A480010A183 /* CCWelfareMenuCollectionViewCell.xib in Resources */,
 				C52AB5CF2216B58E0031A550 /* CCInvitationViewController.xib in Resources */,
 				C56E20C622110CF600E9BB47 /* CCSpecialAreaTableViewCell.xib in Resources */,
@@ -3908,6 +4090,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D3963C2227E00C0007FD05 /* CCEvaluationViewController.swift in Sources */,
 				C5E0D1612213C64D00C93EC1 /* CCManagerAddressTableViewCell.swift in Sources */,
 				C56641E121F55C43008C8CC6 /* UIColor+Extension.swift in Sources */,
 				C566420521F55C43008C8CC6 /* MDSettingTableViewCell.swift in Sources */,
@@ -3920,6 +4103,7 @@
 				C5E0D1792214005900C93EC1 /* CCUserSettingViewController.swift in Sources */,
 				C5E0D18D22141E0000C93EC1 /* CCMyPropertyTableViewCell.swift in Sources */,
 				C56E20CA2211413400E9BB47 /* CCPersonalCenterCollectionViewCell.swift in Sources */,
+				C558C0262227B23900F9F51F /* CCOrderTableViewCell.swift in Sources */,
 				C566420F21F55C43008C8CC6 /* NSDate+BRPickerView.m in Sources */,
 				C5F6881E221AA2D400982ECC /* CCCommmentView.swift in Sources */,
 				C5A3A79D221D3FE70080DA57 /* CCPayPopView.swift in Sources */,
@@ -3949,6 +4133,7 @@
 				C56641CD21F55C43008C8CC6 /* QYTools.swift in Sources */,
 				C52AB5F2221948260031A550 /* TimelineViewController.swift in Sources */,
 				C538583E221B960500CFFF29 /* CCGroupViewController.swift in Sources */,
+				C558C02D2227B43800F9F51F /* CCOrderViewController.swift in Sources */,
 				C566423521F55C43008C8CC6 /* HXPhotoSubViewCell.m in Sources */,
 				C5A750FD22153A240010A183 /* MCSelectLocalController.swift in Sources */,
 				C566424821F55C43008C8CC6 /* FJSQLiteUtils.swift in Sources */,
@@ -3981,6 +4166,7 @@
 				C55955462223B85D00A7A5BD /* CCImmediateAssistanceViewController.swift in Sources */,
 				C5384C2A22125A33002F9561 /* CCBalanceRechargeViewController.swift in Sources */,
 				C52AB5CE2216B58E0031A550 /* CCInvitationViewController.swift in Sources */,
+				C5D396412227E0700007FD05 /* CCEvaluationFooterView.swift in Sources */,
 				C5A7510422153A240010A183 /* MCLocalCityGroup.swift in Sources */,
 				C52AB5DD2216C3880031A550 /* CCTeamRuleViewController.swift in Sources */,
 				C566423821F55C43008C8CC6 /* UIButton+HXExtension.m in Sources */,
@@ -3999,6 +4185,7 @@
 				C566420221F55C43008C8CC6 /* ZYStarRateView.swift in Sources */,
 				C566423421F55C43008C8CC6 /* HXDatePhotoViewTransition.m in Sources */,
 				C56641F721F55C43008C8CC6 /* NSMutableString+Safe.m in Sources */,
+				C5D396532228D9910007FD05 /* CCWelfarePopView.swift in Sources */,
 				DE84074D221A87BB00B352CB /* STPlaceOfOwnershipVC.swift in Sources */,
 				C5F6F92B2214FE180094DC0E /* CCOwnersCertificationTableViewCell.swift in Sources */,
 				C5A7513122165A480010A183 /* CCWelfareMenuCollectionViewCell.swift in Sources */,
@@ -4059,6 +4246,7 @@
 				C56641FB21F55C43008C8CC6 /* NSObject+Category.m in Sources */,
 				C566423121F55C43008C8CC6 /* HXFullScreenCameraPlayView.m in Sources */,
 				C5B9F147221FDADA003C78FA /* CCAddInvoiceViewController.swift in Sources */,
+				C558C0412227D11E00F9F51F /* CCFinishOrderViewController.swift in Sources */,
 				C566422421F55C43008C8CC6 /* UIView+HXExtension.m in Sources */,
 				C566425721F55C43008C8CC6 /* NSBundle+CYPasswordView.m in Sources */,
 				C56641E821F55C43008C8CC6 /* NSArray+Category.m in Sources */,
@@ -4086,11 +4274,13 @@
 				C5F68819221A9ADF00982ECC /* CCCarGroupHeaderView.swift in Sources */,
 				C56641C721F55C43008C8CC6 /* HFNetworkManager.swift in Sources */,
 				C566425221F55C43008C8CC6 /* AppDefaultStyle.swift in Sources */,
+				C558C0312227B65000F9F51F /* CCOrderSectionHeaderView.swift in Sources */,
 				C566403621F5579B008C8CC6 /* AppDelegate.swift in Sources */,
 				C5E0D197221449A500C93EC1 /* CCCooperationViewController.swift in Sources */,
 				C56641B021F55C43008C8CC6 /* HFAppEngine+Enum.swift in Sources */,
 				C566423E21F55C43008C8CC6 /* HXDatePhotoToolManager.m in Sources */,
 				C566424D21F55C43008C8CC6 /* FJSelectLocationView.swift in Sources */,
+				C5D396582228E38A0007FD05 /* CCReleaseNotesView.swift in Sources */,
 				C5A750D522150BE70010A183 /* CCVehicleRecordsTableViewCell.swift in Sources */,
 				C566425321F55C43008C8CC6 /* DispatchTime+Extension.swift in Sources */,
 				C566422321F55C43008C8CC6 /* HXAlbumListViewController.m in Sources */,
@@ -4106,7 +4296,9 @@
 				C56641A921F55C43008C8CC6 /* API.swift in Sources */,
 				C566429D21F55C8D008C8CC6 /* YDMenuDataSource.swift in Sources */,
 				C566425521F55C43008C8CC6 /* CYPasswordView.m in Sources */,
+				C5D3965D2228FDFA0007FD05 /* CCPushSuccessViewController.swift in Sources */,
 				C5A751082215431C0010A183 /* MCSearchBar.swift in Sources */,
+				C558C0352227B70200F9F51F /* CCOrderSectionFooterView.swift in Sources */,
 				C566420E21F55C43008C8CC6 /* BRStringPickerView.m in Sources */,
 				C56641FD21F55C43008C8CC6 /* NSString+MD5.m in Sources */,
 				C56641F621F55C43008C8CC6 /* UIMenuItem+Category.m in Sources */,
@@ -4115,6 +4307,7 @@
 				C5B9F14C221FE0D9003C78FA /* CCBargainDetailViewController.swift in Sources */,
 				C5A3A78C221D22EE0080DA57 /* CCHandWashCarPopView.swift in Sources */,
 				C5F68810221A4D4A00982ECC /* CCCommentTableViewCell.swift in Sources */,
+				C5D3964C2227E89C0007FD05 /* CCWashCarEvaluationViewController.swift in Sources */,
 				C5FA09D521FEE3D0005AF09C /* CCBargainTableViewCell.swift in Sources */,
 				C56641E021F55C43008C8CC6 /* UIFont+Extension.swift in Sources */,
 				C5A75118221574C30010A183 /* ZXSectorModel.swift in Sources */,
@@ -4142,6 +4335,7 @@
 				C5385849221BD0E600CFFF29 /* CCApplyView.swift in Sources */,
 				C566424F21F55C43008C8CC6 /* FJItemCVCell.swift in Sources */,
 				C5FA09BD21FEABE9005AF09C /* CCGroupBuyingViewController.swift in Sources */,
+				C558C0452227DA7300F9F51F /* CCRebateViewController.swift in Sources */,
 				C5A750FF22153A240010A183 /* MCLocalModel.swift in Sources */,
 				C566423621F55C43008C8CC6 /* HXAlbumModel.m in Sources */,
 				C5F6BE2821F6FF40009FACD6 /* NSLayoutConstraint+Category.m in Sources */,
@@ -4191,10 +4385,12 @@
 				C566428D21F55C8D008C8CC6 /* MDWebViewController.swift in Sources */,
 				C52AB5D62216BCA80031A550 /* CCMyTeamTableViewCell.swift in Sources */,
 				C56641C421F55C43008C8CC6 /* MDHorizontalCircleMenuView.swift in Sources */,
+				C558C03B2227C37A00F9F51F /* BasePageViewController.swift in Sources */,
 				C52A0D8B220033920017D113 /* CCPersonalCenterHeaderView.swift in Sources */,
 				C56641CB21F55C43008C8CC6 /* HFImagePickerManager.swift in Sources */,
 				C566422821F55C43008C8CC6 /* HXDatePhotoViewFlowLayout.m in Sources */,
 				C5BA72F6221C000E0036E409 /* CCWashCarHeaderView.swift in Sources */,
+				C558C03A2227C37A00F9F51F /* FYLSegmentView.m in Sources */,
 				C56641E721F55C43008C8CC6 /* NSString+DisplayTime.m in Sources */,
 				C56641E421F55C43008C8CC6 /* NSObject+Swizzle.m in Sources */,
 				C5E0D1922214430000C93EC1 /* CCMyPropertyHeaderView.swift in Sources */,
@@ -4216,6 +4412,7 @@
 				C566424221F55C43008C8CC6 /* AddressAttribute.swift in Sources */,
 				C5FA09D121FEE399005AF09C /* CCBargainViewController.swift in Sources */,
 				C56641AD21F55C43008C8CC6 /* HFUserData.swift in Sources */,
+				C558C03D2227C8F500F9F51F /* CCOrderOutSideViewController.swift in Sources */,
 				C58F3751221F962100C122B0 /* CCGoodsFooterView.swift in Sources */,
 				C5A7513522165A620010A183 /* CCWelfareSigninCollectionViewCell.swift in Sources */,
 				C5385836221AF56E00CFFF29 /* CCActivityGroupViewController.swift in Sources */,
@@ -4229,6 +4426,7 @@
 				C5A751392216699F0010A183 /* CCWelfareHeaderSigninCollectionViewBgView.swift in Sources */,
 				C566421021F55C43008C8CC6 /* BRDatePickerView.m in Sources */,
 				C56641A821F55C43008C8CC6 /* Macro.swift in Sources */,
+				C5D396502227E8A90007FD05 /* CCWashCarEvaluationFooterView.swift in Sources */,
 				C5A3A770221CFBE50080DA57 /* CCHandWashCarOutSideViewController.swift in Sources */,
 				C56641D021F55C43008C8CC6 /* BaseCollectionViewController.swift in Sources */,
 				C566422E21F55C43008C8CC6 /* HXCustomCollectionReusableView.m in Sources */,

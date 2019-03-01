@@ -30,6 +30,21 @@ class CCOtherWashCarViewController: BaseTableViewController {
         }
     }
     
+    @IBAction func btn_DidClicked(_ sender: UIButton) {
+        let pv = CCReleaseNotesView.md_viewFromXIB(cornerRadius: 5) as! CCReleaseNotesView
+        pv.autoresizingMask = .flexibleWidth
+        pv.clickBlock = {(sender) in
+            if let btn = sender as? UIButton {
+                if let sv = pv.superview {
+                    sv.removeFromSuperview()
+                }
+                let vc = CCPushSuccessViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        HFAlertController.showCustomView(view: pv)
+    }
+    
 }
 extension CCOtherWashCarViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +59,8 @@ extension CCOtherWashCarViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = CCWashCarEvaluationViewController.init(nibName: "CCWashCarEvaluationViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

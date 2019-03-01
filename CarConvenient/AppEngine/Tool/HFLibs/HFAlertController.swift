@@ -402,6 +402,9 @@ class HFAlertController: UIAlertController, HFAlertBkViewDelegate {
         cancelAction.setValue(config.negativeTitleColor, forKey: "titleTextColor")
         yesAction.setValue(config.positiveTitleColor, forKey: "titleTextColor")
         
+        cancelAction.setValue(config.negativeTitleBgColor, forKey: "backgroundColor")
+        yesAction.setValue(config.positiveTitleBgColor, forKey: "backgroundColor")
+        
         alertController.addAction(yesAction)
         if config.isShowCancel {
             alertController.addAction(cancelAction)
@@ -872,16 +875,16 @@ class MDAlertConfig: NSObject {
     
     var titleColor: UIColor = UIColor.init(rgba: "#333333")
     var descColor: UIColor = UIColor.init(rgba: "#333333")
-    var positiveTitleColor: UIColor = UIColor.init(rgba: "#FD212E")
-    var negativeTitleColor: UIColor = UIColor.init(rgba: "#333333")
+    var positiveTitleColor: UIColor = UIColor.init(rgba: "#FFFFFF")
+    var negativeTitleColor: UIColor = UIColor.init(rgba: "#FFFFFF")
     var positiveTitleBgColor: UIColor = UIColor.red
     var negativeTitleBgColor: UIColor = UIColor.white
     
     var titleFontSize: CGFloat = 17
     var descFontSize: CGFloat = 14
     
-    var positiveTitleFontSize: CGFloat = 17
-    var negativeTitleFontSize: CGFloat = 17
+    var positiveTitleFontSize: CGFloat = 14
+    var negativeTitleFontSize: CGFloat = 14
     
     var isShowCancel: Bool = true
     

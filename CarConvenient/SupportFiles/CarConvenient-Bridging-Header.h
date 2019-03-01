@@ -47,4 +47,6 @@
 
 #import "SVProgressHUD/SVProgressHUD.h"
 
+#import "FYLSegmentView.h"
+
 #endif /* Bridge_Header_h */

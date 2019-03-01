@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2Pv-dL-l8l" customClass="CCOrderSectionFooterView" customModule="CarConvenient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4N-jG-TBX">
+                    <rect key="frame" x="336" y="21" width="31" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y72-4I-QWM">
+                    <rect key="frame" x="297" y="21" width="31" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjM-9H-Uy5">
+                    <rect key="frame" x="8" y="44" width="359" height="1"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rr7-2b-hTo"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-55-Eb2">
+                    <rect key="frame" x="207" y="52.5" width="77.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消订单">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjk-La-JZ5">
+                    <rect key="frame" x="292.5" y="53" width="74.5" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tjk-La-JZ5" secondAttribute="height" multiplier="80:30" id="PEb-P3-v4f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确认收货">
+                        <color key="titleColor" red="0.90196078430000004" green="0.086274509799999996" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btn_DidClicked:" destination="2Pv-dL-l8l" eventType="touchUpInside" id="nJR-Oy-euJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xjM-9H-Uy5" firstAttribute="leading" secondItem="v3J-0M-P1I" secondAttribute="leading" constant="8" id="EOC-NZ-jnf"/>
+                <constraint firstItem="nVe-55-Eb2" firstAttribute="width" secondItem="nVe-55-Eb2" secondAttribute="height" multiplier="80:30" id="F6U-hk-Kdc"/>
+                <constraint firstItem="nVe-55-Eb2" firstAttribute="centerY" secondItem="tjk-La-JZ5" secondAttribute="centerY" id="G9v-kH-cmq"/>
+                <constraint firstItem="xjM-9H-Uy5" firstAttribute="centerY" secondItem="2Pv-dL-l8l" secondAttribute="centerY" id="Oln-92-AGU"/>
+                <constraint firstItem="m4N-jG-TBX" firstAttribute="trailing" secondItem="xjM-9H-Uy5" secondAttribute="trailing" id="ZnQ-0g-qHN"/>
+                <constraint firstItem="v3J-0M-P1I" firstAttribute="bottom" secondItem="tjk-La-JZ5" secondAttribute="bottom" constant="8" id="jo9-gD-4bz"/>
+                <constraint firstItem="xjM-9H-Uy5" firstAttribute="centerX" secondItem="2Pv-dL-l8l" secondAttribute="centerX" id="kek-cv-mUX"/>
+                <constraint firstItem="v3J-0M-P1I" firstAttribute="trailing" secondItem="tjk-La-JZ5" secondAttribute="trailing" constant="8" id="r4m-kc-KBE"/>
+                <constraint firstItem="tjk-La-JZ5" firstAttribute="leading" secondItem="nVe-55-Eb2" secondAttribute="trailing" constant="8" id="rdE-SY-5mh"/>
+                <constraint firstItem="tjk-La-JZ5" firstAttribute="top" secondItem="xjM-9H-Uy5" secondAttribute="bottom" constant="8" id="rqZ-0Z-JhV"/>
+                <constraint firstItem="Y72-4I-QWM" firstAttribute="centerY" secondItem="m4N-jG-TBX" secondAttribute="centerY" id="vu8-N0-oNJ"/>
+                <constraint firstItem="m4N-jG-TBX" firstAttribute="leading" secondItem="Y72-4I-QWM" secondAttribute="trailing" constant="8" id="yg5-dl-hp5"/>
+                <constraint firstItem="xjM-9H-Uy5" firstAttribute="top" secondItem="m4N-jG-TBX" secondAttribute="bottom" constant="8" id="zBu-A9-RVe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="v3J-0M-P1I"/>
+            <connections>
+                <outlet property="leftBtn" destination="nVe-55-Eb2" id="Ccw-Cs-5Wm"/>
+                <outlet property="rightBtn" destination="tjk-La-JZ5" id="9RY-KJ-yx2"/>
+            </connections>
+            <point key="canvasLocation" x="143" y="188"/>
+        </view>
+    </objects>
+</document>
